@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" >
+<head>
+<title><%= Info[:lastName] %> <%= Info[:firstName] %> - Personal web site</title>
+
+<meta name="description" content="<%= Info[:lastName] %> <%= Info[:firstName] %>, personal web site" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+</head>
+<body>
+<header>
+<div id="header">
+<h1 id="name" class="big"><%= Info[:firstName] %> <%= Info[:lastName] %></h1>
+<p class="normal">(aka <span id="nickname"><%= Info[:nickName] %></span>)</p>
+</div>
+
+<div id="image">
+<img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
+</div>
+
+<div id="resume">
+<a name="resume" />
+<h2>Curriculum Vitæ<br/><span id="updated-on" class="smaller">(updated on <%= DateTime.now.strftime('%B %Y') %>)</span></h2>
+
+<a href="cv_altamore_michelangelo_with_photo.pdf">PDF</a>
+<a href="cv_altamore_michelangelo_with_photo.html" >HTML</a>
+<p/>
+
+</div>
+
+</header>
+
+<nav><a href="#profile">Profile</a> <a href="#skills">Skills</a> <a href="#resume">Résumé</a> <a href="#around-the-internet">Around the internet</a></nav>
+
+<div id="main">
+<section id="profile">
+<a name="profile" />
+<h2><%= Info[:profileDescription] %></h2>
+<% Info[:summary].split("\n\n").each do |p| %>
+<p class="justify"><%= p %></p>
+<% end %>
+</section>
+
+<section id="skills">
+<a name="skills" />
+<h2>Skills</h2>
+<% Skills.each do |skill| %>
+<p class="close"><b><%= skill[:title] %>:</b> <%= skill[:tags] %></p>
+<% end %>
+</section>
+</div>
+
+<a name="around-the-internet" />
+<footer>	
+	<h2>Around the internet</h2>
+	<% Internet.each do |i| %>
+	<a href="<%= i[:url] %>"><%= i[:name] %></a> 
+	<% end %>
+</footer>
+</body>
+</html>

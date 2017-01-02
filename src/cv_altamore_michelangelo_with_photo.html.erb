@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<title>Curriculum Vitæ - <%= Info[:lastName] %> <%= Info[:firstName] %></title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8;charset=utf-8">
+
+<style type="text/css" media="all">
+	@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Regular.woff');
+	font-weight: 400;
+	}
+
+	@font-face {
+	    font-family: Roboto;
+	    src: url('fonts/Roboto-Bold.woff');
+		font-weight: 500;
+	}
+
+	@font-face {
+	    font-family: Roboto;
+	    src: url('fonts/Roboto-Light.woff');
+		font-weight: normal;
+	}
+
+	@font-face {
+	    font-family: Roboto;
+	    src: url('fonts/Roboto-Medium.woff');
+		font-weight: bold;
+	}
+
+ 	table { page-break-inside: avoid; }
+   	tr    { page-break-inside: avoid; page-break-after: auto; }
+ 	h1, h2, h3 { page-break-after: avoid; }
+ 	p { page-break-inside: avoid; }
+
+	@page { 
+		margin: 2cm
+	}
+
+	body { font-family: Roboto, sans-serif; margin: 2em }
+	
+	table { margin-bottom: 2em; font-size: 0.95em }
+	
+	table tr td { text-align: justify; }
+
+	table tr td:first-child { text-align: right; vertical-align: top; }
+
+	img {
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		border-radius: 15px; /* future proofing */
+		float: right;
+		display: inline
+	}
+
+	a { color: #3333B0; }
+
+	p.justify { text-align: justify; }
+
+	.smaller { font-size: 12pt; font-weight: normal; }
+	.left { text-align: left; }
+
+</style>
+</head>
+<body>
+<h1>Curriculum Vitæ <br><span id="updated-on" class="smaller">(updated on <%= DateTime.now.strftime('%B %Y') %>)</span></h1>
+
+<img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
+
+<p id="name">
+	<b>Name:</b> <%= Info[:firstName] %><br>
+	<b>Surname:</b> <%= Info[:lastName] %>
+</p>
+
+<p><b>Place, Date of Birth:</b><br><%= Info[:placeOfBirth] %>, <%= Info[:dateOfBirth] %> </p>
+
+<p>
+<b>Email</b>:&nbsp;<a href="mailto:<%= Info[:email] %>"><%= Info[:email] %></a><br>
+<b>Mobile</b>:&nbsp;<a href="tel:<%= Info[:phoneNumber] %>"><%= Info[:phoneNumber] %></a></p>
+
+<h2 id="toc_id_1">Job profile description</h2>
+<p><%= Info[:profileDescription] %>.<br></p>
+
+<h2 id="toc_id_2">Summary</h2>
+<% Info[:summaryPreamble].split("\n\n").each do |p| %>
+<p class="justify"><%= p %></p>
+<% end %>
+<% Info[:summary].split("\n\n").each do |p| %>
+<p class="justify"><%= p %></p>
+<% end %>
+
+<h2 id="toc_id_3">Skills</h2>
+<% Skills.each do |skill| %>
+<p><b><%= skill[:title] %>:</b> <%= skill[:tags] %></p>
+<% end %>
+
+<h2 id="toc_id_4">Professional experiences</h2>
+<% Experiences.each do |e| %>
+<table>
+<tbody><tr>
+<td><b>Period:</b></td>
+<td><%= e[:period] %></td>
+</tr>
+<tr>
+<td><b>Experience:</b></td>
+<td class="left"><%= e[:title] %></td>
+</tr>
+<tr>
+<td><b>Role:</b></td>
+<td><%= e[:role] %><br></td>
+</tr>
+<tr>
+<td><b>Client:</b></td>
+<td><%= e[:client] %><br></td>
+</tr>
+<tr>
+<td><b>Objectives:</b></td>
+<td><%= e[:objectives] %></td>
+</tr>
+<tr>
+<td><b>Description:</b></td>
+<td><%= e[:description] %></td>
+</tr>
+<tr>
+<td><b>Technologies:</b></td>
+<td><%= e[:technologies] %></td>
+</tr>
+</tbody>
+</table>
+<% end %>
+
+<h2 id="toc_id_5">Education</h2>
+<h3 id="toc_id_6">Qualifications</h3>
+<% Qualifications.each do |q| %>
+<div><div><b><%= q[:year] %>:</b> <%= q[:description] %></div>
+<div><br></div>
+<% end %>
+
+<h3 id="toc_id_7">Languages</h3>
+
+<table>
+<tbody>
+<tr>
+<td></td>
+<td><b><span class="Apple-tab-span" style="white-space:pre">	</span>Written</b></td>
+<td><b><span class="Apple-tab-span" style="white-space:pre">	</span>Spoken</b></td>
+</tr>
+<tr>
+<td><b>Italian</b></td>
+<td><span class="Apple-tab-span" style="white-space:pre">	</span>Excellent</td>
+<td><span class="Apple-tab-span" style="white-space:pre">	</span>Excellent</td>
+</tr>
+<tr>
+<td><b>English</b></td>
+<td><span class="Apple-tab-span" style="white-space:pre">	</span>Good</td>
+<td><span class="Apple-tab-span" style="white-space:pre">	</span>Good</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="toc_id_8">Other activities</h2>
+<div><div><b>November 2009:</b> backend implementation for online management of thematic seminars.</div> 
+<div><br></div>
+<div><div><b>August 2009:</b> Implementation back end web application for preventive chemical analysis.</div>
+<div><br></div>
+<div><b>June 2009:</b> publication introductory article to the use of Test Driven Development with Ruby on Rails on Rails Magazine.</div>
+<div><br></div>
+<div><b>April 2009:</b> <a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> to the Telecom Working Capital Barcamp entitled: Redis, a service with high performance for storage of data structures.</div>
+<div><br></div>
+<div><b>January 2009:</b> participated in the foundation of <a href="http://cataniarb.org">Catania Ruby User Group</a> and has organized regular meetings.&nbsp;</div>
+<div><br></div>
+<div><b>May 2008:</b> begins designing web application for the management of clinical data management Leukemia Chronic Myelogenous.</div>
+</div>
+<div><br></div>
+
+<h2 id="toc_id_9">Open source projects</h2>
+<div><% OpenSourceProjects.each do |oss| %>
+<div><b><%= oss[:title] %>:</b>&nbsp;<%= oss[:description] %></div>
+<div><a href="<%= oss[:url] %>"><%= oss[:url] %></a></div>
+<div><br></div>
+<% end %>
+</div>
+</body>
+</html>

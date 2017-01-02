@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.woff');
+	font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Bold.woff');
+	font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Light.woff');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Medium.woff');
+	font-weight: bold;
+}
+
+body { margin: 1.5em; font-family: Roboto, sans-serif; }
+
+table { margin-bottom: 2em; }
+
+h1 { margin: 0em; }
+p { margin-top: 0.2em; line-height: 1.5em; }
+
+header { display: flex; flex-flow: row; }
+header > div#header { flex: 2 1 50%; order: 1; margin-right: 2em}
+header > div#image { flex: 1 2 20%; order: 2; }
+header > div#resume { flex: 1 2 30%; order: 3; }
+
+#main { display: flex; flex-flow: row; }
+#main > section#profile { flex: 2 1 50%; order: 1; margin-right: 2em }
+#main > section#skills { flex: 1 2 50%; order: 2;}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 940px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > div#header {
+        flex: 1;
+        order: 1;
+    }
+
+    header > div#image {
+        flex: 1;
+        order: 2;
+    }
+
+    header > div#resume {
+        flex: 1;
+        order: 3;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main > section#profile {
+    /* Return them to document order */
+        flex: 1;
+        order: 1;
+    }
+
+    #main > section#skills {
+        flex: 1;
+        order: 2;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, b { font-weight: 300; color: #303030; }
+
+h2 { font-size: 2em; }
+
+table tr td:first-child { text-align: right; vertical-align: top; }
+
+a:visited, a:link { color: black; margin-right: 0.6em; }
+
+img {-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px; /* future proofing */
+}
+
+.big { font-size: 3em; }
+.medium { font-size: 2em; }
+.normal { font-size: 1.5em; }
+.justify { text-align: justify; }
+
+.smaller { font-size: 12pt; font-weight: normal; }
+.close { line-height: 1em; }
