@@ -18,7 +18,7 @@ Skills = [
   { title: 'Web stacks', tags: 'Ruby on Rails, Node.js' },
   { title: 'Databases', tags: 'Postgres, Redis, SQlite, MySQL, SQL Server, DB2 UDB' },
   { title: 'Version Control Systems', tags: 'Git, Git-SVN, SVN' },
-  { title: 'Platforms', tags: 'Android, iOS, Windows Phone, MacOS X, Linux, Windows'},    
+  { title: 'Platforms', tags: 'Android, iOS, Windows Phone, MacOS X, Linux, Windows'},
   { title: 'Web/Application server', tags: 'NGINX, Apache' }
 ]
 
@@ -26,7 +26,7 @@ Skills = [
 Experiences = [
 {
   period: '8-2016 – ongoing',
-  title: 'Native android application development targeted at consumer market',
+  title: 'Native iOS application development targeted at consumer market',
   role: 'Mobile application developer',
   client: 'Telecom Italia Lab',
   objectives: 'Implementation of an iOS application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by partners of Telecom Italia',
