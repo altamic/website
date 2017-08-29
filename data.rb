@@ -1,9 +1,9 @@
 Info = {
-	firstName: "Michelangelo",
-	lastName: "Altamore",
-	placeOfBirth: "Catania (Italy)",
-  dateOfBirth: "February 9th, 1978",
+  firstName: "Michelangelo",
+  lastName: "Altamore",
+  placeOfBirth: "Catania (Italy)",
   email: "michelangelo@altamore.org",
+  nationality: "Italian",
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
   profileDescription: "Mobile developer over many platforms",
@@ -306,6 +306,11 @@ Qualifications = [
 }]
 
 OpenSourceProjects = [
+{
+  title: 'Privablic',
+  description: 'Access to private members and methods of a C++ struct or class',
+  url: 'https://github.com/altamic/privablic'
+},
 {
   title: 'Bitcoin Protocol',
   description: 'Bitcoin protocol implementation in Ruby',

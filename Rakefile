@@ -1,4 +1,5 @@
 require 'rake'
+require 'date'
 require 'erb'
 
 load 'data.rb'

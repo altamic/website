@@ -35,14 +35,14 @@
  	h1, h2, h3 { page-break-after: avoid; }
  	p { page-break-inside: avoid; }
 
-	@page { 
+	@page {
 		margin: 2cm
 	}
 
 	body { font-family: Roboto, sans-serif; margin: 2em }
-	
+
 	table { margin-bottom: 2em; font-size: 0.95em }
-	
+
 	table tr td { text-align: justify; }
 
 	table tr td:first-child { text-align: right; vertical-align: top; }
@@ -74,7 +74,7 @@
 	<b>Surname:</b> <%= Info[:lastName] %>
 </p>
 
-<p><b>Place, Date of Birth:</b><br><%= Info[:placeOfBirth] %>, <%= Info[:dateOfBirth] %> </p>
+<p><b>Nationality:</b> <%= Info[:nationality] %></p>
 
 <p>
 <b>Email</b>:&nbsp;<a href="mailto:<%= Info[:email] %>"><%= Info[:email] %></a><br>
@@ -162,7 +162,7 @@
 
 
 <h2 id="toc_id_8">Other activities</h2>
-<div><div><b>November 2009:</b> backend implementation for online management of thematic seminars.</div> 
+<div><div><b>November 2009:</b> backend implementation for online management of thematic seminars.</div>
 <div><br></div>
 <div><div><b>August 2009:</b> Implementation back end web application for preventive chemical analysis.</div>
 <div><br></div>
