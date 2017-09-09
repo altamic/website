@@ -32,7 +32,9 @@
 <header>
 <div id="header">
 <h1 id="name" class="big"><%= Info[:firstName] %> <%= Info[:lastName] %></h1>
-<p class="normal">(aka <span id="nickname"><%= Info[:nickName] %></span>)</p>
+<div class="normal">(aka <span id="nickname"><%= Info[:nickName] %></span>)</div>
+<br/>
+<p><i id="profile_info" class="small"><%= Info[:profileInfo] %></i></p>
 </div>
 
 <div id="image">
@@ -41,6 +43,7 @@
 
 <div id="resume">
 <a name="resume" />
+
 <h2>Résumé</h2>
 
 <a href="cv_altamore_michelangelo_with_photo.html" >View</a> | <a href="cv_altamore_michelangelo_with_photo.pdf">Download PDF</a>
@@ -50,7 +53,7 @@
 
 </header>
 
-<nav><a href="#profile">Profile</a> <a href="#skills">Skills</a> <a href="#resume">Résumé</a> <a href="#around-the-internet">Around the internet</a></nav>
+<nav><!-- <a href="#profile">Profile</a> <a href="#skills">Skills</a> <a href="#resume">Résumé</a> <a href="#around-the-internet">Around the internet</a> --></nav>
 
 <div id="main">
 <section id="profile">

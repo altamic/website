@@ -93,7 +93,7 @@
 
 <img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
 
-<span id="updated-on" class="smaller">(Curriculum Vitæ updated on <%= DateTime.now.strftime('%B %Y') %>)</span>
+<span id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y') %>)</span>
 
 <p><b>Nationality:</b> <%= Info[:nationality] %></p>
 
@@ -102,6 +102,10 @@
 <b>Mobile</b>:&nbsp;<a href="tel:<%= Info[:phoneNumber] %>"><%= Info[:phoneNumber] %></a></p>
 
 <h2 id="toc_id_1"><%= Info[:profileDescription] %></h2>
+<% Info[:profileInfo].split("\n\n").each do |p| %>
+<p class="justify"><%= p %></p>
+<% end %>
+
 
 <h2 id="toc_id_2">Summary</h2>
 <% Info[:summaryPreamble].split("\n\n").each do |p| %>
@@ -110,7 +114,6 @@
 <% Info[:summary].split("\n\n").each do |p| %>
 <p class="justify"><%= p %></p>
 <% end %>
-
 
 <h2 id="toc_id_3">Skills</h2>
 <% Skills.each do |skill| %>
