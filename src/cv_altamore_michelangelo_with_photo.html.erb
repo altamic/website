@@ -48,9 +48,10 @@
 		font-weight: bold;
 	}
 
+  h1 { display: inline; }
  	table { page-break-inside: avoid; }
    	tr    { page-break-inside: avoid; page-break-after: auto; }
- 	h1, h2, h3 { page-break-after: avoid; }
+ 	h1, h2, h3 { page-break-after: avoid; font-weight: normal; }
  	p { page-break-inside: avoid; }
 
 	@page {
@@ -65,10 +66,12 @@
 
 	table tr td:first-child { text-align: right; vertical-align: top; }
 
-	img {
-		-moz-border-radius: 15px;
-		-webkit-border-radius: 15px;
-		border-radius: 15px; /* future proofing */
+  img {
+    margin-top: -2.4em;
+    border: 2px solid #d0d0d0;
+		-moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+		border-radius: 80px; /* future proofing */
 		float: right;
 		display: inline
 	}
@@ -83,14 +86,14 @@
 </style>
 </head>
 <body>
-<h1>Curriculum Vitæ <br><span id="updated-on" class="smaller">(updated on <%= DateTime.now.strftime('%B %Y') %>)</span></h1>
+
+<div id="name">
+  <h1><%= Info[:firstName] %> <%= Info[:lastName].upcase %></h1>
+</div>
 
 <img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
 
-<p id="name">
-	<b>Name:</b> <%= Info[:firstName] %><br>
-	<b>Surname:</b> <%= Info[:lastName] %>
-</p>
+<span id="updated-on" class="smaller">(Curriculum Vitæ updated on <%= DateTime.now.strftime('%B %Y') %>)</span>
 
 <p><b>Nationality:</b> <%= Info[:nationality] %></p>
 
@@ -107,6 +110,7 @@
 <% Info[:summary].split("\n\n").each do |p| %>
 <p class="justify"><%= p %></p>
 <% end %>
+
 
 <h2 id="toc_id_3">Skills</h2>
 <% Skills.each do |skill| %>
