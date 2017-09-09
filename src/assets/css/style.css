@@ -1,25 +1,25 @@
 @font-face {
-    font-family: Roboto;
-    src: url('../fonts/Roboto-Regular.woff');
-	font-weight: 400;
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.woff');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url('../fonts/Roboto-Bold.woff');
-	font-weight: 500;
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Bold.woff');
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url('../fonts/Roboto-Light.woff');
-	font-weight: normal;
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Light.woff');
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url('../fonts/Roboto-Medium.woff');
-	font-weight: bold;
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Medium.woff');
+  font-weight: bold;
 }
 
 body { margin: 1.5em; font-family: Roboto, sans-serif; }
@@ -30,51 +30,51 @@ h1 { margin: 0em; }
 p { margin-top: 0.2em; line-height: 1.5em; }
 
 header { display: flex; flex-flow: row; }
-header > div#header { flex: 2 1 50%; order: 1; margin-right: 2em}
-header > div#image { flex: 1 2 20%; order: 2; }
+header > div#header { flex: 2 1 43%; order: 1; margin-right: 2em}
+header > div#image { flex: 1 2 32%; order: 2; }
 header > div#resume { flex: 1 2 30%; order: 3; }
 
 #main { display: flex; flex-flow: row; }
-#main > section#profile { flex: 2 1 50%; order: 1; margin-right: 2em }
-#main > section#skills { flex: 1 2 50%; order: 2;}
+#main > section#profile { flex: 2 1 55%; order: 1; margin-right: 2em }
+#main > section#skills { flex: 1 2 40%; order: 2;}
 
 /* Too narrow to support three columns */
 @media all and (max-width: 940px) {
-    header {
-        display: flex;
-        flex-direction: column;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 
-    header > div#header {
-        flex: 1;
-        order: 1;
-    }
+  header > div#header {
+    flex: 1;
+    order: 1;
+  }
 
-    header > div#image {
-        flex: 1;
-        order: 2;
-    }
+  header > div#image {
+    flex: 1;
+    order: 2;
+  }
 
-    header > div#resume {
-        flex: 1;
-        order: 3;
-    }
+  header > div#resume {
+    flex: 1;
+    order: 3;
+  }
 
-    #main {
-        display: flex;
-        flex-direction: column;
-    }
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
 
-    #main > section#profile {
+  #main > section#profile {
     /* Return them to document order */
-        flex: 1;
-        order: 1;
-    }
+    flex: 1;
+    order: 1;
+  }
 
-    #main > section#skills {
-        flex: 1;
-        order: 2;
-    }
+  #main > section#skills {
+    flex: 1;
+    order: 2;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, b { font-weight: 300; color: #303030; }
@@ -85,9 +85,10 @@ table tr td:first-child { text-align: right; vertical-align: top; }
 
 a:visited, a:link { color: black; margin-right: 0.6em; }
 
-img {-moz-border-radius: 15px;
--webkit-border-radius: 15px;
-border-radius: 15px; /* future proofing */
+img {
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px; /* future proofing */
 }
 
 .big { font-size: 3em; }

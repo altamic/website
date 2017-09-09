@@ -6,9 +6,9 @@ Info = {
   nationality: "Italian",
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
-  profileDescription: "Mobile developer over many platforms",
+  profileDescription: "Mobile developer over Android and iOS platforms",
   summaryPreamble: "I received a five-year bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical clinics.\n\n",
-  summary: "I currently hold the role of iOS software developer for an agile team that adopts SCRUM methodology since early 2015. I have experience of other mobile platforms (Android, Windows Phone, BlackBerry) as well as on frontend web development.\n\nI have a strong interest in the latest technological advancements of statically typed programming languages (Kotlin, Java 8, Swift 3), dynamic ones (Ruby, Javascript), programming paradigms (Object Oriented/Functional) and methodological approaches as Functional Reactive Programming (RxJava, RxSwift). Also, I became interested in the automation of processes, implementing an automated system for the build, deployment of software artifacts and server provisioning (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant)."
+  summary: "I currently hold the role of iOS software developer for an agile team that adopts SCRUM methodology since early 2015. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects ranging from firmware to back-end development.\n\nI cultivate a strong interest in the latest technological advancements of statically typed programming languages (Kotlin, Java, Swift), dynamic ones (Ruby, Javascript), programming paradigms (Object Oriented/Functional) and methodological approaches as Functional Reactive Programming (RxJava, RxSwift). Also, I became interested in the automation of software life-cycle processes, implementing automated systems for the build, software artifacts provisioning and server deployment (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant)."
 }
 
 Skills = [
@@ -31,7 +31,7 @@ Experiences = [
   client: 'Telecom Italia Lab',
   objectives: 'Implementation of an iOS application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by partners of Telecom Italia',
   description: 'Development of a smartphone application that provides recognition services (SPID) based on SIM to access third party services: gain access to public administration services or payment for goods/services of business partners. The application provides other ancillary services (purchase of bus tickets and parking) and is also able to capture and virtualize loyalty cards',
-  technologies: 'Swift, RxSwift, iOS, Alamofire, Xcode, CocoaPods'
+  technologies: 'Swift, RxSwift, iOS, Alamofire, Realm, Xcode, CocoaPods'
 },
 {
   period: '1-2016 – 8-2016',
@@ -302,7 +302,7 @@ Qualifications = [
 },
 {
   year: "1996",
-  description: "Maturità Scientifica. High school diploma at the \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
+  description: "Maturità Scientifica. High school diploma at \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
 }]
 
 OpenSourceProjects = [
