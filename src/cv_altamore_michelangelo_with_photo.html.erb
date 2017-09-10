@@ -93,7 +93,7 @@
 
 <img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
 
-<span id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y') %>)</span>
+<span id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y').downcase %>)</span>
 
 <p><b>Nationality:</b> <%= Info[:nationality] %></p>
 
