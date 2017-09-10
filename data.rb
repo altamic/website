@@ -14,13 +14,12 @@ Info = {
 
 Skills = [
   { title: 'Programming paradigms', tags: 'Object Oriented, Functional' },
-  { title: 'Programming languages', tags: 'Kotlin, Java, Swift, Objective-C, C, C#, Ruby, Javascript' },
-  { title: 'Frameworks', tags: 'RxKotlin, RxJava, RxSwift, RxJs' },
-  { title: 'Web stacks', tags: 'Ruby on Rails, Node.js' },
-  { title: 'Databases', tags: 'Postgres, Redis, SQlite, MySQL, SQL Server, DB2 UDB' },
-  { title: 'Version Control Systems', tags: 'Git, Git-SVN, SVN' },
-  { title: 'Platforms', tags: 'Android, iOS, Windows Phone, MacOS X, Linux, Windows'},
-  { title: 'Web/Application server', tags: 'NGINX, Apache' }
+  { title: 'Languages', tags: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript' },
+  { title: 'Platforms', tags: 'Android, iOS, MacOS X, Linux, Windows'},
+  { title: 'Remote API paradigms', tags: 'HTTP REST (JSON, XML), RPC (SOAP)'},
+  { title: 'Frameworks', tags: 'RxKotlin/RxJava, RxSwift/PromiseKit' },
+  { title: 'Specialties', tags: 'Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
+  { title: 'Version Control Systems', tags: 'Git, Git-SVN, SVN' }
 ]
 
 
