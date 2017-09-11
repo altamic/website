@@ -14,5 +14,5 @@ fluidity.
 ## License ##
 
 Copyright 2016-2017 Michelangelo Altamore. It may be 
-redistributed under the terms specified in the LICENSE file.
+redistributed under the terms specified in the [LICENSE](LICENSE) file.
 
