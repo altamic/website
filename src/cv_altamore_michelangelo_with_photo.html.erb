@@ -23,7 +23,16 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <style type="text/css" media="all">
+
+      @font-face {
+        font-family: FontAwesome;
+        src: url('fonts/fontawesome-webfont.woff');
+        font-weight: 400;
+      }
+
       @font-face {
         font-family: Roboto;
         src: url('fonts/Roboto-Regular.woff');
@@ -51,11 +60,11 @@
       h1 { display: inline; }
       table { page-break-inside: avoid; }
       tr    { page-break-inside: avoid; page-break-after: auto; }
-      h1, h2, h3 { page-break-after: avoid; font-weight: normal; }
-      p { page-break-inside: avoid; }
+      h1, h2, h3 { margin-bottom: 0.4em; page-break-after: avoid; font-weight: normal; }
+      p { margin: 0.4em 0.4em; page-break-inside: avoid; }
 
       @page {
-        margin: 2cm
+        margin: 2cm;
       }
 
       body { font-family: Roboto, sans-serif; margin: 2em }
@@ -68,6 +77,7 @@
 
       img {
         margin-top: -2.4em;
+        margin-left: 0.4em;
         border: 2px solid #d0d0d0;
         -moz-border-radius: 80px;
         -webkit-border-radius: 80px;
@@ -78,12 +88,18 @@
 
       a { color: #3333B0; }
 
+      p { font-size: 0.8em }
       p.justify { text-align: justify; }
 
-      .smaller { font-size: 12pt; font-weight: normal; }
+      .smaller { font-size: 0.4em; font-weight: normal; margin-bottom: 0.4em;}
+
+      .small { margin-top: 0.4em; text-indent: 0.2em; font-size: 0.7em; font-weight: lighter; }
+
       .left { text-align: left; }
 
-
+      .fontawesome {
+        font-family: FontAwesome;
+      }
       /* -------------------------------------
        * timeline
        * ------------------------------------- */
@@ -94,7 +110,9 @@
 
       #timeline {
         list-style: none;
-        margin: 30px 0px 30px 58px;
+        float: left;
+        width: 9.6em;
+        margin: 10px 0px 30px 58px;
         padding-left: 0px;
         padding-top: 16px;
         border-left: 4px solid black;
@@ -102,16 +120,15 @@
 
       #timeline li {
         padding: 0px;
-        margin-bottom: -8px;
         position: relative;
       }
 
       #timeline li div.height1 {
-        margin-bottom: -8px;
+        margin-bottom: -12px;
       }
 
       #timeline li div.height2 {
-        margin-bottom: 0px;
+        margin-bottom: -4px;
       }
 
       #timeline li div.height3 {
@@ -153,10 +170,12 @@
         position: relative;
       }
 
-     .label {
+      .label {
         font-size: 0.4em;
         margin-left: 12px;
-        top: -17px;
+        top: -12px;
+        width: 120px;
+        display: block;
         position: relative;
       }
 
@@ -196,6 +215,16 @@
     </style>
   </head>
   <body>
+    <p>
+    <i class="fa fa-envelope-o"></i>&nbsp;<a href="mailto:<%= Info[:email] %>"><%= Info[:email] %></a> &mdash;
+    <i class="fa fa-phone"></i>&nbsp;<a href="tel:<%= Info[:phoneNumber] %>"><%= Info[:phoneNumber] %></a> &mdash;
+    <% Internet[0..2].each do |i| %>
+      <span class="fontawesome"><%= i[:icon]%></span>
+    <% end %>
+    <a href="#">altamic</a>
+    </p>
+
+    <div id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y').downcase %>)</div>
 
     <div id="name">
       <h1><%= Info[:firstName] %> <%= Info[:lastName].upcase %></h1>
@@ -203,49 +232,38 @@
 
     <img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
 
-    <span id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y').downcase %>)</span>
-
-    <p><b>Nationality:</b> <%= Info[:nationality] %></p>
-
-    <p>
-    <b>Email</b>:&nbsp;<a href="mailto:<%= Info[:email] %>"><%= Info[:email] %></a><br>
-    <b>Mobile</b>:&nbsp;<a href="tel:<%= Info[:phoneNumber] %>"><%= Info[:phoneNumber] %></a></p>
-
-    <h2 id="toc_id_1"><%= Info[:profileDescription] %></h2>
-    <% Info[:profileInfo].split("\n\n").each do |p| %>
-      <p class="justify"><%= p %></p>
-    <% end %>
+    <!-- <p><b>Nationality:</b> <%= Info[:nationality] %></p> -->
 
     <ul id='timeline'>
       <% Timeline[:items].each do |item| %>
         <li>
-        <div>
+        <div class='height<%= item[2]%>'>
           <span class='date'><%= item[0] %></span>
           <span class='circle'></span>
           <span class='label'><%= item[1] %></span>
         </div>
         </li>
       <% end %>
-      <li class='height3'>
-        <span class='label' for='work3'>Lorem ipsum dolor sit amet</span>
-        <span class='date'>10 May 2013</span>
-        <span class='circle'></span>
-      </div>
-     </li>
-      <li class='height2'>
-      <div >
-        <span class='label'>Lorem ipsum dolor sit amet</span>
-        <span class='date'>09 May 2013</span>
-        <span class='circle'></span>
-      </div>
-     <li class='height3'>
-      <div >
-        <span class='label'>Lorem ipsum dolor sit amet</span>
-        <span class='date'>08 May 2013</span>
-        <span class='circle'></span>
-      </div>
-     </li>
     </ul>
+
+    <% Info[:profileInfo].split("\n\n").each do |p| %>
+      <p class="small"><em><%= p %></em></p>
+    <% end %>
+
+    <h2 id="toc_id_1"><%= Info[:profileDescription] %></h2>
+
+    <h2>Quick facts</h2>
+    11 Years experience
+    <br/>
+    12 Mobile apps delivered
+    <br/>
+    7 Apps running in production<sup>1</sup>
+    <br/>
+    60k Total users<sup>1</sup>
+    <br/>
+    7.4k Commits
+
+    <p class="smaller"><sup>1</sup> at the time of writing.</p>
 
     <h2 id="toc_id_2">Summary</h2>
     <% Info[:summaryPreamble].split("\n\n").each do |p| %>
@@ -260,10 +278,13 @@
       <p><b><%= skill[:title] %>:</b> <%= skill[:tags] %></p>
     <% end %>
 
+    <br/>
+
     <h2 id="toc_id_4">Professional experiences</h2>
     <% Experiences.each do |e| %>
       <table>
-        <tbody><tr>
+        <tbody>
+          <tr>
             <td><b>Period:</b></td>
             <td><%= e[:period] %></td>
           </tr>
@@ -303,7 +324,6 @@
       <% end %>
 
       <h3 id="toc_id_7">Languages</h3>
-
       <table>
         <tbody>
           <tr>
@@ -323,7 +343,6 @@
           </tr>
         </tbody>
       </table>
-
 
       <h2 id="toc_id_8">Other activities</h2>
       <div><div><b>November 2009:</b> backend implementation for online management of thematic seminars.</div>

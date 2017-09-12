@@ -4,7 +4,7 @@ Info = {
   placeOfBirth: "Catania (Italy)",
   email: "michelangelo@altamore.org",
   nationality: "Italian",
-  phoneNumber: "+39 320 948 66 63",
+  phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
   profileDescription: "Mobile developer over Android and iOS platforms",
   summaryPreamble: "I received a five-year bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical clinics.\n\n",
@@ -30,26 +30,28 @@ Timeline = {
   numTicks: 60,
   tickFormat: "%b %Y",
   items: [
-    ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift"],
-    ["Jan 2017", "Deliver a native app for both Android and iOS platforms"],
-    ["Aug 2016", "Replace a team leader dev for an iOS app in Swift"],
-    ["Jan 2016", "Take part in development of a new Android app"],
-    ["Dec 2015", "Turn an in-house sw solution into a lib and release it as an SDK"],
-    ["Nov 2015", "Deliver a native Android app"],
-    ["Aug 2015", "Ship a native Android app"],
-    ["Jan 2015", "Enhance and fix apps in production"],
-    ["Sep 2014", "Automate builds and releases for Android apps"],
-    ["Jun 2014", "Deliver a native Android app"],
-    ["Feb 2014", "Ship a native Android app"],
-    ["Sep 2013", "Deliver a native BlackBerry app"],
-    ["Jan 2013", "Dispense a course on native Android development"],
-    ["Dec 2012", "Take part in development of a native mobile iOS app"],
-    ["Sep 2012", "Prototype a multi-platforms hybrid app"],
-    ["Apr 2012", "Ship a native Windows Phone app"],
-    ["Dec 2011", "Ship a cross platform iOS app"],
-    ["Oct 2011", "Ship a cross platform Symbian app"],
-    ["Dec 2006", "Begin working as Java Developer"],
-    ["Jul 2006", "BS degree in Computer Science"]
+    ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 1],
+    ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 3],
+    ["Aug 2016", "Replace a team leader dev for an iOS app in Swift", 3],
+    ["Jan 2016", "Take part in development of a new Android app", 1],
+    ["Dec 2015", "Turn an in-house sw solution into a lib and release it as an SDK", 1],
+    ["Nov 2015", "Deliver a native Android app", 1],
+    ["Aug 2015", "Ship a native Android app", 4],
+    ["Jan 2015", "Enhance and fix apps in production", 3],
+    ["Sep 2014", "Automate builds and releases for Android apps", 3],
+    ["Jun 2014", "Deliver a native Android app", 1],
+    ["Feb 2014", "Ship a native Android app", 3],
+    ["Sep 2013", "Deliver a native BlackBerry app", 4],
+    ["Jan 2013", "Dispense a course on native Android development", 1],
+    ["Dec 2012", "Take part in development of a native mobile iOS app", 2],
+    ["Sep 2012", "Prototype a multi-platforms hybrid app", 3],
+    ["Apr 2012", "Ship a native Windows Phone app", 5],
+    ["Dec 2011", "Ship a cross platform iOS app", 2],
+    ["Oct 2011", "Ship a cross platform Symbian app", 1],
+    ["Sep 2011", "Begin working as Mobile Developer", 5],
+    ["Apr 2007", "Begin working as Full Stack Web Developer", 5],
+    ["Dec 2006", "Begin working as Java developer", 2],
+    ["Jul 2006", "BS degree in Computer Science", 1]
   ],
   eras: [
     ["Full Stack Web Developer", "Apr 2007", "Sep 2011"],
@@ -379,19 +381,27 @@ OpenSourceProjects = [
 Internet = [
 {
   name: "GitHub",
-  url: "https://github.com/altamic"
+  url: "https://github.com/altamic",
+  nickname: "altamic",
+  icon: "&#xf09b;"
 },
 {
   name: "StackOverflow",
-  url: "http://stackoverflow.com/users/6168558/altamic"
+  url: "http://stackoverflow.com/users/6168558/altamic",
+  nickname: "altamic",
+  icon: "&#xf16c;"
 },
 {
   name: "LinkedIn",
-  url: "https://it.linkedin.com/in/altamic"
+  url: "https://it.linkedin.com/in/altamic",
+  nickname: "altamic",
+  icon: "&#xf08c;"
 },
 {
   name: "Twitter",
-  url: "https://twitter.com/altamic_"
+  url: "https://twitter.com/altamic_",
+  nickname: "altamic",
+  icon: "&#xf099;"
 }]
 
 
