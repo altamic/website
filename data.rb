@@ -22,6 +22,40 @@ Skills = [
   { title: 'Version Control Systems', tags: 'Git, Git-SVN, SVN' }
 ]
 
+require 'date'
+Timeline = {
+  width: 1800,
+  start: "Jul 2006",
+  end: DateTime.now.strftime('%b %Y'),
+  numTicks: 60,
+  tickFormat: "%b %Y",
+  items: [
+    ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift"],
+    ["Jan 2017", "Deliver a native app for both Android and iOS platforms"],
+    ["Aug 2016", "Replace a team leader dev for an iOS app in Swift"],
+    ["Jan 2016", "Take part in development of a new Android app"],
+    ["Dec 2015", "Turn an in-house sw solution into a lib and release it as an SDK"],
+    ["Nov 2015", "Deliver a native Android app"],
+    ["Aug 2015", "Ship a native Android app"],
+    ["Jan 2015", "Enhance and fix apps in production"],
+    ["Sep 2014", "Automate builds and releases for Android apps"],
+    ["Jun 2014", "Deliver a native Android app"],
+    ["Feb 2014", "Ship a native Android app"],
+    ["Sep 2013", "Deliver a native BlackBerry app"],
+    ["Jan 2013", "Dispense a course on native Android development"],
+    ["Dec 2012", "Take part in development of a native mobile iOS app"],
+    ["Sep 2012", "Prototype a multi-platforms hybrid app"],
+    ["Apr 2012", "Ship a native Windows Phone app"],
+    ["Dec 2011", "Ship a cross platform iOS app"],
+    ["Oct 2011", "Ship a cross platform Symbian app"],
+    ["Dec 2006", "Begin working as Java Developer"],
+    ["Jul 2006", "BS degree in Computer Science"]
+  ],
+  eras: [
+    ["Full Stack Web Developer", "Apr 2007", "Sep 2011"],
+    ["Mobile Developer", "Sep 2011", "Sep 2017", "#404040"]
+  ]
+}
 
 Experiences = [
 {
