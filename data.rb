@@ -24,11 +24,6 @@ Skills = [
 
 require 'date'
 Timeline = {
-  width: 1800,
-  start: "Jul 2006",
-  end: DateTime.now.strftime('%b %Y'),
-  numTicks: 60,
-  tickFormat: "%b %Y",
   items: [
     ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 1],
     ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 3],
