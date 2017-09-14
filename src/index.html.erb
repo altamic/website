@@ -1,84 +1,74 @@
 <!doctype html>
 <html lang="en" >
-<head>
-<title><%= Info[:lastName] %> <%= Info[:firstName] %> - Personal web site</title>
+  <head>
+    <title><%= Info[:lastName] %> <%= Info[:firstName] %> - Personal web site</title>
 
-<meta name="description" content="<%= Info[:lastName] %> <%= Info[:firstName] %>, personal web site" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="<%= Info[:lastName] %> <%= Info[:firstName] %>, personal web site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="altamic">
+    <meta name="application-name" content="altamic">
+    <meta name="theme-color" content="#00aba9">
 
-<link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 
-</head>
-<body>
-<header>
-<div id="header">
-<h1 id="name" class="big"><%= Info[:firstName] %> <%= Info[:lastName] %></h1>
-<div class="normal">(aka <span id="nickname"><%= Info[:nickName] %></span>)</div>
-<br/>
-<p><i id="profile_info" class="small"><%= Info[:profileInfo] %></i></p>
-</div>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <h1 id="name" class="big"><%= Info[:firstName] %> <%= Info[:lastName] %></h1>
+        <div class="normal">(aka <span id="nickname"><%= Info[:nickName] %></span>)</div>
+        <br/>
+        <p><i id="profile_info" class="small"><%= Info[:profileInfo] %></i></p>
+      </div>
 
-<div id="image">
-<img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
-</div>
+      <div id="image">
+        <img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
+      </div>
 
-<div id="resume">
-<a name="resume" />
+      <div id="resume">
+        <a name="resume" />
 
-<h2>Résumé</h2>
+          <h2>Résumé</h2>
 
-<a href="cv_altamore_michelangelo_with_photo.html" >View</a> | <a href="cv_altamore_michelangelo_with_photo.pdf">Download PDF</a>
-<p/>
+          <a href="cv_altamore_michelangelo_with_photo.html" >View</a> | <a href="cv_altamore_michelangelo_with_photo.pdf">Download PDF</a>
+          <p/>
 
-</div>
+        </div>
 
-</header>
+      </header>
 
-<nav><!-- <a href="#profile">Profile</a> <a href="#skills">Skills</a> <a href="#resume">Résumé</a> <a href="#around-the-internet">Around the internet</a> --></nav>
+      <nav><!-- <a href="#profile">Profile</a> <a href="#skills">Skills</a> <a href="#resume">Résumé</a> <a href="#around-the-internet">Around the internet</a> --></nav>
 
-<div id="main">
-<section id="profile">
-<a name="profile" />
-<h2><%= Info[:profileDescription] %></h2>
-<% Info[:summary].split("\n\n").each do |p| %>
-<p class="justify"><%= p %></p>
-<% end %>
-</section>
+        <div id="main">
+          <section id="profile">
+            <a name="profile" />
+              <h2><%= Info[:profileDescription] %></h2>
+              <% Info[:summary].split("\n\n").each do |p| %>
+                <p class="justify"><%= p %></p>
+              <% end %>
+            </section>
 
-<section id="skills">
-<a name="skills" />
-<h2>Skills</h2>
-<% Skills.each do |skill| %>
-<p class="close"><b><%= skill[:title] %>:</b> <%= skill[:tags] %></p>
-<% end %>
-</section>
-</div>
+            <section id="skills">
+              <a name="skills" />
+                <h2>Skills</h2>
+                <% Skills.each do |skill| %>
+                  <p class="close"><b><%= skill[:title] %>:</b> <%= skill[:tags] %></p>
+                <% end %>
+              </section>
+            </div>
 
-<a name="around-the-internet" />
-<footer>
-	<h2>Around the internet</h2>
-	<% Internet.each do |i| %>
-	<a href="<%= i[:url] %>"><%= i[:name] %></a>
-	<% end %>
-</footer>
-</body>
-</html>
+            <a name="around-the-internet" />
+              <footer>
+                <h2>Around the internet</h2>
+                <% Internet.each do |i| %>
+                  <a href="<%= i[:url] %>"><%= i[:name] %></a>
+                <% end %>
+              </footer>
+            </body>
+          </html>
