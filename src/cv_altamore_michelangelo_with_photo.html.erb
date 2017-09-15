@@ -101,10 +101,12 @@
       #timeline {
         list-style: none;
         float: left;
-        width: 9.6em;
-        margin: 10px 0px 30px 58px;
+        width: 9.2em;
+        margin: 8px 0px 30px 58px;
         padding-left: 0px;
-        padding-top: 16px;
+        padding-right: 0.6em;
+        padding-top: 24px;
+        padding-bottom: 24px;
         border-left: 4px solid black;
       }
 
@@ -142,7 +144,7 @@
         margin-top: -20px;
         top: 50%;
         left: -60px;
-        font-size: 0.60em;
+        font-size: 0.70em;
         line-height: 20px;
         position: relative;
       }
@@ -161,10 +163,10 @@
       }
 
       .label {
-        font-size: 0.4em;
+        font-size: 0.50em;
         margin-left: 12px;
-        top: -12px;
-        width: 120px;
+        top: -14px;
+        padding-right: 0.6em;
         display: block;
         position: relative;
       }
@@ -211,6 +213,8 @@
     <% Internet[0..2].each do |i| %>
       <span class="fontawesome"><%= i[:icon]%></span>
     <% end %>
+    <span class="fontawesome">&#xf2c6;</span>
+    <span class="fontawesome">&#xf17e;</span>
     <a href="#">altamic</a>
     </p>
 
