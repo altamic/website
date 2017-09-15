@@ -65,7 +65,7 @@
 
       table tr td:first-child { text-align: right; vertical-align: top; }
 
-      img {
+      img.face {
         margin-top: -2.4em;
         margin-left: 0.4em;
         border: 2px solid #d0d0d0;
@@ -74,6 +74,10 @@
         border-radius: 80px; /* future proofing */
         float: right;
         display: inline
+      }
+
+      img.client {
+        margin: 0 1em 0 1em;
       }
 
       a { color: #3333B0; }
@@ -224,7 +228,7 @@
       <h1><%= Info[:firstName] %> <%= Info[:lastName].upcase %></h1>
     </div>
 
-    <img alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
+    <img class="face" alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
 
     <!-- <p><b>Nationality:</b> <%= Info[:nationality] %></p> -->
 
@@ -273,6 +277,49 @@
     <% end %>
 
     <br/>
+
+    <h2 id="toc_id_4">Clients</h2>
+
+    <table>
+      <tr>
+        <td><h3>TLC</h3></td>
+        <td>
+          <img class="client" src="img/client/tim.png" />
+          <img class="client" src="img/client/vodafone.png" />
+        </td>
+      </tr>
+      
+      <tr>
+        <td><h3>Finance</h3></td>
+        <td>
+          <img class="client" src="img/client/banca_sella.png" />
+          <img class="client" src="img/client/intesa_sanpaolo.png" />
+        </td>
+      </tr>
+
+      <tr>
+        <td><h3>Mass Retail/Supply Chain</h3></td>
+        <td>
+          <img class="client" src="img/client/despar.png" />
+        </td>
+      </tr>
+
+      <tr>
+        <td><h3>Services</h3></td>
+        <td>
+          <img class="client" src="img/client/gruppo_scai.png" />
+          <img class="client" src="img/client/tesisquare.png" />
+          <img class="client" src="img/client/smartrm.png" />
+        </td>
+      </tr>
+      
+      <tr>
+        <td><h3>Medical Research</h3></td>
+        <td>
+          <img class="client" src="img/client/fondazione_veronesi.png" />
+      </td>
+      </tr>
+    </table>
 
     <h2 id="toc_id_4">Professional experiences</h2>
     <% Experiences.each do |e| %>
