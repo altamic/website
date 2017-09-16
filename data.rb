@@ -333,7 +333,7 @@ Qualifications = [
 },
 {
   year: "1996",
-  description: "Maturità Scientifica. High school diploma at \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
+  description: "High school diploma at \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
 }]
 
 OpenSourceProjects = [
