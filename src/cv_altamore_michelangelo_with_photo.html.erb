@@ -97,20 +97,18 @@
       .fontawesome {
         font-family: FontAwesome;
       }
-      /* -------------------------------------
-       * timeline
-       * ------------------------------------- */
+      
       #timeline ul {
-        padding: 0px;
-        margin: 0px;
+        padding: 0;
+        margin: 0;
       }
 
       #timeline {
         list-style: none;
         float: left;
         width: 9.2em;
-        margin: 8px 0px 30px 58px;
-        padding-left: 0px;
+        margin: 8px 0 30px 58px;
+        padding-left: 0;
         padding-right: 0.6em;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -118,7 +116,7 @@
       }
 
       #timeline li {
-        padding: 0px;
+        padding: 0;
         position: relative;
       }
 
@@ -178,13 +176,6 @@
         position: relative;
       }
 
-      .radio {
-        display: none;
-      }
-
-      /* -------------------------------------
-       * mobile phones (vertical version only)
-       * ------------------------------------- */
       @media screen and (max-width: 767px) {
         #timeline {
           margin-left: 0;
@@ -222,7 +213,7 @@
     <% end %>
     <span class="fontawesome">&#xf2c6;</span>
     <span class="fontawesome">&#xf17e;</span>
-    <a href="#">altamic</a>
+    <a href="https://github.com/altamic">altamic</a>
     </p>
 
     <div id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y').downcase %>)</div>
@@ -232,8 +223,6 @@
     </div>
 
     <img class="face" alt="<%= Info[:lastName] %> <%= Info[:firstName] %>" src="img/altamore_michelangelo_face.jpg" />
-
-    <!-- <p><b>Nationality:</b> <%= Info[:nationality] %></p> -->
 
     <ul id='timeline'>
       <% Timeline[:items].each do |item| %>
@@ -254,15 +243,15 @@
     <h2 id="toc_id_1"><%= Info[:profileDescription] %></h2>
 
     <h2>Quick facts</h2>
-    11 Years experience
+    <%= Info[:yearsExperience] %> Years experience
     <br/>
-    10 Mobile apps delivered
+    <%= Info[:appsDeliveredCount] %> Mobile apps delivered
     <br/>
-    6 Apps running in production<sup>1</sup>
+    <%= Info[:appsRunningCount] %> Apps running in production<sup>1</sup>
     <br/>
-    ~ 60k Total users<sup>1</sup>
+    <%= Info[:totalUsers] %> Total users<sup>1</sup>
     <br/>
-    ~ 7.4k Commits
+    <%= Info[:grandTotalCommits] %> Commits
 
     <p class="smaller"><sup>1</sup> at the time of writing.</p>
 
