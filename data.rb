@@ -182,7 +182,7 @@ The application also manage the booking of corporate resources (classrooms meeti
   ]
 },
 {
-  sector: "Medical Research",
+  sector: "Medical research",
   projects: [
     {
       client: "fondazione_veronesi",
