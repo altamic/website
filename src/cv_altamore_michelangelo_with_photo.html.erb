@@ -65,7 +65,8 @@
 
       table tr td:first-child { text-align: right; vertical-align: top; margin:0;}
       
-      td > ul > li { margin-bottom: 1em; }
+      td > ul { margin-top: 0.2em; margin-bottom: 0.2em; }
+      td > ul > li { margin-bottom: 0.5em; }
 
       img.face {
         margin-top: -2.4em;
@@ -281,466 +282,101 @@
     <br/>
 
     <h2 id="toc_id_4">Projects grouped by clients</h2>
+    <% ProjectsByClients.each do |item| %>
+      <h3><%= item[:sector] %></h3>
+      <table>
+        <% item[:projects].each do |project| %>
+        <tr>
+          <td><img class="client" src="img/client/<%= project[:client] %>.png" /></td>
+          <td>
+              <b><%= project[:title] %></b><br/>
+              <%= project[:description] %><br/>
+              <% if project.has_key? :released %>
+                <i><%= project[:released] %></i><br/>
+              <% end %>
+              <br/>
 
-    <h3>TLC</h3>
-    <table>
-      <tr>
-        <td><img class="client" src="img/client/tim.png" /></td>
-        <td>
-            <b>TIMpersonal</b><br/>
-            A Smartphone application that provides recognition services based on the SIM to access third party services: payment for goods/services of Telecom Italia business partners and gain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.<br/>
-            <i>Released publicly in Jan 2017</i><br/>
-            <br/>
-            <b>Role</b>: Mobile application developer (iOS/Android)<br/>
-            <b>Periods</b>:<br/>
-              - iOS platform: Aug 2016 – ongoing<br/>
-              - Android platform: Jan 2016 – Aug 2016<br/>
-            <b>Technologies</b>:<br/>
-              - Android: RxJava, EventBus, Retrofit, Java, Android Studio, Gradle<br/>
-              - iOS: Swift, RxSwift, iOS, Alamofire, Realm, Xcode, CocoaPods<br/>
-            <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/tim.png" /></td>
-        <td>
-            <b>MobileConnectProximity</b><br/>
-            A turnkey solution appliance that provides identification and authorization services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <br/>
-            <ul>
-              <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method:
-                <ul>
-                  <li><i>WebCam (QrCode)</i></li>
-                  <li><i>Bluetooth Low Energy (GATT profile)</i></li>
-                  <li><i>PC/SC NFC reader (NFC HCE)</i></li>                  
-                </ul>
-                then check such token with a remote API call and invoke user-customizable remote callback API for a third party</li>
-              <li>a <em>Mobile application</em> for both Android and iOS platforms 
-                able to identificate a user through a Mobile Connect login. 
-                An SMS verify of the phone number associated with a customers data base in order to receive <i>identification tokens</i> that can be used by a third party</li>
-              <li>A <em>custom Bluetooth GATT Profile</em>, in order to transfer a token sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed</li>
-              <li>A <em>backend application</em> exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token</li>
-            </ul>
-            <i>Solution released internally as a prototype in Nov 2015</i><br/>
-            <br/>
-
-            <b>Role</b>: Desktop application developer<br/>
-            <b>Period</b>: Nov 2015 – Dec 2015<br/>
-            <b>Experience</b>: Design and implement a Desktop PC application intended for a third party, able to acquire identification tokens and transfer them via REST API after verification.<br/> 
-            <b>Technologies</b>: Java, Swing/Awt<br/>
-            <br/>
-            <b>Role</b>: Desktop application developer<br/>
-            <b>Period</b>: Nov 2015 – Dec 2015<br/>
-            <b>Experience</b>: Design and implement a Desktop PC application able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode.<br/> 
-            <b>Technologies</b>: Java, JavaFx, PC/SC NFC<br/>
-            <br/>
-            <b>Role</b>: Firmware software developer<br/>
-            <b>Period</b>: Oct 2015 – Nov 2015<br/>
-            <b>Experience</b>: Enable the use of Bluetooth Low Energy Technology.  Define, design, configure, install a GATT Profile, Service and Feature onto a firmware of a programmable BLE device connected to a PC in order to transfer tokens sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed by a Desktop Application.<br/>
-            <b>Technologies</b>: BlueGiga Proprietary Scripting Language, Java, Swing/AWT.<br/>
-            <br/>
-            <b>Role</b>: Mobile application developer (Android)<br/>
-            <b>Period</b>: Aug 2015 – Oct 2015<br/>
-            <b>Experience</b>: Design and implement an app to enable the identification through NFC technology (HCE), QrCode received via Bluetooth and Mobile Connect OpenID authentication able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive identification tokens.<br/>
-            <b>Technologies</b>: OAuth, OpenID Connect, Android, Java<br/>
-            <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/tim.png" /></td>
-        <td>
-          <b>TIM Tokky</b><br/>
-          A smartphone application that captures coupons via QR Code  after watching a video in a website provided by a sponsor, or by a Scratch Card sold by the service provider. The coupons consist of hours or internet traffic and can be activated by the application itself. Coupons may be transfered to other TIM customers via the telephone number of the recipient or via NFC.<br/>
-          <i>Released internally as a prototype in Aug 2015</i><br/>
-          <br/>
-          <b>Role</b>: Mobile application developer (Android)<br/>
-          <b>Period</b>: Jun 2015 – Aug 2015<br/>
-          <b>Experience</b>: Design and implement an app to acquire and manage coupons captured by a QrCode or transfered/received via NFC, interfaceing with back-end via REST APIs
-          <b>Technologies</b>: Android, RecyclerView, CardView, Volley, REST APIs<br/>
-          <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/tim.png" /></td>
-        <td>
-          <b>SelfPass</b><br/>
-          Smartphone application intended for corporate employees provide a virtual reception service allowing to book a visit from a guest, providing the guest's entry clearance in the company.<br/>
-          The application also manage the booking of corporate resources (classrooms meeting) and enable access to the resource (opening enabling mechatronics for classroom meeting) devices via NFC.
-          <br/>          
-          <i>Solution released for corporate employees in Jun 2014</i><br/>
-          <br/>
-          <b>Role</b>: Mobile application developer (Android)<br/>
-          <b>Periods</b>:<br/>
-            - Jan 2015 – Mar 2015<br/>
-            - Feb 2014 – Jun 2014<br/>
-            - Sep 2013 – Feb 2014<br/>
-          <b>Experience</b>: Design and implementation, evolutionary maintenance, implementation of new features (meeting rooms reservation).<br/>
-          <b>Technologies</b>: Android, RecyclerView, CardView, Volley, REST APIs<br/>
-          <br/>
-
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/tim.png" /></td>
-        <td>
-        <b>DevOps</b><br/>
-        Server application provisioning, automated configuration and installation of RDBMS, Application Server in a Java environment, deploy web application package.<br/>
-        Build automation of Android projects and libraries and artifacts distribution.<br/>
-        <i>System fully operational since Sep 2014</i><br/>
-        <br/>
-
-        <b>Role</b>: Operations engineer<br/>
-        <b>Period</b>: Sep 2014 – Dec 2014<br/>        
-        <b>Experience</b>: Setup VM Provisioning, service configurations and software deploy within UNIX environment<br/>
-        <b>Technologies</b>: Puppet, Vagrant, VMWare, VirtualBox, Ruby, Bash<br/>
-        <br/>
-
-        <b>Role</b>: Build automation engineer<br/>
-        <b>Period</b>: Jun 2014 – Sep 2014<br/>
-        <b>Experience</b>: Implement a centralized build system for team's projects with internal Issue Tracker integration by custom scripts<br/>
-        <b>Technologies</b>: Jenkins, Gradle, Maven, Artifactory, Redmine, Ruby, Bash<br/>
-        <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/tim.png" /></td>
-        <td>
-          <b>TIM Wallet</b><br/>
-          Smartphone application for the management of smart cards (eg. Attendance badge business, credit card canteen, public transport badge); interface to a library developed to communicate to/from SIM NFC and NFC terminals (POS)<br/>
-          <i>Released publicly in Sep 2013</i><br/>
-          <br/>
-          <b>Role</b>: Mobile application developer (BlackBerry)<br/>
-          <b>Period</b>: Aug 2013 – Sep 2013<br/>
-          <b>Experience</b>:  REST API back-end developed by third parties, the management of subscribed services (subscription request to a new service, removal subscription to one or more services, operations related to the individual as a subscribed service payments, sending identity in terminals); management of PIN/PUK application integrated SIM Level<br/>
-          <b>Technologies</b>: Java Micro Edition, BlackBerry, NFC<br/>
-          <br/>     
-      <tr>
-        <td><img class="client" src="img/client/vodafone.png" /></td>
-        <td>
-          <b>SmartPass</b><br/>
-            Design and implementation of a mobile application for the use of payment services via prepaid virtual cards. The app makes available information services, devices, self care and mobile couponing and advertising.<br/>
-            <i>Released internally as a prototype in Apr 2012</i><br/>
-            <br/>
-            <b>Role</b>: Mobile application developer (Windows Phone)<br/>
-            <b>Period</b>: Jan2012 – Apr 2012<br/>
-            <b>Experience</b>: Develop a Windows Phone app with a native environment.<br/>
-            <b>Technologies</b>: C#, XAML<br/>
-            <br/>
-            <b>Role</b>: Mobile application developer (iOS)<br/>
-            <b>Periods</b>: Nov 2011 – Dec 2011<br/>
-            <b>Experience</b>: Develop an iPhone app with a multi-platform framework, implement interface with REST APIs.<br/>
-            <b>Technologies</b>: Javascript, jQuery, Ruby, HTML/CSS, Rhomobile<br/>
-            <br/>
-        </td>
-      </tr>
+              <% project[:roles].each do |role| %>
+                <b>Role</b>: <%= role[:title] %><br/>
+                <% if role.has_key? :period %>
+                <b>Period</b>: <%= role[:period] %><br/>
+                <% elsif role.has_key? :periods %>
+                  <b>Periods</b>:<br/>         
+                    <% role[:periods].each do |period| %>
+                     - <%= period %><br/>
+                    <% end %>
+                <% end %>
+                <b>Experience</b>: <%= role[:experience] %><br/>
+                <b>Technologies</b>: <%= role[:technologies] %><br/>
+                <br/>
+              <% end %>
+          </td>
+        </tr>
+      <% end %>
     </table>
-    
-    <h3>Finance</h3>
-    <table>
-      <tr>
-        <td><img class="client" src="img/client/banca_sella.png" /></td>
-        <td>
-          <b>Payment APIs integration</b><br/>
-          Integration of banking APIs into a smartphone application in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).<br/>
-          <i>Work in progress</i><br/>
-          <br/>  
-          <b>Role</b>: Mobile application developer (iOS)<br/>
-          <b>Period</b>: Mar 2017 – ongoing<br/>
-          <b>Experience</b>: Integrating REST web services and a new UI into an existing iPhone app (TIMpersonal).<br/>
-          <b>Technologies</b>: Alamofire, PromiseKit, REST API<br/><br/>
-          <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/intesa_sanpaolo.png" /></td>
-        <td>
-          <b>Portal web site</b><br/>
-          Customization of components in CMS to manage corporate banking websites<br/>
-          <i>Released publicly in Mar 2013</i><br/>
-          <br/>
-          <b>Role</b>: Front end web developer<br/>
-          <b>Period</b>: Feb 2013 – Apr 2013<br/>
-          <b>Experience</b>: Customize javascript components (carousel, WYSIWYG editor) and a Java Servlet in a content management system driven by XML.<br/>
-          <b>Technologies</b>: Javascript, jQuery, Java, JSP, Weblogic, J2E<br/>
-        </td>
-      </tr>
-    </table>
-    
-    <h3>Medical Research</h3>
-    <table>  
-      <tr>
-        <td><img class="client" src="img/client/fondazione_veronesi.png" /></td>
-        <td>
-          <b>Agenda della Salute</b><br/>
-          Smartphone application providing an agenda where information about medical tests are displayed and recommended according on user's gender and age.<br/>
-          <i>Released publicly in Apr 2012.</i><br/>
-          <br/>
-          <b>Role</b>: Mobile application developer (Symbian)<br/>
-          <b>Period</b>: Jan2012 – Apr 2012<br/>
-          <b>Experience</b>: Develop a mobile application with a cross platform environment<br/>
-          <b>Technologies</b>: Javascript, jQuery, Ruby, HTML/CSS, Rhomobile<br/>
-          <br/>          
-        </td>
-      </tr>
-    </table>
+    <% end %>
 
-    <h3>Mass Retail/Supply Chain</h3>
-     <table>
-      <tr>
-        <td><img class="client" src="img/client/despar.png" /></td>
-        <td>
-          <b>Intranet web application</b><br/>
-          Implementation of a web application that allows managers to supermarkets affiliated to the brand, access to a control panel from which you can see incoming offers for product assortment and range of dates, in order to reserve those of interest via an user interface.<br/>
-          <i>Released internally on Sep 2007</i><br/>
-          <br/>
-          <b>Role</b>: Full stack web developer<br/>
-          <b>Period</b>: Apr 2007 – Sep 2007<br/>
-          <b>Experience</b>: Design, implement a web application to book offers for subsidiary supermarkets using SQL Server as data source and MySQL as persistence layer<br/>
-          <b>Technologies</b>: PHP, PRADO, Apache, SQL Server, MySQL<br/>
-          <br/>
-          <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/despar.png" /></td>
-        <td>
-          <b>Fidelity card back-office</b><br/>
-          Desktop application to manage requests between headquarters and stores and provide a back-office for consumer loyalty cards<br/>
-          <i>Updates released internally during Dec 2006 an Jan 2008</i><br/>
-          <br/>
-          <b>Role</b>: Java Desktop developer<br/>
-          <b>Period</b>: Dec 2006 – Jan 2008<br/>
-          <b>Experience</b>: Fix and enhance of a Desktop Java application backed by a SQL Server DB<br/>
-          <b>Technologies</b>: Java, Swing/AWT, SQL Server<br/>
-          <br/>
-          <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/despar.png" /></td>
-        <td>
-          <b>Sales data reports</b><br/>
-          Maintenance of a Desktop application for processing sales data and producing specific reports, customizable by the user.<br/>
-          <i>Updates released internally during Dec 2006 an Jan 2008</i><br/>
-          <br/>
-          <b>Role</b>: Java Desktop developer<br/>
-          <b>Period</b>: Dec 2006 – Jan 2008<br/>
-          <b>Experience</b>: Fix and enhance a Desktop Java application interfacing with an IBM iSeries mainframe<br/>
-          <b>Technologies</b>: Java, Swing/AWT, DB2 UDB<br/>
-      <tr>
-    </table>
-
-    <h3>Services</h3>
-    <table>
-      <tr>
-        <td><img class="client" src="img/client/gruppo_scai.png" /></td>
-        <td>
-          <b>Android course</b><br/>
-          Dispense a course to introduce the Android architecture and train on the development of Android applications in Java.<br/>
-          <br/>
-          <b>Role</b>: Teacher<br/>
-          <b>Period</b>: Jan 2013 – Mar 2013<br/>
-          <b>Experience</b>: Introduce the Android operating system, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample application that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments.<br/>
-          <b>Technologies</b>: Java, Android, Eclipse<br/>
-          <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/tesisquare.png" /></td>
-        <td>
-          <b>Privacy compliance survey</b><br/>
-          Web application for the management of customizable questionnaires intended for assessment and identification of company's privacy policies applied.<br/>
-          <i>Solution released as a prototype in Jul 2013</i><br/>
-          <br/>
-          <b>Role</b>: Web application developer<br/>
-          <b>Period</b>: May 2013 – Jul 2013<br/>
-          <b>Experience</b>: Personalization of .NET components for insertion and formal validation of formulas expressed with EXCEL syntax used for the calculation of the scores in the survey<br/>
-          <b>Technologies</b>: C#, ASP.net, .NET, SQL Server, T-SQL<br/>
-          <br/>
-        </td>
-      </tr>
-      <tr>
-        <td><img class="client" src="img/client/smartrm.png" /></td>
-        <td>
-          <b>Back office dashboard panel</b><br/>
-          Web application for displaying information pertaining the digital content distribued in the MP21 file format.<br/>
-          <i>Solution released as a prototype in Apr 2010</i><br/>
-          <br/>
-
-          <b>Role</b>: Full stack web developer<br/>
-          <b>Period</b>: Feb 2010 – Sep 2010<br/>
-          <b>Experience</b>: Develop logic an UI in order to profile user, obtain statistical information about the number of times that a content have been used, represent an historical graph with content utilization in a given period, realtime monitoring of the usage of digital content.<br/>
-          <b>Technologies</b>: Ruby, Ruby on Rails, Postgres, Javascript, jQuery, jQuery UI, HTML/CSS<br/>
-          <br/>
-        </td>
-      </tr>
-    </table>
-    
     <br/>
+
+    <h2 id="toc_id_5">Open source projects</h2>
+    <div><% OpenSourceProjects.each do |oss| %>
+      <div><b><%= oss[:title] %>:</b>&nbsp;<%= oss[:description] %></div>
+      <div><a href="<%= oss[:url] %>"><%= oss[:url] %></a></div>
+      <div><br></div>
+    <% end %>
+    </div>
+
+    <h2 id="toc_id_6">Education</h2>
+
+    <h3 id="toc_id_7">Qualifications</h3>
+    <% Qualifications.each do |q| %>
+      <div><div><b><%= q[:year] %>:</b> <%= q[:description] %></div><div><br></div>
+    <% end %>
+
+    <h3 id="toc_id_8">Languages</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <td><b><span class="Apple-tab-span" style="white-space:pre">  </span>Written</b></td>
+          <td><b><span class="Apple-tab-span" style="white-space:pre">  </span>Spoken</b></td>
+        </tr>
+        <tr>
+          <td><b>Italian</b></td>
+          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Excellent (native)</td>
+          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Excellent (native)</td>
+        </tr>
+        <tr>
+          <td><b>English</b></td>
+          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Good (B1)</td>
+          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Good (B1)</td>
+        </tr>
+      </tbody>
+    </table>
     
-    <h2 id="toc_id_5">Other professional experiences</h2>
-     <table>
-        <tbody>
-          <tr>
-            <td><b>Role:</b></td>
-            <td>Front end application developer<br></td>
-          </tr>
-          <tr>
-            <td><b>Period:</b></td>
-            <td>Apr 2015 – May 2015</td>
-          </tr>
-          <tr>
-            <td><b>Experience:</b></td>
-            <td class="left">Single page web application</td>
-          </tr>
-
-          <tr>
-            <td><b>Client:</b></td>
-            <td>Telecom Italia Lab<br></td>
-          </tr>
-          <tr>
-            <td><b>Objectives:</b></td>
-            <td>Visual editor for the production of XML documents</td>
-          </tr>
-          <tr>
-            <td><b>Description:</b></td>
-            <td>Implementation of a visual editor for the production of Widget type custom XML documents validated with a set of XSD schemas and downloadable as a zip file</td>
-          </tr>
-          <tr>
-            <td><b>Technologies:</b></td>
-            <td>Jquery, Underscore, HTML5</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <table>
-        <tbody>
-          <tr>
-            <td><b>Role:</b></td>
-            <td>Full stack web developer<br></td>
-          </tr>
-          <tr>
-            <td><b>Period:</b></td>
-            <td>Aug 2011 – Sep 2011</td>
-          </tr>
-          <tr>
-            <td><b>Experience:</b></td>
-            <td class="left">Facebook app development</td>
-          </tr>          
-          <tr>
-            <td><b>Client:</b></td>
-            <td>Start up TLC<br></td>
-          </tr>
-          <tr>
-            <td><b>Objectives:</b></td>
-            <td>Implementation of a Facebook application to manage a virtual currency</td>
-          </tr>
-          <tr>
-            <td><b>Description:</b></td>
-            <td>Implement a web application on the Facebook platform. The application allows the user to insert products that can be exchanged with other users via coupon</td>
-          </tr>
-          <tr>
-            <td><b>Technologies:</b></td>
-            <td>Ruby, Ruby on Rails, Postgres, Javascript, jQuery, HTML/CSS</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table>
-        <tbody>
-          <tr>
-            <td><b>Role:</b></td>
-            <td>Full stack web developer<br></td>
-          </tr>
-          <tr>
-            <td><b>Period:</b></td>
-            <td>Mar 2009 – Jun 2009</td>
-          </tr>
-          <tr>
-            <td><b>Experience:</b></td>
-            <td class="left">Intranet web application development</td>
-          </tr>
-          <tr>
-            <td><b>Client:</b></td>
-            <td>no profit corporation<br></td>
-          </tr>
-          <tr>
-            <td><b>Objectives:</b></td>
-            <td>Implementation of an information retrieval system</td>
-          </tr>
-          <tr>
-            <td><b>Description:</b></td>
-            <td>Implementation of a web application for managing information related to the services provided by the consultancy. In particular, personal information management, organizations and consultancies.</td>
-          </tr>
-          <tr>
-            <td><b>Technologies:</b></td>
-            <td>Ruby, Ruby on Rails, Postgres, Javascript, HTML/CSS</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table>
-        <tbody>
-          <tr>
-            <td><b>Role:</b></td>
-            <td>Full stack web developer<br></td>
-          </tr>
-          <tr>
-            <td><b>Period:</b></td>
-            <td>May 2008 – Feb 2009</td>
-          </tr>
-          <tr>
-            <td><b>Experience:</b></td>
-            <td class="left">Intranet web application development</td>
-          </tr>
-
-          <tr>
-            <td><b>Client:</b></td>
-            <td>Private institute of medical research<br></td>
-          </tr>
-          <tr>
-            <td><b>Objectives:</b></td>
-            <td>Implementation of a web application for the management of clinical data for university research project</td>
-          </tr>
-          <tr>
-            <td><b>Description:</b></td>
-            <td>Implementation of a web application for managing information on medical records of patients undergoing drug therapy; the system allows the recovery of the historical clinical data and a section in which to do research on parametric data</td>
-          </tr>
-          <tr>
-            <td><b>Technologies:</b></td>
-            <td>Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS</td>
-          </tr>
-        </tbody>
-      </table>
-    
-    <!--  
-    <h2 id="toc_id_4">Professional experiences</h2>
+    <h2 id="toc_id_9">Other professional experiences</h2>
     <% OtherExperiences.each do |e| %>
       <table>
         <tbody>
+          <tr>
+            <td><b>Role:</b></td>
+            <td><%= e[:role] %><br></td>
+          </tr>          
           <tr>
             <td><b>Period:</b></td>
             <td><%= e[:period] %></td>
           </tr>
           <tr>
-            <td><b>Experience:</b></td>
-            <td class="left"><%= e[:title] %></td>
-          </tr>
-          <tr>
-            <td><b>Role:</b></td>
-            <td><%= e[:role] %><br></td>
-          </tr>
-          <tr>
             <td><b>Client:</b></td>
             <td><%= e[:client] %><br></td>
-          </tr>
-          <tr>
-            <td><b>Objectives:</b></td>
-            <td><%= e[:objectives] %></td>
-          </tr>
+          </tr>    
           <tr>
             <td><b>Description:</b></td>
             <td><%= e[:description] %></td>
+          </tr>      
+          <tr>
+            <td><b>Experience:</b></td>
+            <td class="left"><%= e[:experience] %></td>
           </tr>
           <tr>
             <td><b>Technologies:</b></td>
@@ -749,57 +385,12 @@
         </tbody>
       </table>
     <% end %>
-    -->
 
-    <h2 id="toc_id_6">Education</h2>
-
-    <h3 id="toc_id_7">Qualifications</h3>
-    <% Qualifications.each do |q| %>
-      <div><div><b><%= q[:year] %>:</b> <%= q[:description] %></div>
-        <div><br></div>
-      <% end %>
-
-      <h3 id="toc_id_8">Languages</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td></td>
-            <td><b><span class="Apple-tab-span" style="white-space:pre">	</span>Written</b></td>
-            <td><b><span class="Apple-tab-span" style="white-space:pre">	</span>Spoken</b></td>
-          </tr>
-          <tr>
-            <td><b>Italian</b></td>
-            <td><span class="Apple-tab-span" style="white-space:pre">	</span>Excellent (native)</td>
-            <td><span class="Apple-tab-span" style="white-space:pre">	</span>Excellent (native)</td>
-          </tr>
-          <tr>
-            <td><b>English</b></td>
-            <td><span class="Apple-tab-span" style="white-space:pre">	</span>Good (B1)</td>
-            <td><span class="Apple-tab-span" style="white-space:pre">	</span>Good (B1)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2 id="toc_id_9">Other activities</h2>
-      <div><div><b>Nov 2009:</b> implement of a web application to manage thematic seminars.</div>
-        <div><br></div>
-        <div><div><b>Aug 2009:</b> implement a web application to manage chemical analysis preventive.</div>
-          <div><br></div>
-          <div><b>Jun 2009:</b> publish an introductory article to the use of Test Driven Development with Ruby on Rails on Rails Magazine.</div>
-          <div><br></div>
-          <div><b>Apr 2009:</b> <a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the Telecom Working Capital Barcamp entitled: Redis, a service with high performance for storage of data structures.</div>
-          <div><br></div>
-          <div><b>Jan 2009:</b> cofound <a href="http://cataniarb.org">Catania Ruby User Group</a> and organize of regular meetings.&nbsp;</div>
-          <div><br></div>
-          <div><b>May 2008:</b> design a web application for management of clinical data of patients affected by Leukemia Chronic Myelogenous.</div>
-        </div>
-        <div><br></div>
-      </div>
-      <h2 id="toc_id_10">Open source projects</h2>
-      <div><% OpenSourceProjects.each do |oss| %>
-        <div><b><%= oss[:title] %>:</b>&nbsp;<%= oss[:description] %></div>
-        <div><a href="<%= oss[:url] %>"><%= oss[:url] %></a></div>
-        <div><br></div>
+    <h2 id="toc_id_10">Other activities</h2>
+    <div>
+      <% OtherActivities.each do |oa| %>
+      <div><b><%= oa[:date] %></b>:&nbsp;<%= oa[:description] %></div>
+      <div><br></div>
       <% end %>
     </div>
   </body>

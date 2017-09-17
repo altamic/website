@@ -47,356 +47,398 @@ Timeline = {
     ["Apr 2007", "Begin working as Full Stack Web Developer", 3],
     ["Dec 2006", "Begin working as Java developer", 3],
     ["Jul 2006", "BS degree in Computer Science", 1]
-  ],
-  eras: [
-    ["Full Stack Web Developer", "Apr 2007", "Sep 2011"],
-    ["Mobile Developer", "Sep 2011", "Sep 2017", "#404040"]
   ]
 }
 
-Experiences = [
+ProjectsByClients = [
 {
-  period: '8-2016 – ongoing',
-  title: 'Native iOS application development targeted at consumer market',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Implementation of an iOS application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by partners of Telecom Italia',
-  description: 'Development of a smartphone application that provides recognition services (SPID) based on SIM to access third party services: gain access to public administration services or payment for goods/services of business partners. The application provides other ancillary services (purchase of bus tickets and parking) and is also able to capture and virtualize loyalty cards',
-  technologies: 'Swift, RxSwift, iOS, Alamofire, Realm, Xcode, CocoaPods'
+  sector: "TLC",
+  projects: [
+    {
+      client: "tim",
+      title: "TIMpersonal",
+      description: "Smartphone application that provides recognition services based on the SIM to access third party services: payment for goods/services of Telecom Italia business partners and gain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.",
+      released: "Released publicly in Jan 2017",
+      roles: [
+        {
+          title: "Mobile application developer (iOS)",
+          period: "Aug 2016 – ongoing",
+          experience: "Introduce an event based architecture, refactor and/or port ObjC code to Swift, implement features, introduce bug fixes, profile and improve performances",
+          technologies: "Swift, RxSwift, iOS, Alamofire, Realm, Xcode, CocoaPods"
+        },
+        {
+          title: "Mobile application developer (Android)",
+          period: "Jan 2016 – Aug 2016",
+          experience: "Implement business logic flows pertaining the APIs with reactive programming and link them with the UI through an event based architecture, introduce planned features.",
+          technologies: "RxJava, EventBus, Retrofit, Java, Android Studio, Gradle"
+        }
+      ]
+    },
+    {
+      client: "tim",
+      title: "MobileConnectProximity",
+      description: 'A turnkey solution appliance that provides identification and authorization services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <ul> <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method: <ul> <li><i>WebCam (QrCode)</i></li> <li><i>Bluetooth Low Energy (GATT profile)</i></li> <li><i>PC/SC NFC reader (NFC HCE)</i></li> </ul> then check such token with a remote API call and invoke user-customizable remote callback API for a third party</li> <li>a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive <i>identification tokens</i> that can be used by a third party</li> <li>A <em>Custom Bluetooth GATT Profile</em>, in order to transfer a token sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed</li> <li>A <em>Backend application</em> exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token</li></ul>',
+      released: "Solution released internally as a prototype in Nov 2015",
+      roles: [
+        {
+          title: "Mobile application developer (Android)",
+          period: "Aug 2015 – Oct 2015",
+          experience: "Design and implement methods to enable the identification through NFC technology (HCE), QrCode received via Bluetooth and Mobile Connect OpenID authentication able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive identification tokens.",
+          technologies: "Bluetooth, HCE, OAuth, OpenID Connect, Android Studio, Java"
+        }
+      ]
+    },
+    {
+      client: "tim",
+      title: "TIM Tokky",
+      description: "Smartphone application that captures coupons via QR Code after watching a video in a website provided by a sponsor, or by a Scratch Card sold by the service provider. The coupons consist of hours or internet traffic and can be activated by the application itself. Coupons may be transfered to other TIM customers via the telephone number of the recipient or via NFC.",
+      released: "Released internally as a prototype in Aug 2015",
+      roles: [
+        {
+          title: "Mobile application developer (Android)",
+          period: "Jun 2015 – Aug 2015",
+          experience: "Design and implement an app to acquire and manage coupons captured by a QrCode or transfered/received via NFC, and interface with back end via REST APIs.",
+          technologies: "Android, RecyclerView, CardView, Volley, REST APIs"
+        }
+      ]
+    },
+    {
+      client: "tim",
+      title: "SelfPass",
+      description: "Smartphone application intended for corporate employees provide a virtual reception service allowing to book a visit from a guest, providing the guest's entry clearance in the company.
+The application also manage the booking of corporate resources (classrooms meeting) and enable access to the resource (opening enabling mechatronics for classroom meeting) devices via NFC.",
+      released: "Released for corporate employees in Jun 2014",
+      roles: [
+        {
+          title: "Mobile application developer (Android)",
+          periods: [
+            "Jan 2015 – Mar 2015",
+            "Feb 2014 – Jun 2014",
+            "Sep 2013 – Feb 2014"
+          ],
+          experience: "Design and implementation, evolutionary maintenance, implementation of new features (meeting rooms reservation).",
+          technologies: "Material Design, RecyclerView, CardView, Volley, REST APIs"
+        }
+      ]
+    },
+    {
+      client: "tim",
+      title: "TIM Wallet",
+      description: "Smartphone application for the management of smart cards (eg. Attendance badge business, credit card canteen, public transport badge).",
+      released: "Released publicly in Sep 2013",
+      roles: [
+        {
+          title: "Mobile application developer (BlackBerry)",
+          period: "Aug 2013 – Sep 2013",
+          experience: "Interface to a library developed to communicate to/from SIM NFC and NFC terminals (POS), implement management of subscribed services (subscription request, removal, operations related to subscribed service payments, sending identity in terminals), management of PIN/PUK application integrated at the SIM Level",
+          technologies: "Java Micro Edition, BlackBerry, NFC"
+        }
+      ]
+    },
+    {
+      client: "vodafone",
+      title: "SmartPass",
+      description: "Smartphone application to enable use of payment services via prepaid virtual cards. The app makes available information services, devices, self care and mobile couponing and advertising.",
+      released: "Released internally as a prototype in Apr 2012",
+      roles: [
+        {
+          title: "Mobile application developer (Windows Phone)",
+          period: "Jan 2012 – Apr 2012",
+          experience: "Develop a Windows Phone app with platform's UI native components, interface with RESTful back-end APIs.",
+          technologies: "C#, XAML"
+        },
+        {
+          title: "Mobile application developer (iOS)",
+          period: "Nov 2011 – Dec 2011",
+          experience: "Develop an iPhone app with a multi-platform framework, interface with RESTful back-end APIs.",
+          technologies: "Rhomobile, Javascript, jQuery, Ruby, HTML/CSS"
+        }
+      ]
+    },
+  ]
 },
 {
-  period: '1-2016 – 8-2016',
-  title: 'Native android application development targeted at consumer market',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Implementation of an Android application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by partners of Telecom Italia',
-  description: 'Development of a smartphone application that provides recognition services (SPID) based on SIM to access third party services: gain access to public administration services or payment for goods/services of business partners. The application provides other ancillary services (purchase of bus tickets and parking) and is also able to capture and virtualize loyalty cards',
-  technologies: 'RxJava, EventBus, Retrofit, Java, Android Studio, Android'
+  sector: "Finance",
+  projects: [
+    {
+      client: "banca_sella",
+      title: "Payment APIs integration",
+      description: "Integration of banking APIs into a smartphone application (TIMpersonal) in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).",
+      released: "Work in progress",
+      roles: [
+        {
+          title: "Mobile application developer (iOS)",
+          period: "Mar 2017 – ongoing",
+          experience: "Integrating REST web services and a new UI into an existing iPhone app (TIMpersonal).",
+          technologies: "ApplePay, Alamofire, PromiseKit"
+        }
+      ]
+    }
+  ]
 },
 {
-  period: '11-2015 – 12-2015',
-  title: 'Development of a desktop application for acquiring identification token to be transferred via API after verification',
-  role: 'Desktop application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Release an identification turnkey solution SDK to a third party',
-  description: 'Implementation of a Desktop PC application able to get an identification token via WebCam (QrCode) or a PC/SC NFC reader, check such token with a REST call and invoke user-customizable callback API',
-  technologies: 'Java, Swing/Awt'
+  sector: "Medical Research",
+  projects: [
+    {
+      client: "fondazione_veronesi",
+      title: "Agenda della Salute",
+      description: "Smartphone application providing an agenda where information about medical tests are displayed and recommended according on user's gender and age.",
+      released: "Released publicly in Oct 2011",
+      roles: [
+        {
+          title: "Mobile application developer (Symbian)",
+          period: "Sep 2011 – Oct 2011",
+          experience: "Develop a mobile application with a cross platform environment",
+          technologies: "Rhomobile, Javascript, jQuery, Ruby, HTML/CSS"
+        }
+      ]
+    }
+  ]
 },
 {
-  period: '11-2015',
-  title: 'Development of a desktop application for acquiring identification token to be transmitted to a USB Smartcard device equipped with an NFC interface',
-  role: 'Desktop application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Implementation of a Desktop PC application that can receive tokens to be transferred to an USB SmartCard device equipped with an NFC interface',
-  description: 'Desktop PC application able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode',
-  technologies: 'Java, JavaFx'
-},
-{
-  period: '10-2015 – 11-2015',
-  title: 'Bluetooth Low Energy GATT profile customization for a client identification token- based solution',
-  role: 'Firmware software developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Enabling the use of Bluetooth Low Energy Technology, within the context of a turnkey solution identification via token internally developed',
-  description: 'Definition, design, configuration, implementation and installation of a GATT Profile, Service and Feature onto a firmware of a programmable BLE device connected to a PC in order to transfer tokens sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed by a Desktop Application',
-  technologies: 'BlueGiga Proprietary Scripting Language, Java, Swing/AWT'
-},
-{
-  period: '8-2015 – 10-2015',
-  title: 'Native mobile development Android 4.0 and higher',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'As part of a turnkey solution, implementation of an identification appliance through token developed internally using Android terminals to enable the identification through NFC technology (HCE), QrCode received via Bluetooth and Mobile Connect OpenID authentication',
-  description: 'Application for Android able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive identification tokens that can be used for payment, turnstiles opening, ans so on',
-  technologies: 'OAuth, OpenID Connect, Android, Java'
-},
-{
-  period: '6-2015 – 08-2015',
-  title: 'Native mobile development Android 4.0 and higher',
-  role: 'Mobile Application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Design and implementation of an application for smartphones to manage internet traffic offers offered as coupons',
-  description: 'The application captures coupons via QR Code, by watching videos provided by Sponsor or by Scratch Card sold by the service provider. The coupons consist of hours or internet traffic and can be activated by the application itself. Coupons may be transfered to other TIM customers via the telephone number of the recipient or via NFC',
-  technologies: 'REST, Android, RecyclerView, CardView, Volley'
-},
-{
-  period: '4-2015 – 5-2015',
-  title: 'Single page web application',
-  role: 'Javascript application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Visual editor for the production of XML documents',
-  description: 'Implementation of a visual editor for the production of Widget type custom XML documents validated with a set of XSD schemas and downloadable as a zip file',
-  technologies: 'Jquery, Underscore, HTML5'
-},
-{
-  period: '1-2015 – 3-2015',
-  title: 'Native mobile development Android 4.0 and higher',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Evolutionary maintenance of a smartphone application to manage reservation for guests visits',
-  description: 'Customization and addition of features in the application upon user requests; design and implementation of smartphone application to manage the booking of corporate resources (classrooms meeting) and enable access to the resource (eg. opening enabling mechatronics for classroom meeting) devices via NFC; the application also allows the entry clearance in the company (eg. enabling opening turnstile via NFC) as a virtual reception service',
-  technologies: 'Android, RecyclerView, CardView'
-},
-{
-  period: '9-2014 – 12-2014',
-  title: 'Full stack web server application provisioning',
-  role: 'Operations engineer',
-  client: 'Telecom Italia Lab',
-  objectives: 'VM Provisioning, service configurations and software deploy within UNIX environment',
-  description: 'Automated configuration and installation of a RDBMS, Application Server in a Java environment, deploy web application package',
-  technologies: 'Puppet, Vagrant, VMWare, VirtualBox, Ruby, Bash'
-},
-{
-  period: '6-2014 – 9-2014',
-  title: 'Build automation of Android projects and libraries',
-  role: 'Build automation engineer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Implementation of a centralized build system for team\'s projects with internal Issue Tracker integration',
-  description: 'Implementation of auxiliary scripts for a centralized application build ',
-  technologies: 'Jenkins, Gradle, Maven, Android, Redmine, Ruby, Bash'
-},
-{
-  period: '2-2014 – 6-2014',
-  title: 'Native mobile development Android 2.3 and higher',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Design and implementation of a smartphone application for managing reservations of guests visits',
-  description: 'The application allows the entry clearance in the company on a specified date as virtual reception service; interfacing to back-end REST for delivery and consultation of bookings to authorized users',
-  technologies: 'Android, Fragments, REST'
-},
-{
-  period: '9-2013 – 2-2014',
-  title: 'Native mobile development Android 2.3 and higher',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Design and implementation of smartphone application to manage the booking of corporate resources (classrooms meeting) and enable access to the resource (eg. opening enabling mechatronics for classroom meeting) devices via NFC',
-  description: 'Design architecture to handle bookings of heterogeneous resources with different types of equipment and selection criteria; interfacing to back-end REST for delivery and consultation of bookings to authorized users',
-  technologies: 'Android, Fragments, REST'
-},
-{
-  period: '8-2013 – 9-2013',
-  title: 'Native mobile development BlackBerry 7.1',
-  role: 'Mobile application developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Application for NFC equipped smartphones, for the management of smart cards (eg. Attendance badge business, credit card canteen, public transport badge); interface to a library developed to communicate to / from SIM NFC and NFC terminals (POS, detectors, etc ..)',
-  description: 'Allows through REST API back-end developed by third parties, the management of subscribed services (subscription request to a new service, removal subscription to one or more services, operations related to the individual as a subscribed service payments, sending identity in terminals, etc ..); management of PIN / PUK application integrated SIM Level',
-  technologies: 'Java Micro Edition, BlackBerry, NFC'
-},
-{
-  period: '5-2013 – 7-2013',
-  title: 'Evolutionary development web application',
-  role: 'Web application developer',
-  client: 'Gruppo Tesi',
-  objectives: 'Components customization in web application for the management of customizable questionnaires oriented assessment and identification of company policies regarding privacy',
-  description: 'Personalization of .NET components for insertion and formal validation of formulas expressed with EXCEL syntax used for the calculation of the scores in the questionnaires',
-  technologies: 'C#, ASP.net, .NET, SQL Server, T-SQL'
-},
-{
-  period: '2-2013 – 4-2013',
-  title: 'Web application development',
-  role: 'Front end web developer',
-  client: 'Banca Intesa San Paolo',
-  objectives: 'Customization components in CMS to manage corporate banking websites',
-  description: 'Customizing components javascript (carousel, WYSIWYG editor) Java Servlet in a content management system based on XML',
-  technologies: 'Javascript, jQuery, Java, JSP, Weblogic, J2E'
-},
-{
-  period: '1-2013 – 3-2013',
-  title: 'Teaching of native Android applications development',
-  role: 'Android development teacher',
-  client: 'SCAI Torino',
-  objectives: 'Training on the development of Android applications in Java',
-  description: 'Dispensing a course to introduce the Android operating system, its components and their application programming techniques through a theoretical introduction accompanied by the development of a sample application that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments',
-  technologies: 'Java, Android'
-},
-{
-  period: '10-2012 – 12-2012',
-  title: 'iPhone application development',
-  role: 'iOS Mobile developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Implementation of a native mobile application for iPhone',
-  description: 'Implementation of a mobile application for iPhone for the use of aggregate information from social networks (Facebook, Twitter, FourSquare). The application shows the activities flow of the social circle, the user\'s contacts and a geographic location map with points of interest.',
-  technologies: 'Objective-C, iOS, UIKit'
-},
-{
-  period: '4-2012 – 9-2012',
-  title: 'Development of a multi-platform mobile application',
-  role: 'Mobile developer',
-  client: 'Telecom Italia Lab',
-  objectives: 'Implementation of a multi-platform mobile application: Android, iPhone',
-  description: 'Implementation of a multi-platform mobile application on Android and iPhone for the use of aggregate information from social networks (Facebook, Twitter, FourSquare); the application shows the flow of the activities of the social circle, the user\'s contacts and a geographic location map with points of interest',
-  technologies: 'PhoneGap, jQuery Mobile, Sencha Touch'
-},
-{
-  period: '1-2012 – 4-2012',
-  title: 'Windows Phone 7 application development',
-  role: 'Native mobile developer',
-  client: 'Vodafone Italia',
-  objectives: 'Implementation if a native Windows Phone 7 application (Vodafone SmartPass)',
-  description: 'Implementation of a mobile application on Windows Phone 7 for the use of payment services via prepaid virtual; the app makes available to the user access to information services, devices, self care and mobile couponing and advertising',
-  technologies: 'C#, XAML'
-},
-{
-  period: '11-2011 – 12-2011',
-  title: 'iPhone app development with a multi-platform framework',
-  role: 'Mobile Developer',
-  client: 'Vodafone Italia',
-  objectives: 'Implementation of an application for iOS with a cross-platform framework',
-  description: 'Implementation of a mobile application platform iOS/iPhone for payment services via a virtual prepaid card; the app makes available to the user access to information services, devices, self care and mobile couponing and advertising',
-  technologies: 'Javascript, jQuery, Ruby, HTML/CSS, Rhomobile'
-},
-{
-  period: '9-2011 – 10-2011',
-  title: 'Symbian app development with a multi-platform framework',
-  role: 'Mobile Developer',
-  client: 'Fondazione Veronesi',
-  objectives: 'Implementation of a mobile application on Symbian platform for Veronesi Foundation',
-  description: 'The application shows an agenda in which information about medical tests are displayed and recommended according on user\'s gender and age',
-  technologies: 'Javascript, jQuery, Ruby, HTML/CSS, Rhomobile'
-},
-{
-  period: '8-2011 – 9-2011',
-  title: 'Facebook app development',
-  role: 'Full stack web developer',
-  client: 'Start up TLC',
-  objectives: 'Implementation of a Facebook application to manage a virtual currency',
-  description: 'Creation of a web application on the Facebook platform. The application allows the user to insert products that can be exchanged with other users via coupon',
-  technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, jQuery, HTML/CSS'
-},
-{
-  period: '2-2010 – 9-2010',
-  title: 'Web app development',
-  role: 'Full stack web developer',
-  client: 'Start up TLC',
-  objectives: 'Implementation of a web application for displaying meta-information about media content',
-  description: 'Implementation of a web application for displaying meta information related to digital content format MP21 profiled user; administrators can see on a control panel the number of times that the contents have been played, a time graph with reproductions for content in the last 30 days, while users can monitor the use of their digital content',
-  technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, jQuery, jQuery UI, HTML/CSS'
-},
-{
-  period: '4–2010',
-  title: 'Intranet web application development',
-  role: 'Full stack web developer',
-  client: 'Private clinical laboratory',
-  objectives: 'Implementation of a web application for managing cost estimation of chemical analysis',
-  description: 'Implementation of a web application for managing preventive chemical analysis. The system allows the grouping of analytes and provides information on the expected delivery date and cost calculation for the final client',
-  technologies: 'Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS'
-},
-{
-  period: '3-2009 – 6-2009',
-  title: 'Intranet web application development',
-  role: 'Full stack web developer',
-  client: 'no profit corporation',
-  objectives: 'Implementation of an information retrieval system',
-  description: 'Implementation of a web application for managing information related to the services provided by the consultancy. In particular, personal information management, organizations and consultancies.',
-  technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, HTML/CSS'
-},
-{
-  period: '5-2008 – 2-2009',
-  title: 'Intranet web application development',
-  role: 'Full stack web developer',
-  client: 'Private institute of medical research',
-  objectives: 'Implementation of a web application for the management of clinical data for university research project',
-  description: 'Implementation of a web application for managing information on medical records of patients undergoing drug therapy; the system allows the recovery of the historical clinical data and a section in which to do research on parametric data',
-  technologies: 'Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS'
-},
-{
-  period: '4-2007 – 9-2007',
-  title: 'Intranet web application development',
-  role: 'Full stack web developer',
-  client: 'Despar',
-  objectives: 'Implementation of a web application for managing reservations offers for supermarkets affiliates',
-  description: 'Implementation of a web application that allows managers to supermarkets affiliated to the brand, access to a control panel from which you can see incoming offers for product assortment and range of dates, in order to reserve those of interest via an user interface',
-  technologies: 'PHP, PRADO, Apache, SQL Server, MySQL'
-},
-{
-  period: '12-2006 – 1-2008',
-  title: 'Evolutionary development of a Java application',
-  role: 'Java developer',
-  client: 'Despar',
-  objectives: 'Maintenance software for the management of fidelity cards',
-  description: 'Maintenance management software flow demands answers between headquarters and stores on the management of consumer loyalty cards',
-  technologies: 'Java, Swing/AWT, SQL Server'
-},
-{
-  period: '12-2006 – 1-2008',
-  title: 'Evolutionary development of a Java application',
-  role: 'Java Developer',
-  client: 'Despar',
-  objectives: 'Maintenance of software for processing sales data',
-  description: 'Evolution of a software for processing data and producing specific reports ',
-  technologies: 'Java, Swing/AWT, DB2 UDB'
-}]
+  sector: "Services",
+  projects: [
+    {
+      client: "gruppo_scai",
+      title: "Android course",
+      description: "Dispense a course to introduce the Android architecture and train on the development of Android applications in Java.",
+      roles: [
+        {
+          title: "Teacher",
+          period: "Jan 2013 – Mar 2013",
+          experience: "Introduce the Android operating system, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample application that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments.",
+          technologies: "Java, Android, Eclipse"
+        }
+      ]
+    }
+  ]
+}
+]
+
+OtherExperiences = [
+  {
+    role: "Desktop application developer",
+    period: "Nov 2015 – Dec 2015",
+    client: 'Telecom Italia Lab',
+    description: "Identification and authorization turnkey solution (MobileConnectProximity)",
+    experience: "Design and implement two Desktop PC applications: the first to be used as <em>back office</em>: able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode; the second one intended for a <em>third party</em>: able to acquire identification tokens and transfer them via REST API after verification.",
+    technologies: "Java, Swing/Awt, JavaFx, PC/SC NFC"
+  },
+  {
+    role: "Firmware software developer",
+    period: "Oct 2015 – Nov 2015",
+    client: 'Telecom Italia Lab',
+    description: "Identification and authorization turnkey solution (MobileConnectProximity)",
+    experience: "Enable the use of Bluetooth Low Energy Technology. Define, design, configure, install a GATT Profile, Service and Feature onto a firmware of a programmable BLE device connected to a PC in order to transfer tokens sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed by a Desktop Application. Technologies: BlueGiga Proprietary Scripting Language, Java, Swing/AWT",
+    technologies: "BlueGiga Proprietary Scripting Language, Java, Swing/AWT"
+  },  
+  {
+    role: 'Front end developer',
+    period: 'Apr 2015 – May 2015',
+    client: 'Telecom Italia Lab',
+    description: 'Single page web application (XML documents visual editor)',
+    experience: 'Implementation of a visual editor for producing custom XML Widget documents, validated with a set of XSD schemas and downloadable as a zip file',
+    technologies: 'Jquery, Underscore, HTML5'
+  },
+  {
+    role: "Operations engineer (DevOps)",
+    period: "Sep 2014 – Dec 2014",
+    client: 'Telecom Italia Lab',
+    description: "Server application provisioning, automated configuration and installation of RDBMS, Application Server in a Java environment, deploy web application packages.",
+    experience: "Setup VM Provisioning, service configurations and software deploy within UNIX environment",
+    technologies: "Puppet, Vagrant, VMWare, VirtualBox, Ruby, Bash"
+  },
+  {
+    role: "Build automation engineer (DevOps)",
+    period: "Sep 2014 – Dec 2014",
+    client: 'Telecom Italia Lab',
+    description: "Automate build of team's projects/libraries and artifacts distribution.",
+    experience: "Implement a centralized build system for team's projects with internal Issue Tracker integration by custom scripts",
+    technologies: "Jenkins, Gradle, Maven, Artifactory, Redmine, Ruby, Bash"
+  },
+  {
+    role: 'Front end web developer',
+    period: 'May 2013 – Jul 2013',
+    client: 'Tesi Square',
+    description: 'Privacy compliance web app survey',
+    experience: 'Personalization of .NET components for insertion and formal validation of formulas expressed with EXCEL syntax used for the calculation of the scores in the survey',
+    technologies: 'C#, ASP.net, .NET, SQL Server, T-SQL'
+  },
+  {
+    role: 'Front end web developer',
+    period: 'Feb 2013 – Apr 2013',
+    client: 'Banca Intesa San Paolo',
+    description: 'Customization of components in a corporate banking CMS (Portal web site)',
+    experience: 'Adapt javascript components (carousel, WYSIWYG editor) and a Java Servlet in a XML driven CMS.',
+    technologies: 'Technologies: Javascript, jQuery, Java, JSP, Weblogic, J2E'
+  },
+  {
+    role: 'Full stack web developer',
+    period: 'Aug 2011 – Sep 2011',
+    client: 'Start up TLC',
+    description: 'Facebook application',
+    experience: 'Allow a user to publish products that can be exchanged with other users through a virtual currency',
+    technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, jQuery, HTML/CSS'
+  },
+  {
+    role: 'Full stack web developer',
+    period: 'Feb 2010 – Sep 2010',
+    client: 'Startup TLC',
+    description: 'Back office dashboard panel (digital content distribution)',
+    experience: 'Develop logic an UI in order to profile users, obtain statistical information about the number of times that a digital content have been used, represent an historical graph with content utilization in a given period, realtime monitoring of the usage of digital content.',
+    technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, jQuery, jQuery UI, HTML/CSS'
+  },
+  {
+    role: 'Full stack web developer',
+    period: 'Apr 2010',
+    client: 'Unnamed private clinical laboratory',    
+    description: 'Intranet web application',
+    experience: 'Implement management of quotes for chemical analysis exams, group analytes and provides information on the expected delivery date and cost calculation for the final client',
+    technologies: 'Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS'
+  },
+  {
+    role: 'Full stack web developer',
+    period: 'Mar 2009 – Jun 2009',
+    client: 'Unnamed no profit corporation',
+    description: 'Intranet web application',
+    experience: 'Implement a retrieval information system tracking personal information, services provided, affiliate organizations and consultancies.',
+    technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, HTML/CSS'
+  },
+  {
+    role: 'Full stack web developer',
+    period: 'May 2008 – Feb 2009',
+    client: 'Unnamed private institute of medical research',
+    description: 'Intranet web application',
+    experience: "Perform data mining of patient's medical records undergoing drug treatment, retrieve and filter by parameters historical clinical data with a graphical representation",
+    technologies: 'Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS'
+  },
+  {
+    role: 'Full stack web developer',
+    period: 'Apr 2007 – Sep 2007',
+    client: 'Despar',
+    description: 'Intranet web application',
+    experience: 'Design, implement a web application to book offers for subsidiary supermarkets using SQL Server as data source and MySQL as persistence layer',
+    technologies: 'PHP, PRADO, Apache, SQL Server, MySQL'
+  },
+  {
+    role: 'Java Desktop developer',
+    period: 'Dec 2006 – Jan 2008',
+    client: 'Despar',
+    description: 'Intranet desktop application (Fidelity card back office)',
+    experience: 'Fix and enhance of a Desktop Java application backed by a SQL Server DB',
+    technologies: 'Java, Swing/AWT, SQL Server'
+  },
+  {
+    role: 'Java Desktop developer',
+    period: 'Dec 2006 – Jan 2008',
+    client: 'Despar',
+    description: 'Intranet desktop application (Sales data reports)',
+    experience: 'Fix and enhance a Desktop Java application interfacing with an IBM iSeries mainframe',
+    technologies: 'Java, Swing/AWT, DB2 UDB'
+  }
+]
 
 Qualifications = [
-{
-  year: "2006",
-  description: "Bachelor Degree in Computer Science at Catania University&nbsp;–&nbsp;Score&nbsp;108/110"
-},
-{
-  year: "1996",
-  description: "High school diploma at \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
-}]
+  {
+    year: "2006",
+    description: "Bachelor Degree in Computer Science at Catania University&nbsp;–&nbsp;Score&nbsp;108/110"
+  },
+  {
+    year: "1996",
+    description: "High school diploma at \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
+  }
+]
+
+OtherActivities = [
+  {
+    date: "Nov 2009",
+    description: "implement of a web application to manage thematic seminars."
+  },
+  {
+    date: "Aug 2009",
+    description: "implement a web application to manage chemical analysis estimates."
+  },
+  {
+    date: "Jun 2009",
+    description: "publish an introductory article to the use of Test Driven Development with Ruby on Rails on Rails Magazine."
+  },
+  {
+    date: "Apr 2009",
+    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the Telecom Working Capital Barcamp entitled: Redis, a service with high performance for storage of data structures.',
+  },
+  {
+    date: "Jan 2009",
+    description: 'cofound <a href="http://cataniarb.org">Catania Ruby User Group</a> and organize of regular meetings.',
+  },
+  {
+    date: "May 2008",
+    description: "design a web application for management of clinical data of patients affected by Leukemia Chronic Myelogenous."
+  }
+]
 
 OpenSourceProjects = [
-{
-  title: 'Privablic',
-  description: 'Access to private members and methods of a C++ struct or class',
-  url: 'https://github.com/altamic/privablic'
-},
-{
-  title: 'Bitcoin Protocol',
-  description: 'Bitcoin protocol implementation in Ruby',
-  url: 'https://github.com/altamic/bitcoin-protocol'
-},
-{
-  title: 'Binary Finery',
-  description: 'library for reading/writing binary data in Ruby',
-  url: 'https://github.com/altamic/binary_finery'
-},
-{
-  title: 'Clinikr',
-  description: 'web application for estimating quotes for clinical analysis and related examinations',
-  url: 'http://user:password@clinikr.com'
-},
-{
-  title: 'Notepad',
-  description: 'Implementation of a notepad in Android with database SQlite',
-  url: 'https://github.com/altamic/notepad'
-},
-{
-  title: 'Mainteinancer',
-  description: 'web application for managing maintenance for machinery',
-  url: 'https://github.com/altamic/maintenancer'
-},
-{
-  title: 'Gestione Referti',
-  description: 'web application for the acceptance of clinical tests with statistical functions',
-  url: 'https://github.com/altamic/gestione_referti'
-}]
+  {
+    title: 'Privablic',
+    description: 'Access to private members and methods of a C++ struct or class',
+    url: 'https://github.com/altamic/privablic'
+  },
+  {
+    title: 'Bitcoin Protocol',
+    description: 'Bitcoin protocol implementation in Ruby',
+    url: 'https://github.com/altamic/bitcoin-protocol'
+  },
+  {
+    title: 'Binary Finery',
+    description: 'library for reading/writing binary data in Ruby',
+    url: 'https://github.com/altamic/binary_finery'
+  },
+  {
+    title: 'Clinikr',
+    description: 'web application for estimating quotes for clinical analysis and related examinations',
+    url: 'http://user:password@clinikr.com'
+  },
+  {
+    title: 'Notepad',
+    description: 'Implementation of a notepad in Android with database SQlite',
+    url: 'https://github.com/altamic/notepad'
+  },
+  {
+    title: 'Mainteinancer',
+    description: 'web application for managing maintenance for machinery',
+    url: 'https://github.com/altamic/maintenancer'
+  },
+  {
+    title: 'Gestione Referti',
+    description: 'web application for the acceptance of clinical tests with statistical functions',
+    url: 'https://github.com/altamic/gestione_referti'
+  }
+]
 
 Internet = [
-{
-  name: "GitHub",
-  url: "https://github.com/altamic",
-  nickname: "altamic",
-  icon: "&#xf09b;"
-},
-{
-  name: "StackOverflow",
-  url: "http://stackoverflow.com/users/6168558/altamic",
-  nickname: "altamic",
-  icon: "&#xf16c;"
-},
-{
-  name: "LinkedIn",
-  url: "https://it.linkedin.com/in/altamic",
-  nickname: "altamic",
-  icon: "&#xf08c;"
-},
-{
-  name: "Twitter",
-  url: "https://twitter.com/altamic_",
-  nickname: "altamic",
-  icon: "&#xf099;"
-}]
+  {
+    name: "GitHub",
+    url: "https://github.com/altamic",
+    nickname: "altamic",
+    icon: "&#xf09b;"
+  },
+  {
+    name: "StackOverflow",
+    url: "http://stackoverflow.com/users/6168558/altamic",
+    nickname: "altamic",
+    icon: "&#xf16c;"
+  },
+  {
+    name: "LinkedIn",
+    url: "https://it.linkedin.com/in/altamic",
+    nickname: "altamic",
+    icon: "&#xf08c;"
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/altamic_",
+    nickname: "altamic",
+    icon: "&#xf099;"
+  }
+]
 
 
