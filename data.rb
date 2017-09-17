@@ -69,7 +69,7 @@ ProjectsByClients = [
         {
           title: "Mobile application developer (Android)",
           period: "Jan 2016 – Aug 2016",
-          experience: "Implement business logic flows pertaining the APIs with reactive programming and link them with the UI through an event based architecture, introduce planned features.",
+          experience: "Implement business logic flows pertaining the APIs with reactive programming and link them with the UI through an event based architecture, introduce planned features",
           technologies: "RxJava, EventBus, Retrofit, Java, Android Studio, Gradle"
         }
       ]
@@ -83,7 +83,7 @@ ProjectsByClients = [
         {
           title: "Mobile application developer (Android)",
           period: "Aug 2015 – Oct 2015",
-          experience: "Design and implement methods to enable the identification through NFC technology (HCE), QrCode received via Bluetooth and Mobile Connect OpenID authentication able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive identification tokens.",
+          experience: "Design and implement methods to enable the identification through NFC technology (HCE), QrCode received via Bluetooth and Mobile Connect OpenID authentication able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive identification tokens",
           technologies: "Bluetooth, HCE, OAuth, OpenID Connect, Android Studio, Java"
         }
       ]
@@ -91,13 +91,13 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "TIM Tokky",
-      description: "Smartphone application that captures coupons via QR Code after watching a video in a website provided by a sponsor, or by a Scratch Card sold by the service provider. The coupons consist of hours or internet traffic and can be activated by the application itself. Coupons may be transfered to other TIM customers via the telephone number of the recipient or via NFC.",
+      description: "Smartphone application that captures coupons by a QR Code shown after watching a video in a website provided by a <em>Sponsor</em>, or by a <em>Scratch Card</em> sold by the <em>Telephony Network Operator</em> (TIM). The coupons consist of hours/volume of internet traffic and can be activated by the application itself. Coupons may be transfered to other TIM customers via the telephone number of the recipient or via NFC.",
       released: "Released internally as a prototype in Aug 2015",
       roles: [
         {
           title: "Mobile application developer (Android)",
           period: "Jun 2015 – Aug 2015",
-          experience: "Design and implement an app to acquire and manage coupons captured by a QrCode or transfered/received via NFC, and interface with back end via REST APIs.",
+          experience: "Design and implement an app to acquire and manage coupons captured by a QrCode or transfered/received via NFC, and interface with back end via REST APIs",
           technologies: "Android, RecyclerView, CardView, Volley, REST APIs"
         }
       ]
@@ -105,7 +105,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "SelfPass",
-      description: "Smartphone application intended for corporate employees provide a virtual reception service allowing to book a visit from a guest, providing the guest's entry clearance in the company.
+      description: "Smartphone application intended for corporate employees. Perfoms a virtual reception service allowing to <em>book a visit from a guest</em> and providing the guest's <em>entry clearance</em> in the company.
 The application also manage the booking of corporate resources (classrooms meeting) and enable access to the resource (opening enabling mechatronics for classroom meeting) devices via NFC.",
       released: "Released for corporate employees in Jun 2014",
       roles: [
@@ -116,7 +116,7 @@ The application also manage the booking of corporate resources (classrooms meeti
             "Feb 2014 – Jun 2014",
             "Sep 2013 – Feb 2014"
           ],
-          experience: "Design and implementation, evolutionary maintenance, implementation of new features (meeting rooms reservation).",
+          experience: "Design and implementation, evolutionary maintenance, implementation of new features (meeting rooms reservation)",
           technologies: "Material Design, RecyclerView, CardView, Volley, REST APIs"
         }
       ]
@@ -124,13 +124,13 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "tim",
       title: "TIM Wallet",
-      description: "Smartphone application for the management of smart cards (eg. Attendance badge business, credit card canteen, public transport badge).",
+      description: "Smartphone application for the management of smart cards (eg. attendance business badges, canteen badges, public transport badges).",
       released: "Released publicly in Sep 2013",
       roles: [
         {
           title: "Mobile application developer (BlackBerry)",
           period: "Aug 2013 – Sep 2013",
-          experience: "Interface to a library developed to communicate to/from SIM NFC and NFC terminals (POS), implement management of subscribed services (subscription request, removal, operations related to subscribed service payments, sending identity in terminals), management of PIN/PUK application integrated at the SIM Level",
+          experience: "Interface to communicate to/from SIM NFC and NFC terminals (POS), implement management of service subscriptions (request, removal, operations related to payments, sending identity in terminals), management of PIN/PUK application integrated at the SIM Level",
           technologies: "Java Micro Edition, BlackBerry, NFC"
         }
       ]
@@ -138,19 +138,19 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "vodafone",
       title: "SmartPass",
-      description: "Smartphone application to enable use of payment services via prepaid virtual cards. The app makes available information services, devices, self care and mobile couponing and advertising.",
+      description: "Smartphone application to enable use of payment services via prepaid virtual cards. The app makes available information services, self care, mobile couponing and advertising.",
       released: "Released internally as a prototype in Apr 2012",
       roles: [
         {
           title: "Mobile application developer (Windows Phone)",
           period: "Jan 2012 – Apr 2012",
-          experience: "Develop a Windows Phone app with platform's UI native components, interface with RESTful back-end APIs.",
+          experience: "Develop a Windows Phone app with platform's UI native components, interface with RESTful back-end APIs",
           technologies: "C#, XAML"
         },
         {
           title: "Mobile application developer (iOS)",
           period: "Nov 2011 – Dec 2011",
-          experience: "Develop an iPhone app with a multi-platform framework, interface with RESTful back-end APIs.",
+          experience: "Develop an iPhone app with a multi-platform framework, interface with RESTful back-end APIs",
           technologies: "Rhomobile, Javascript, jQuery, Ruby, HTML/CSS"
         }
       ]
@@ -163,14 +163,14 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "banca_sella",
       title: "Payment APIs integration",
-      description: "Integration of banking APIs into a smartphone application (TIMpersonal) in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).",
+      description: 'Integration of banking APIs into a smartphone application (<a href="https://www.tim.it/timpersonal" alt="TIMpersonal web site">TIMpersonal</a>) in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).',
       released: "Work in progress",
       roles: [
         {
           title: "Mobile application developer (iOS)",
           period: "Mar 2017 – ongoing",
-          experience: "Integrating REST web services and a new UI into an existing iPhone app (TIMpersonal).",
-          technologies: "ApplePay, Alamofire, PromiseKit"
+          experience: "Integrating REST web services and a new UI into an existing iPhone app",
+          technologies: "ApplePay, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
         }
       ]
     }
@@ -206,7 +206,7 @@ The application also manage the booking of corporate resources (classrooms meeti
         {
           title: "Teacher",
           period: "Jan 2013 – Mar 2013",
-          experience: "Introduce the Android operating system, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample application that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments.",
+          experience: "Introduce the Android operating system, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample application that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments",
           technologies: "Java, Android, Eclipse"
         }
       ]
@@ -221,7 +221,7 @@ OtherExperiences = [
     period: "Nov 2015 – Dec 2015",
     client: 'Telecom Italia Lab',
     description: "Identification and authorization turnkey solution (MobileConnectProximity)",
-    experience: "Design and implement two Desktop PC applications: the first to be used as <em>back office</em>: able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode; the second one intended for a <em>third party</em>: able to acquire identification tokens and transfer them via REST API after verification.",
+    experience: "Design and implement two Desktop PC applications: the first to be used as <em>back office</em>: able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode; the second one intended for a <em>third party</em>: able to acquire identification tokens and transfer them via REST API after verification",
     technologies: "Java, Swing/Awt, JavaFx, PC/SC NFC"
   },
   {
@@ -229,9 +229,9 @@ OtherExperiences = [
     period: "Oct 2015 – Nov 2015",
     client: 'Telecom Italia Lab',
     description: "Identification and authorization turnkey solution (MobileConnectProximity)",
-    experience: "Enable the use of Bluetooth Low Energy Technology. Define, design, configure, install a GATT Profile, Service and Feature onto a firmware of a programmable BLE device connected to a PC in order to transfer tokens sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed by a Desktop Application. Technologies: BlueGiga Proprietary Scripting Language, Java, Swing/AWT",
+    experience: "Enable the use of Bluetooth Low Energy Technology. Define, design, configure, install a GATT Profile, Service and Feature onto a firmware of a programmable BLE device connected to a PC in order to transfer tokens sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed by a Desktop Application",
     technologies: "BlueGiga Proprietary Scripting Language, Java, Swing/AWT"
-  },  
+  },
   {
     role: 'Front end developer',
     period: 'Apr 2015 – May 2015',
@@ -269,13 +269,13 @@ OtherExperiences = [
     period: 'Feb 2013 – Apr 2013',
     client: 'Banca Intesa San Paolo',
     description: 'Customization of components in a corporate banking CMS (Portal web site)',
-    experience: 'Adapt javascript components (carousel, WYSIWYG editor) and a Java Servlet in a XML driven CMS.',
+    experience: 'Adapt javascript components (carousel, WYSIWYG editor) and a Java Servlet in a XML driven CMS',
     technologies: 'Technologies: Javascript, jQuery, Java, JSP, Weblogic, J2E'
   },
   {
     role: 'Full stack web developer',
     period: 'Aug 2011 – Sep 2011',
-    client: 'Start up TLC',
+    client: 'Unnamed TLC Start up',
     description: 'Facebook application',
     experience: 'Allow a user to publish products that can be exchanged with other users through a virtual currency',
     technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, jQuery, HTML/CSS'
@@ -283,15 +283,15 @@ OtherExperiences = [
   {
     role: 'Full stack web developer',
     period: 'Feb 2010 – Sep 2010',
-    client: 'Startup TLC',
+    client: 'Unnamed TLC Start up',
     description: 'Back office dashboard panel (digital content distribution)',
-    experience: 'Develop logic an UI in order to profile users, obtain statistical information about the number of times that a digital content have been used, represent an historical graph with content utilization in a given period, realtime monitoring of the usage of digital content.',
+    experience: 'Develop logic an UI in order to profile users, obtain statistical information about the number of times that a digital content have been used, represent an historical graph with content utilization in a given period, realtime monitoring of the usage of digital content',
     technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, jQuery, jQuery UI, HTML/CSS'
   },
   {
     role: 'Full stack web developer',
     period: 'Apr 2010',
-    client: 'Unnamed private clinical laboratory',    
+    client: 'Unnamed private clinical laboratory',
     description: 'Intranet web application',
     experience: 'Implement management of quotes for chemical analysis exams, group analytes and provides information on the expected delivery date and cost calculation for the final client',
     technologies: 'Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS'
@@ -301,7 +301,7 @@ OtherExperiences = [
     period: 'Mar 2009 – Jun 2009',
     client: 'Unnamed no profit corporation',
     description: 'Intranet web application',
-    experience: 'Implement a retrieval information system tracking personal information, services provided, affiliate organizations and consultancies.',
+    experience: 'Implement a retrieval information system tracking personal information, services provided, affiliate organizations and consultancies',
     technologies: 'Ruby, Ruby on Rails, Postgres, Javascript, HTML/CSS'
   },
   {
