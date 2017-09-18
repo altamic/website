@@ -82,13 +82,13 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "MobileConnectProximity",
-      description: 'A turnkey solution appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <ul> <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method: <ul> <li><i>WebCam (QrCode)</i></li> <li><i>Bluetooth Low Energy (GATT profile)</i></li> <li><i>PC/SC NFC reader (NFC HCE)</i></li></ul></li> <li>a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID Mobile Connect login. An SMS verify the phone number associated with a customers data base in order to receive <i>identification tokens</i> that can be used by a third party</li> <li>A <em>Custom Bluetooth GATT Profile</em></li> <li>A <em>Backend application</em> (exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token)</li></ul>',
+      description: 'A turnkey solution appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <ul> <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method: <ul> <li><i>WebCam (QrCode)</i></li> <li><i>Bluetooth Low Energy (GATT profile)</i></li> <li><i>PC/SC NFC reader (NFC HCE)</i></li></ul></li> <li>a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID Mobile Connect login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop PC app</em> using above technologies</li> <li>A <em>Custom Bluetooth GATT Profile</em></li> <li>A <em>Backend application</em> (exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token)</li></ul>',
       released: "Solution released internally as a prototype in Nov 2015",
       roles: [
         {
           title: "Mobile application developer (Android)",
           period: "Aug 2015 – Oct 2015",
-          experience: "Design and implement methods to enable an OpenID  Mobile Connect login; an SMS with a PIN number is intercepted in order to verify the phone number associated with a customer's data base so to receive identification tokens that can be transferred by NFC technology (HCE), QrCode or via Bluetooth LE",
+          experience: "Design and implement methods to enable an OpenID  Mobile Connect login; intercept an SMS with a PIN number in order to verify the phone number associated with a customer's data base, call a remote API to receive identification tokens that can be transferred by NFC technology (HCE), QrCode or via Bluetooth LE",
           technologies: "Bluetooth, HCE, OAuth, OpenID Connect, Android Studio, Java"
         }
       ]
