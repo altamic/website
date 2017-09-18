@@ -62,7 +62,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "TIMpersonal",
-      description: "Smartphone application that provides an identification service based on the SIM to access third party services: payment for goods/services of Telecom Italia business partners and gain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.",
+      description: "Smartphone application that provides an identification service based on the SIM to gain access to third party services: payment for goods/services of TIM business partners and obtain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.",
       released: "Released publicly in Jan 2017",
       roles: [
         {
@@ -82,13 +82,13 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "MobileConnectProximity",
-      description: 'A turnkey solution appliance that provides identification and authorization services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <ul> <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method: <ul> <li><i>WebCam (QrCode)</i></li> <li><i>Bluetooth Low Energy (GATT profile)</i></li> <li><i>PC/SC NFC reader (NFC HCE)</i></li> </ul> then check such token with a remote API call and invoke user-customizable remote callback API for a third party</li> <li>a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive <i>identification tokens</i> that can be used by a third party</li> <li>A <em>Custom Bluetooth GATT Profile</em>, in order to transfer a token sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed</li> <li>A <em>Backend application</em> exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token</li></ul>',
+      description: 'A turnkey solution appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <ul> <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method: <ul> <li><i>WebCam (QrCode)</i></li> <li><i>Bluetooth Low Energy (GATT profile)</i></li> <li><i>PC/SC NFC reader (NFC HCE)</i></li></ul></li> <li>a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID Mobile Connect login. An SMS verify the phone number associated with a customers data base in order to receive <i>identification tokens</i> that can be used by a third party</li> <li>A <em>Custom Bluetooth GATT Profile</em></li> <li>A <em>Backend application</em> (exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token)</li></ul>',
       released: "Solution released internally as a prototype in Nov 2015",
       roles: [
         {
           title: "Mobile application developer (Android)",
           period: "Aug 2015 – Oct 2015",
-          experience: "Design and implement methods to enable the identification through NFC technology (HCE), QrCode received via Bluetooth and Mobile Connect OpenID authentication able to identificate a user through a Mobile Connect login. An SMS verify of the phone number associated with a customers data base in order to receive identification tokens",
+          experience: "Design and implement methods to enable an OpenID  Mobile Connect login; an SMS with a PIN number is intercepted in order to verify the phone number associated with a customer's data base so to receive identification tokens that can be transferred by NFC technology (HCE), QrCode or via Bluetooth LE",
           technologies: "Bluetooth, HCE, OAuth, OpenID Connect, Android Studio, Java"
         }
       ]
@@ -96,7 +96,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "TIM Tokky",
-      description: "Smartphone application that captures coupons by a QR Code shown after watching a video in a website provided by a <em>Sponsor</em>, or by a <em>Scratch Card</em> sold by the <em>Telephony Network Operator</em> (TIM). The coupons consist of hours/volume of internet traffic and can be activated by the application itself. Coupons may be transfered to other TIM customers via the telephone number of the recipient or via NFC.",
+      description: "Smartphone application that captures coupons by a QR Code shown after watching a video in a website provided by a <em>Sponsor</em>, or by a <em>Scratch Card</em> sold by the <em>Telephony Network Operator</em> (TIM). The coupons consist of hours/volume of internet traffic and can be activated by the application itself. Coupons may be transferred to other TIM customers via the telephone number of the recipient or via NFC.",
       released: "Released internally as a prototype in Aug 2015",
       roles: [
         {
@@ -110,8 +110,8 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "SelfPass",
-      description: "Smartphone application intended for corporate employees. Perfoms a virtual reception service allowing to <em>book a visit from a guest</em> and providing the guest's <em>entry clearance</em> in the company.
-The application also manage the booking of corporate resources (classrooms meeting) and enable access to the resource (opening enabling mechatronics for classroom meeting) devices via NFC.",
+      description: "Smartphone application intended for corporate employees. Perfoms a virtual reception service allowing to <em>book a visit for a guest</em> and providing the guest's <em>entry clearance</em> in the company.
+The application also manage the booking of corporate resources (classrooms meeting) and enable access to the resource (opening enabling mechatronics for classroom meeting) via NFC.",
       released: "Released for corporate employees in Jun 2014",
       roles: [
         {
@@ -168,13 +168,13 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "banca_sella",
       title: "Payment APIs integration",
-      description: 'Integration of banking APIs into a smartphone application (<a href="https://www.tim.it/timpersonal" alt="TIMpersonal web site">TIMpersonal</a>) in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).',
+      description: 'Integration of banking APIs into a smartphone application in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).',
       released: "Work in progress",
       roles: [
         {
           title: "Mobile application developer (iOS)",
           period: "Mar 2017 – ongoing",
-          experience: "Integrating REST web services and a new UI into an existing iPhone app",
+          experience: 'Integrating REST web services and a new UI into an existing iPhone app (<a href="https://www.tim.it/timpersonal" title="TIMpersonal web site">TIMpersonal</a>)',
           technologies: "ApplePay, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
         }
       ]
@@ -225,7 +225,7 @@ OtherExperiences = [
     role: "Desktop application developer",
     period: "Nov 2015 – Dec 2015",
     client: 'Telecom Italia Lab',
-    description: "Identification and authorization turnkey solution (MobileConnectProximity)",
+    description: "Identification turnkey solution (MobileConnectProximity)",
     experience: "Design and implement two Desktop PC applications: the first to be used as <em>back office</em>: able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode; the second one intended for a <em>third party</em>: able to acquire identification tokens and transfer them via REST API after verification",
     technologies: "Java, Swing/Awt, JavaFx, PC/SC NFC"
   },
@@ -233,7 +233,7 @@ OtherExperiences = [
     role: "Firmware software developer",
     period: "Oct 2015 – Nov 2015",
     client: 'Telecom Italia Lab',
-    description: "Identification and authorization turnkey solution (MobileConnectProximity)",
+    description: "Identification turnkey solution (MobileConnectProximity)",
     experience: "Enable the use of Bluetooth Low Energy Technology. Define, design, configure, install a GATT Profile, Service and Feature onto a firmware of a programmable BLE device connected to a PC in order to transfer tokens sent by a smartphone (iOS or Android) via BLE interface to the serial port of the personal computer and then be processed by a Desktop Application",
     technologies: "BlueGiga Proprietary Scripting Language, Java, Swing/AWT"
   },
@@ -298,7 +298,7 @@ OtherExperiences = [
     period: 'Apr 2010',
     client: 'Unnamed private clinical laboratory',
     description: 'Intranet web application',
-    experience: 'Implement management of quotes for chemical analysis exams, group analytes and provides information on the expected delivery date and cost calculation for the final client',
+    experience: 'Implement management of quotes for chemical analysis exams, group analytes and provides information about the expected delivery date and cost calculation for the final client',
     technologies: 'Ruby, Ruby on Rails, MySQL, Javascript, HTML/CSS'
   },
   {
@@ -357,7 +357,7 @@ Qualifications = [
 OtherActivities = [
   {
     date: "Nov 2009",
-    description: "implement of a web application to manage thematic seminars."
+    description: "implement a web application to manage thematic seminars."
   },
   {
     date: "Aug 2009",
@@ -365,26 +365,26 @@ OtherActivities = [
   },
   {
     date: "Jun 2009",
-    description: "publish an introductory article to the use of Test Driven Development with Ruby on Rails on Rails Magazine."
+    description: "publish an introductory article about the use of Test Driven Development with Ruby on Rails on the <em>Rails Magazine</em>."
   },
   {
     date: "Apr 2009",
-    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the Telecom Working Capital Barcamp entitled: Redis, a service with high performance for storage of data structures.',
+    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the <em>Telecom Working Capital Barcamp</em> entitled: <em>Redis, a service with high performance for storage of data structures</em>.',
   },
   {
     date: "Jan 2009",
-    description: 'cofound <a href="http://cataniarb.org">Catania Ruby User Group</a> and organize of regular meetings.',
+    description: 'co-founder of <a href="http://cataniarb.org">Catania Ruby User Group</a> and organizer of regular meetings.',
   },
   {
     date: "May 2008",
-    description: "design a web application for management of clinical data of patients affected by Leukemia Chronic Myelogenous."
+    description: "design a web application for management of clinical data for patients affected by Leukemia Chronic Myelogenous."
   }
 ]
 
 OpenSourceProjects = [
   {
     title: 'Privablic',
-    description: 'Access to private members and methods of a C++ struct or class',
+    description: 'access to private members and methods of a C++ struct or class',
     url: 'https://github.com/altamic/privablic'
   },
   {
@@ -404,12 +404,12 @@ OpenSourceProjects = [
   },
   {
     title: 'Notepad',
-    description: 'Implementation of a notepad in Android with database SQlite',
+    description: 'implementation of a notepad in Android with database SQlite',
     url: 'https://github.com/altamic/notepad'
   },
   {
     title: 'Mainteinancer',
-    description: 'web application for managing maintenance for machinery',
+    description: 'web application for managing maintenance of machinery',
     url: 'https://github.com/altamic/maintenancer'
   },
   {
