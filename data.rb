@@ -220,6 +220,39 @@ The application also manage the booking of corporate resources (classrooms meeti
 }
 ]
 
+OtherExperiencesOutline = [
+  {
+    role: "Full stack web developer",
+    times: "6 times",
+    totalMonths: "31 months",
+    technologies: "Ruby, Ruby on Rails, Postgres, MySQL, Javascript, jQuery, jQuery UI, HTML/CSS, PHP, PRADO, Apache, SQL Server"
+  },
+  {
+    role: "Desktop application developer",
+    times: "3 times",
+    totalMonths: "15 months",
+    technologies: "Java, Swing/AWT, JavaFx, PC/SC NFC, DB2 UDB"
+  },
+  {
+    role: "Front end web developer",
+    times: "3 times",
+    totalMonths: "8 months",
+    technologies: "Jquery, Underscore, HTML5"
+  },
+  {
+    role: "Operations Engineer",
+    times: "2 times",
+    totalMonths: "4 months",
+    technologies: "Jenkins, Gradle, Maven, Artifactory, Puppet, Vagrant, VirtualBox, Bash, Ruby"
+  },
+  {
+    role: "Firmware software developer",
+    times: "1 time",
+    totalMonths: "2 months",
+    technologies: "C, BlueGiga Proprietary Scripting Language, Bluetooth Low Energy Specs"
+  }
+]
+
 OtherExperiences = [
   {
     role: "Desktop application developer",
@@ -238,7 +271,7 @@ OtherExperiences = [
     technologies: "BlueGiga Proprietary Scripting Language, Java, Swing/AWT"
   },
   {
-    role: 'Front end developer',
+    role: 'Front end web developer',
     period: 'Apr 2015 – May 2015',
     client: 'Telecom Italia Lab',
     description: 'Single page web application (XML documents visual editor)',
@@ -401,11 +434,6 @@ OpenSourceProjects = [
     title: 'Clinikr',
     description: 'web application for estimating quotes for clinical analysis and related examinations',
     url: 'http://user:password@clinikr.com'
-  },
-  {
-    title: 'Notepad',
-    description: 'implementation of a notepad in Android with database SQlite',
-    url: 'https://github.com/altamic/notepad'
   },
   {
     title: 'Mainteinancer',

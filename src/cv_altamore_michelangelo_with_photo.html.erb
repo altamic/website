@@ -317,7 +317,8 @@
 
     <h3 id="toc_id_7">Qualifications</h3>
     <% Qualifications.each do |q| %>
-      <div><div><b><%= q[:year] %>:</b> <%= q[:description] %></div><div><br></div>
+      <div><b><%= q[:year] %>:</b> <%= q[:description] %></div>
+      <br/>
     <% end %>
 
     <h3 id="toc_id_8">Languages</h3>
@@ -341,9 +342,15 @@
       </tbody>
     </table>
 
-    <br/>
+    <h2 id="toc_id_9">Other professional experiences outline</h2>
+    <% OtherExperiencesOutline.each do |e| %>
+      <b><%= e[:role]%></b>: <%= e[:times] %> for <%= e[:totalMonths] %> in total <br/>
+      <b>Technologies</b>: <%= e[:technologies] %> <br/>
+      <br/>
+    <% end %>
 
-    <h2 id="toc_id_9">Other professional experiences</h2>
+    <!--
+    <h2 id="toc_id_10">Other professional experiences</h2>
     <% OtherExperiences.each do |e| %>
       <table>
         <tbody>
@@ -374,8 +381,9 @@
         </tbody>
       </table>
     <% end %>
+    -->
 
-    <h2 id="toc_id_10">Other activities</h2>
+    <h2 id="toc_id_11">Other activities</h2>
     <div>
       <% OtherActivities.each do |oa| %>
       <div><b><%= oa[:date] %></b>:&nbsp;<%= oa[:description] %></div>
