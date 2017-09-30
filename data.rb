@@ -326,7 +326,7 @@ OtherExperiences = [
     technologies: 'PHP, PRADO, Apache, SQL Server, MySQL'
   },
   {
-    role: 'Java Desktop developer',
+    role: 'Desktop application developer',
     period: 'Dec 2006 – Jan 2008',
     client: 'Despar',
     description: 'Intranet desktop application (Fidelity card back office)',
@@ -334,7 +334,7 @@ OtherExperiences = [
     technologies: 'Java, Swing/AWT, SQL Server'
   },
   {
-    role: 'Java Desktop developer',
+    role: 'Desktop application developer',
     period: 'Dec 2006 – Jan 2008',
     client: 'Despar',
     description: 'Intranet desktop application (Sales data reports)',

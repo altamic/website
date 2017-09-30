@@ -64,7 +64,7 @@
       table tr td { text-align: justify; }
 
       table tr td:first-child { text-align: right; vertical-align: top; margin:0;}
-      
+
       td > ul { margin-top: 0.2em; margin-bottom: 0.2em; }
       td > ul > li { margin-bottom: 0.5em; }
 
@@ -97,7 +97,7 @@
       .fontawesome {
         font-family: FontAwesome;
       }
-      
+
       #timeline ul {
         padding: 0;
         margin: 0;
@@ -290,7 +290,7 @@
                 <% if role.has_key? :period %>
                 <b>Period</b>: <%= role[:period] %><br/>
                 <% elsif role.has_key? :periods %>
-                  <b>Periods</b>:<br/>         
+                  <b>Periods</b>:<br/>
                     <% role[:periods].each do |period| %>
                      - <%= period %><br/>
                     <% end %>
@@ -335,14 +335,14 @@
         </tr>
         <tr>
           <td><b>English</b></td>
-          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Good (B1)</td>
-          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Good (B1)</td>
+          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Intermediate (B2)</td>
+          <td><span class="Apple-tab-span" style="white-space:pre"> </span>Intermediate (B2)</td>
         </tr>
       </tbody>
     </table>
-    
+
     <br/>
-    
+
     <h2 id="toc_id_9">Other professional experiences</h2>
     <% OtherExperiences.each do |e| %>
       <table>
@@ -350,7 +350,7 @@
           <tr>
             <td><b>Role:</b></td>
             <td><%= e[:role] %><br></td>
-          </tr>          
+          </tr>
           <tr>
             <td><b>Period:</b></td>
             <td><%= e[:period] %></td>
@@ -358,11 +358,11 @@
           <tr>
             <td><b>Client:</b></td>
             <td><%= e[:client] %><br></td>
-          </tr>    
+          </tr>
           <tr>
             <td><b>Description:</b></td>
             <td><%= e[:description] %></td>
-          </tr>      
+          </tr>
           <tr>
             <td><b>Experience:</b></td>
             <td class="left"><%= e[:experience] %></td>
