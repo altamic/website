@@ -240,7 +240,7 @@ OtherExperiencesOutline = [
     technologies: "Jquery, Underscore, HTML5"
   },
   {
-    role: "Operations Engineer",
+    role: "Operations engineer",
     times: "2 times",
     totalMonths: "4 months",
     technologies: "Jenkins, Gradle, Maven, Artifactory, Puppet, Vagrant, VirtualBox, Bash, Ruby"
@@ -410,7 +410,7 @@ OtherActivities = [
   },
   {
     date: "May 2008",
-    description: "design a web application for management of clinical data for patients affected by Leukemia Chronic Myelogenous."
+    description: "design a web application for management of clinical data for patients affected by <em>Leukemia Chronic Myelogenous</em>."
   }
 ]
 
