@@ -379,11 +379,11 @@ OtherExperiences = [
 Qualifications = [
   {
     year: "2006",
-    description: "Bachelor Degree in Computer Science at Catania University&nbsp;–&nbsp;Score&nbsp;108/110"
+    description: "Bachelor's Degree (5 years) in Computer Science at Catania University<br/><b>Mark:</b> 108/110"
   },
   {
     year: "1996",
-    description: "High school diploma at \"Liceo Don Bosco\", Catania&nbsp;–&nbsp;Score&nbsp;60/60"
+    description: "High school diploma specializing in science education at \"Liceo Don Bosco\", Catania&nbsp;<br/><b>Mark:</b> 60/60"
   }
 ]
 
