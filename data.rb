@@ -402,7 +402,7 @@ OtherActivities = [
   },
   {
     date: "Apr 2009",
-    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the <em>Telecom Working Capital Barcamp</em> entitled: <em>Redis, a service with high performance for storage of data structures</em>.',
+    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the <em>Telecom Working Capital Barcamp</em> entitled: <em>Redis, an high performance service for data structures storage</em>.',
   },
   {
     date: "Jan 2009",
