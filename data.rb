@@ -24,7 +24,7 @@ Skills = [
   { title: 'Remote API paradigms', tags: 'HTTP REST (JSON, XML), RPC (SOAP)'},
   { title: 'Frameworks', tags: 'RxKotlin/RxJava, RxSwift/PromiseKit' },
   { title: 'Specialties', tags: 'Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
-  { title: 'Version Control Systems', tags: 'Git, Git-SVN, SVN' }
+  { title: 'Version Control Systems', tags: 'Git, SVN' }
 ]
 
 require 'date'
