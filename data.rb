@@ -7,8 +7,8 @@ Info = {
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
   profileDescription: "Mobile developer over Android and iOS platforms",
-  summaryPreamble: "I received a five-year bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical clinics.\n\n",
-  summary: "I currently hold the role of iOS software developer for an agile team that adopts SCRUM methodology since early 2015. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI cultivate a strong interest in the latest technological advancements of statically typed programming languages (Kotlin, Java, Swift), dynamic ones (Ruby, Javascript), programming paradigms (Object Oriented/Functional) and methodological approaches as Functional Reactive Programming (RxJava, RxSwift). Also, I became interested in the automation of software life-cycle processes, implementing automated systems for the build, software artifacts provisioning and server deployment (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
+  summaryPreamble: "I received a five-year Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical clinics.\n\n",
+  summary: "I currently hold the role of iOS software developer for an agile team that adopts SCRUM methodology since early 2015. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI cultivate a strong interest in the latest technological advancements of statically typed programming languages (Kotlin, Java, Swift), dynamic ones (Ruby, Javascript), programming paradigms (Object Oriented/Functional) and methodological approaches as Reactive Programming (RxJava, RxSwift). Also, I became interested in the automation of software life-cycle processes, implementing automated systems for the build, software artifacts provisioning and server deployment (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
   profileInfo: "Passionate about technology, self-motivated fast learner, pragmatic and versatile, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
   yearsExperience: "11",
   appsDeliveredCount: "10",
@@ -379,7 +379,7 @@ OtherExperiences = [
 Qualifications = [
   {
     year: "2006",
-    description: "Bachelor's Degree (5 years) in Computer Science at Catania University<br/><b>Mark:</b> 108/110"
+    description: "Bachelor's degree (5 years) in Computer Science at Catania University<br/><b>Mark:</b> 108/110"
   },
   {
     year: "1996",
