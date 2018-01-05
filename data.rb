@@ -7,9 +7,9 @@ Info = {
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
   profileDescription: "Mobile developer over Android and iOS platforms",
-  summaryPreamble: "I received a five-year Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical clinics.\n\n",
-  summary: "I currently hold the role of iOS software developer for an agile team that adopts SCRUM methodology since early 2015. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI cultivate a strong interest in the latest technological advancements of statically typed programming languages (Kotlin, Java, Swift), dynamic ones (Ruby, Javascript), programming paradigms (Object Oriented/Functional) and methodological approaches as Reactive Programming (RxJava, RxSwift). Also, I became interested in the automation of software life-cycle processes, implementing automated systems for the build, software artifacts provisioning and server deployment (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
-  profileInfo: "Passionate about technology, self-motivated fast learner, pragmatic and versatile, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
+  summaryPreamble: "I got a five-year Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical.\n\n",
+  summary: "I currently work as Senior iOS software developer for an agile team that adopts SCRUM methodology since early 2015, at TIM, the biggest Italian telecommunications company. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Java, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
+  profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
   yearsExperience: "11",
   appsDeliveredCount: "10",
   appsRunningCount: "6",
@@ -39,7 +39,7 @@ Timeline = {
     ["Aug 2015", "Ship a native Android app", 4],
     ["Jan 2015", "Enhance and fix apps in production", 3],
     ["Sep 2014", "Automate builds and releases for Android apps", 3],
-    ["Jun 2014", "Deliver a native Android app", 1],
+    ["Jun 2014", "Deliver a native Android app", 3],
     ["Feb 2014", "Ship a native Android app", 4],
     ["Sep 2013", "Deliver a native BlackBerry app", 3],
     ["Jan 2013", "Dispense a course on native Android development", 1],
@@ -62,7 +62,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "TIMpersonal",
-      description: "Smartphone application that provides an identification service based on the SIM to gain access to third party services: payment for goods/services of TIM business partners and obtain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.",
+      description: "iOS/Android application that provides an identification service based on the SIM to gain access to third party services: payment for goods/services of TIM business partners and obtain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.",
       released: "Released publicly in Jan 2017",
       roles: [
         {
@@ -82,8 +82,8 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "MobileConnectProximity",
-      description: 'A turnkey solution appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: <ul> <li>a <em>Desktop PC application</em> able to get an <i>identification token</i> via one of the following method: <ul> <li><i>WebCam (QrCode)</i></li> <li><i>Bluetooth Low Energy (GATT profile)</i></li> <li><i>PC/SC NFC reader (NFC HCE)</i></li></ul></li> <li>a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID Mobile Connect login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop PC app</em> using above technologies</li> <li>A <em>Custom Bluetooth GATT Profile</em></li> <li>A <em>Backend application</em> (exposing REST APIs able to perfom an OpenID Mobile Connect authentication or verify a token)</li></ul>',
-      released: "Solution released internally as a prototype in Nov 2015",
+      description: 'A turnkey appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: a <em>Desktop PC application</em> able to get an <i>identification token</i> via WebCam (QrCode), Bluetooth LE (GATT), PC/SC NFC reader (HCE), a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop PC app</em>, a <em>Custom Bluetooth GATT Profile</em> and a <em>REST Back-end</em>.',
+      released: "Released as a prototype in Nov 2015",
       roles: [
         {
           title: "Mobile application developer (Android)",
@@ -96,13 +96,13 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "TIM Tokky",
-      description: "Smartphone application that captures coupons by a QR Code shown after watching a video in a website provided by a <em>Sponsor</em>, or by a <em>Scratch Card</em> sold by the <em>Telephony Network Operator</em> (TIM). The coupons consist of hours/volume of internet traffic and can be activated by the application itself. Coupons may be transferred to other TIM customers via the telephone number of the recipient or via NFC.",
-      released: "Released internally as a prototype in Aug 2015",
+      description: "Android app that captures coupons by a QR Code shown after watching videos provided by a <em>Sponsor</em>'s website, or by a <em>Scratch Card</em> sold by the TIM telco. Coupons consist of hours/volume of internet traffic and can be activated in app or transferred to other TIM customers via the recipient's phone number or NFC.",
+      released: "Released as a prototype in Aug 2015",
       roles: [
         {
           title: "Mobile application developer (Android)",
           period: "Jun 2015 – Aug 2015",
-          experience: "Design and implement an app to acquire and manage coupons captured by a QrCode or transfered/received via NFC, and interface with back end via REST APIs",
+          experience: "Design and implement an app to acquire and manage coupons captured by a QrCode or transferred via NFC interfacing with back-end via REST APIs",
           technologies: "Android, RecyclerView, CardView, Volley, REST APIs"
         }
       ]
@@ -110,7 +110,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "SelfPass",
-      description: "Smartphone application intended for corporate employees. Perfoms a virtual reception service allowing to <em>book a visit for a guest</em> and providing the guest's <em>entry clearance</em> in the company.
+      description: "Android application intended for corporate employees. Perfoms a virtual reception service allowing to <em>book a visit for a guest</em> and providing the guest's <em>entry clearance</em> in the company.
 The application also manage the booking of corporate resources (classrooms meeting) and enable access to the resource (opening enabling mechatronics for classroom meeting) via NFC.",
       released: "Released for corporate employees in Jun 2014",
       roles: [
@@ -129,7 +129,7 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "tim",
       title: "TIM Wallet",
-      description: "Smartphone application for the management of smart cards (eg. attendance business badges, canteen badges, public transport badges).",
+      description: "BlackBerry application for the management of smart cards (eg. attendance business badges, canteen badges, public transport badges).",
       released: "Released publicly in Sep 2013",
       roles: [
         {
@@ -143,21 +143,22 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "vodafone",
       title: "SmartPass",
-      description: "Smartphone application to enable use of payment services via prepaid virtual cards. The app makes available information services, self care, mobile couponing and advertising.",
-      released: "Released internally as a prototype in Apr 2012",
+      description: "Windows Phone/iOS application to enable use of payment services via prepaid virtual cards. The app makes available information services, self care, mobile couponing and advertising.",
+      released: "Released as a prototype in Apr 2012",
       roles: [
         {
           title: "Mobile application developer (Windows Phone)",
           period: "Jan 2012 – Apr 2012",
           experience: "Develop a Windows Phone app with platform's UI native components, interface with RESTful back-end APIs",
           technologies: "C#, XAML"
-        },
-        {
-          title: "Mobile application developer (iOS)",
-          period: "Nov 2011 – Dec 2011",
-          experience: "Develop an iPhone app with a multi-platform framework, interface with RESTful back-end APIs",
-          technologies: "Rhomobile, Javascript, jQuery, Ruby, HTML/CSS"
         }
+        # ,
+        # {
+        #   title: "Mobile application developer (iOS)",
+        #   period: "Nov 2011 – Dec 2011",
+        #   experience: "Develop an iPhone app with a multi-platform framework, interface with RESTful back-end APIs",
+        #   technologies: "Rhomobile, Javascript, jQuery, Ruby."
+        # }
       ]
     },
   ]
@@ -168,7 +169,7 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "banca_sella",
       title: "Payment APIs integration",
-      description: 'Integration of banking APIs into a smartphone application in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).',
+      description: 'Integration of banking APIs into a iOS application in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).',
       released: "Work in progress",
       roles: [
         {
@@ -187,7 +188,7 @@ The application also manage the booking of corporate resources (classrooms meeti
     {
       client: "fondazione_veronesi",
       title: "Agenda della Salute",
-      description: "Smartphone application providing an agenda where information about medical tests are displayed and recommended according on user's gender and age.",
+      description: "Symbian application providing an agenda where information about medical tests are displayed and recommended according on user's gender and age.",
       released: "Released publicly in Oct 2011",
       roles: [
         {
@@ -211,7 +212,7 @@ The application also manage the booking of corporate resources (classrooms meeti
         {
           title: "Teacher",
           period: "Jan 2013 – Mar 2013",
-          experience: "Introduce the Android operating system, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample application that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments",
+          experience: "Introduce the Android OS, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample app that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments",
           technologies: "Java, Android, Eclipse"
         }
       ]
@@ -379,11 +380,11 @@ OtherExperiences = [
 Qualifications = [
   {
     year: "2006",
-    description: "Bachelor's degree (5 years) in Computer Science at Catania University<br/><b>Mark:</b> 108/110"
+    description: "Bachelor's degree (5 years) in Computer Science at Catania University<br/><em>Mark:</em> 108/110"
   },
   {
     year: "1996",
-    description: "High school diploma specializing in science education at \"Liceo Don Bosco\", Catania&nbsp;<br/><b>Mark:</b> 60/60"
+    description: "High school diploma specializing in science education at \"Liceo Don Bosco\", Catania&nbsp;<br/><em>Mark:</em> 60/60"
   }
 ]
 
@@ -407,11 +408,12 @@ OtherActivities = [
   {
     date: "Jan 2009",
     description: 'co-founder of <a href="http://cataniarb.org">Catania Ruby User Group</a> and organizer of regular meetings.',
-  },
-  {
-    date: "May 2008",
-    description: "design a web application for management of clinical data for patients affected by <em>Leukemia Chronic Myelogenous</em>."
   }
+  # ,
+  # {
+  #   date: "May 2008",
+  #   description: "design a web application for management of clinical data for patients affected by <em>Leukemia Chronic Myelogenous</em>."
+  # }
 ]
 
 OpenSourceProjects = [

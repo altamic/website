@@ -61,9 +61,9 @@
 
       table { margin-bottom: 2em; font-size: 0.90em }
 
-      table tr td { text-align: justify; }
-
-      table tr td:first-child { text-align: right; vertical-align: top; margin:0;}
+      table tr td { text-align: justify; vertical-align: top; margin:0; padding-right: 1.6em; }
+      
+      table tr td:first-child { }
 
       td > ul { margin-top: 0.2em; margin-bottom: 0.2em; }
       td > ul > li { margin-bottom: 0.5em; }
@@ -80,7 +80,7 @@
       }
 
       img.client {
-        margin: 0 1em 0 1em;
+        margin: 1em 0 1em 0;
       }
 
       a { color: #3333B0; }
@@ -93,6 +93,10 @@
       .small { margin-top: 0.4em; text-indent: 0.2em; font-size: 0.7em; font-weight: lighter; }
 
       .left { text-align: left; }
+
+      .invisible { visibility: hidden; }
+
+      .largerWidth { width: 55% }
 
       .fontawesome {
         font-family: FontAwesome;
@@ -107,12 +111,12 @@
         list-style: none;
         float: left;
         width: 9.2em;
-        margin: 8px 0 30px 58px;
+        margin: 18px 0 30px 58px;
         padding-left: 0;
         padding-right: 0.6em;
         padding-top: 24px;
         padding-bottom: 24px;
-        border-left: 4px solid black;
+        border-left: 2px solid black;
       }
 
       #timeline li {
@@ -146,7 +150,7 @@
       }
 
       .date {
-        margin-top: -20px;
+        margin-top: -23px;
         top: 50%;
         left: -60px;
         font-size: 0.70em;
@@ -157,11 +161,11 @@
       .circle {
         margin-top: -17px;
         top: 50%;
-        left: -9px;
+        left: -6px;
         width: 7px;
         height: 7px;
         background: white;
-        border: 3px solid black;
+        border: 1px solid black;
         border-radius: 50%;
         display: block;
         position: relative;
@@ -170,7 +174,7 @@
       .label {
         font-size: 0.50em;
         margin-left: 12px;
-        top: -14px;
+        top: -12px;
         padding-right: 0.6em;
         display: block;
         position: relative;
@@ -235,7 +239,7 @@
         </li>
       <% end %>
     </ul>
-
+    
     <% Info[:profileInfo].split("\n\n").each do |p| %>
       <p class="small"><em><%= p %></em></p>
     <% end %>
@@ -265,7 +269,7 @@
 
     <h2 id="toc_id_3">Skills</h2>
     <% Skills.each do |skill| %>
-      <p><b><%= skill[:title] %>:</b> <%= skill[:tags] %></p>
+      <p><em><%= skill[:title] %>:</em> <%= skill[:tags] %></p>
     <% end %>
 
     <br/>
@@ -276,29 +280,30 @@
       <table>
         <% item[:projects].each do |project| %>
         <tr>
-          <td><img class="client" src="img/client/<%= project[:client] %>.png" /></td>
+          <td class="largerWidth">
+              <img class="client" src="img/client/<%= project[:client] %>.png" /><br/>
+              <% project[:roles].each do |role| %>
+                <em>Role:</em> <%= role[:title] %><br/>
+                <% if role.has_key? :period %>
+                <em>Period:</em> <%= role[:period] %><br/>
+                <% elsif role.has_key? :periods %>
+                  <em>Periods:</em><br/>
+                    <% role[:periods].each do |period| %>
+                     - <%= period %><br/>
+                    <% end %>
+                <% end %>
+                <em>Experience:</em> <%= role[:experience] %><br/>
+                <em>Technologies:</em> <%= role[:technologies] %><br/>
+                <br/>
+              <% end %>
+          </td>
           <td>
-              <b><%= project[:title] %></b><br/>
+              <h2><%= project[:title] %></h2>
               <%= project[:description] %><br/>
               <% if project.has_key? :released %>
                 <i><%= project[:released] %></i><br/>
               <% end %>
               <br/>
-
-              <% project[:roles].each do |role| %>
-                <b>Role</b>: <%= role[:title] %><br/>
-                <% if role.has_key? :period %>
-                <b>Period</b>: <%= role[:period] %><br/>
-                <% elsif role.has_key? :periods %>
-                  <b>Periods</b>:<br/>
-                    <% role[:periods].each do |period| %>
-                     - <%= period %><br/>
-                    <% end %>
-                <% end %>
-                <b>Experience</b>: <%= role[:experience] %><br/>
-                <b>Technologies</b>: <%= role[:technologies] %><br/>
-                <br/>
-              <% end %>
           </td>
         </tr>
       <% end %>
@@ -307,7 +312,7 @@
 
     <h2 id="toc_id_5">Open source projects</h2>
     <div><% OpenSourceProjects.each do |oss| %>
-      <div><b><%= oss[:title] %>:</b>&nbsp;<%= oss[:description] %></div>
+      <div><em><%= oss[:title] %>:</em>&nbsp;<%= oss[:description] %></div>
       <div><a href="<%= oss[:url] %>"><%= oss[:url] %></a></div>
       <div><br></div>
     <% end %>
@@ -317,7 +322,7 @@
 
     <h3 id="toc_id_7">Qualifications</h3>
     <% Qualifications.each do |q| %>
-      <div><b><%= q[:year] %>:</b> <%= q[:description] %></div>
+      <div><em><%= q[:year] %>:</em> <%= q[:description] %></div>
       <br/>
     <% end %>
 
@@ -326,16 +331,16 @@
       <tbody>
         <tr>
           <td></td>
-          <td><b><span class="Apple-tab-span" style="white-space:pre">  </span>Written</b></td>
-          <td><b><span class="Apple-tab-span" style="white-space:pre">  </span>Spoken</b></td>
+          <td><em><span class="Apple-tab-span" style="white-space:pre">  </span>Written</em></td>
+          <td><em><span class="Apple-tab-span" style="white-space:pre">  </span>Spoken</em></td>
         </tr>
         <tr>
-          <td><b>Italian</b></td>
+          <td><em>Italian</em></td>
           <td><span class="Apple-tab-span" style="white-space:pre"> </span>Excellent (native)</td>
           <td><span class="Apple-tab-span" style="white-space:pre"> </span>Excellent (native)</td>
         </tr>
         <tr>
-          <td><b>English</b></td>
+          <td><em>English</em></td>
           <td><span class="Apple-tab-span" style="white-space:pre"> </span>Intermediate (B2)</td>
           <td><span class="Apple-tab-span" style="white-space:pre"> </span>Intermediate (B2)</td>
         </tr>
@@ -344,8 +349,8 @@
 
     <h2 id="toc_id_9">Other professional experiences outline</h2>
     <% OtherExperiencesOutline.each do |e| %>
-      <b><%= e[:role]%></b>: <%= e[:times] %> for <%= e[:totalMonths] %> in total <br/>
-      <b>Technologies</b>: <%= e[:technologies] %> <br/>
+      <em><%= e[:role]%>:</em> <%= e[:times] %> for <%= e[:totalMonths] %> in total <br/>
+      <em>Technologies:</em> <%= e[:technologies] %> <br/>
       <br/>
     <% end %>
 
@@ -355,27 +360,27 @@
       <table>
         <tbody>
           <tr>
-            <td><b>Role:</b></td>
+            <td><em>Role:</em></td>
             <td><%= e[:role] %><br></td>
           </tr>
           <tr>
-            <td><b>Period:</b></td>
+            <td><em>Period:</em></td>
             <td><%= e[:period] %></td>
           </tr>
           <tr>
-            <td><b>Client:</b></td>
+            <td><em>Client:</em></td>
             <td><%= e[:client] %><br></td>
           </tr>
           <tr>
-            <td><b>Description:</b></td>
+            <td><em>Description:</em></td>
             <td><%= e[:description] %></td>
           </tr>
           <tr>
-            <td><b>Experience:</b></td>
+            <td><em>Experience:</em></td>
             <td class="left"><%= e[:experience] %></td>
           </tr>
           <tr>
-            <td><b>Technologies:</b></td>
+            <td><em>Technologies:</em></td>
             <td><%= e[:technologies] %></td>
           </tr>
         </tbody>
@@ -386,7 +391,7 @@
     <h2 id="toc_id_11">Other activities</h2>
     <div>
       <% OtherActivities.each do |oa| %>
-      <div><b><%= oa[:date] %></b>:&nbsp;<%= oa[:description] %></div>
+      <div><em><%= oa[:date] %>:</em>&nbsp;<%= oa[:description] %></div>
       <div><br></div>
       <% end %>
     </div>
