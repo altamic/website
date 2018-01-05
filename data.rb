@@ -7,8 +7,8 @@ Info = {
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
   profileDescription: "Mobile developer over Android and iOS platforms",
-  summaryPreamble: "I got a five-year Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical.\n\n",
-  summary: "I currently work as Senior iOS software developer for an agile team that adopts SCRUM methodology since early 2015, at TIM, the biggest Italian telecommunications company. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Java, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
+  summaryPreamble: "I got a five-years Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical.\n\n",
+  summary: "I currently work as senior iOS software developer for an agile team that adopts SCRUM methodology since early 2015, at TIM, the biggest Italian telecommunications company. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Java, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
   profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
   yearsExperience: "11",
   appsDeliveredCount: "10",
@@ -30,7 +30,7 @@ Skills = [
 require 'date'
 Timeline = {
   items: [
-    ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 1],
+    ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 2],
     ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 3],
     ["Aug 2016", "Replace a team leader dev for an iOS app in Swift", 3],
     ["Jan 2016", "Take part in development of a new Android app", 1],
@@ -46,7 +46,7 @@ Timeline = {
     ["Dec 2012", "Take part in development of a native mobile iOS app", 2],
     ["Sep 2012", "Prototype a multi-platforms hybrid app", 3],
     ["Apr 2012", "Ship a native Windows Phone app", 5],
-    ["Dec 2011", "Ship a cross platform iOS app", 1],
+    ["Dec 2011", "Ship a cross platform iOS app", 2],
     ["Oct 2011", "Ship a cross platform Symbian app", 1],
     ["Sep 2011", "Begin working as Mobile Developer", 5],
     ["Apr 2007", "Begin working as Full Stack Web Developer", 3],
@@ -82,7 +82,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "MobileConnectProximity",
-      description: 'A turnkey appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for different services (payment, turnstiles opening, ans so on). It consists of: a <em>Desktop PC application</em> able to get an <i>identification token</i> via WebCam (QrCode), Bluetooth LE (GATT), PC/SC NFC reader (HCE), a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop PC app</em>, a <em>Custom Bluetooth GATT Profile</em> and a <em>REST Back-end</em>.',
+      description: 'A turnkey appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for authorization services (payment, turnstile opening, and so on). It consists of a <em>Desktop PC application</em> able to get an <i>identification token</i> via WebCam (QrCode), Bluetooth LE (GATT), PC/SC NFC reader (HCE), a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop PC app</em>, a <em>Custom Bluetooth GATT Profile</em> and a <em>RESTful back-end</em>.',
       released: "Released as a prototype in Nov 2015",
       roles: [
         {
