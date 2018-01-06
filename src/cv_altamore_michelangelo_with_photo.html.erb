@@ -57,7 +57,7 @@
         margin: 2cm;
       }
 
-      body { font-family: Roboto, sans-serif; margin: 2em; }
+      body { font-family: Roboto, sans-serif; margin: 2em; min-width: 560px; }
 
       table { margin-bottom: 2em; font-size: 0.90em }
 
@@ -102,20 +102,16 @@
         font-family: FontAwesome;
       }
 
-      #timeline ul {
-        padding: 0;
-        margin: 0;
-      }
 
       #timeline {
         list-style: none;
         float: left;
         width: 9.2em;
-        margin: 24px 0 30px 58px;
+        margin: 20px 0 30px 64px;
         padding-left: 0;
         padding-right: 0.6em;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 22px;
+        padding-bottom: 26px;
         border-left: 2px solid black;
       }
 
@@ -180,32 +176,6 @@
         position: relative;
       }
 
-      @media screen and (max-width: 767px) {
-        #timeline {
-          margin-left: 0;
-          padding-left: 0;
-          border-left: none;
-        }
-
-        #timeline li {
-          margin: 50px 0;
-        }
-
-        label {
-          width: 85%;
-          font-size: 1.1em;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          display: block;
-          transform: translateX(18px);
-        }
-
-        .circle, .date {
-          display: none;
-        }
-      }
-
     </style>
   </head>
   <body>
@@ -247,15 +217,15 @@
     <h2 id="toc_id_1"><%= Info[:profileDescription] %></h2>
 
     <h2>Quick facts</h2>
-    <%= Info[:yearsExperience] %> Years experience
+    <%= Info[:yearsExperience] %> years experience
     <br/>
-    <%= Info[:appsDeliveredCount] %> Mobile apps delivered
+    <%= Info[:appsDeliveredCount] %> mobile apps delivered
     <br/>
-    <%= Info[:appsRunningCount] %> Apps running in production<sup>1</sup>
+    <%= Info[:appsRunningCount] %> apps running in production<sup>1</sup>
     <br/>
-    <%= Info[:totalUsers] %> Total users<sup>1</sup>
+    <%= Info[:totalUsers] %> total users<sup>1</sup>
     <br/>
-    <%= Info[:grandTotalCommits] %> Commits
+    <%= Info[:grandTotalCommits] %> commits
 
     <p class="smaller"><sup>1</sup> at the time of writing.</p>
 
