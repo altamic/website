@@ -16,7 +16,7 @@ end
 # desc "Copy assets to dist dir"
 task :copy_assets do
   sh 'cp -rf src/assets/* dist'
-  sh 'cp src/cv_*.pdf dist'
+  sh 'cp src/cv_*.{pdf,html} dist'
 end
 
 # desc "Compile cv html file"
