@@ -30,6 +30,7 @@ Skills = [
 require 'date'
 Timeline = {
   items: [
+    ["Jan 2018", "Deliver a native iOS app supporting Apple Pay", 3],
     ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 2],
     ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 3],
     ["Aug 2016", "Replace a team leader dev for an iOS app in Swift", 3],
@@ -61,13 +62,27 @@ ProjectsByClients = [
   projects: [
     {
       client: "tim",
+      title: "TIMpersonal v2",
+      description: 'Integration of banking APIs into an existing iOS application in order to provide banking services (virtualize physical credit cards, P2P payment between users, POS payments).',
+      released: "Released publicly in Jan 2018",
+      roles: [
+        {
+          title: "Mobile application developer (iOS)",
+          period: "Mar 2017 – ongoing",
+          experience: 'Integrating REST web services and a new UI into an existing iPhone app',
+          technologies: "ApplePay, Apple Push Notifications, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
+        }
+      ]
+    },
+    {
+      client: "tim",
       title: "TIMpersonal",
       description: "iOS/Android application that provides an identification service based on the SIM to gain access to third party services: payment for goods/services of TIM business partners and obtain authorization to public administration services (SPID). The application provides other ancillary services: purchase of bus tickets and parking for many Italian cities and is able to capture and virtualize loyalty cards.",
       released: "Released publicly in Jan 2017",
       roles: [
         {
           title: "Mobile application developer (iOS)",
-          period: "Aug 2016 – ongoing",
+          period: "Aug 2016 – Feb 2017",
           experience: "Introduce an event based architecture, refactor and/or port ObjC code to Swift, implement features, introduce bug fixes, profile and improve performances",
           technologies: "Swift, RxSwift, iOS, Alamofire, Realm, Xcode, CocoaPods"
         },
@@ -161,25 +176,6 @@ The application also manage the booking of corporate resources (classrooms meeti
         # }
       ]
     },
-  ]
-},
-{
-  sector: "Finance",
-  projects: [
-    {
-      client: "banca_sella",
-      title: "Payment APIs integration",
-      description: 'Integration of banking APIs into a iOS application in order to provide banking services (virtualize physical cards, P2P payment between users, POS payments).',
-      released: "Work in progress",
-      roles: [
-        {
-          title: "Mobile application developer (iOS)",
-          period: "Mar 2017 – ongoing",
-          experience: 'Integrating REST web services and a new UI into an existing iPhone app (<a href="https://www.tim.it/timpersonal" title="TIMpersonal web site">TIMpersonal</a>)',
-          technologies: "ApplePay, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
-        }
-      ]
-    }
   ]
 },
 {
