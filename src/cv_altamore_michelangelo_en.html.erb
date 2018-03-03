@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= Info[:lastName] %> <%= Info[:firstName] %> - Curriculum Vitæ - English</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8;charset=utf-8">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="altamic">
+    <meta name="application-name" content="altamic">
+    <meta name="theme-color" content="#00aba9">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <style type="text/css" media="all">
+
+      @font-face {
+        font-family: FontAwesome;
+        src: url('fonts/fontawesome-webfont.woff');
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: Roboto;
+        src: url('fonts/Roboto-Regular.woff');
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: Roboto;
+        src: url('fonts/Roboto-Bold.woff');
+        font-weight: 500;
+      }
+
+      @font-face {
+        font-family: Roboto;
+        src: url('fonts/Roboto-Light.woff');
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: Roboto;
+        src: url('fonts/Roboto-Medium.woff');
+        font-weight: bold;
+      }
+
+      h1 { }
+      table { margin-bottom: 1em; }
+      tr    { page-break-inside: avoid; page-break-after: auto; }
+      tr.header { margin-top: 2em; }
+      h1, h2, h3 { margin-bottom: 0.4em; page-break-after: avoid; font-weight: normal; }
+      p { margin: 0.4em 0.4em; page-break-inside: avoid; }
+
+      @page {
+        margin: 2cm;
+      }
+
+      body { font-family: Roboto, sans-serif; margin: 2em; min-width: 560px; }
+      body { margin: 1em 4em 1em 4em; }
+
+      table { font-size: 0.90em }
+      table th { font-weight: normal; font-size: 1.1em }
+
+      table tr td { text-align: justify; vertical-align: top; margin:0; padding-right: 0.6em; }
+      
+      table tbody tr td:first-child { float: right; }
+
+      td > ul { margin-top: 0.2em; margin-bottom: 0.2em; }
+      td > ul > li { margin-bottom: 0.5em; }
+
+      img.face {
+        margin-top: -2.4em;
+        margin-left: 0.4em;
+        border: 2px solid #d0d0d0;
+        -moz-border-radius: 80px;
+        -webkit-border-radius: 80px;
+        border-radius: 80px; /* future proofing */
+        float: right;
+        display: inline
+      }
+
+      img.client {
+        margin: 1em 0 1em 0;
+      }
+
+      a { color: #3333B0; }
+
+      p { font-size: 0.82em; }
+
+      p.bigger { font-size: 0.96em; }
+
+      p.justify { text-align: justify; }
+
+      .smaller { font-size: 0.4em; font-weight: normal; margin-bottom: 0.4em;}
+
+      .small { margin-top: 0.4em; text-indent: 0.2em; font-size: 0.7em; font-weight: lighter; }
+
+      .left { text-align: left; }
+
+      .invisible { visibility: hidden; }
+
+      .largerWidth { width: 55% }
+
+      .fontawesome {
+        font-family: FontAwesome;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+    <i class="fa fa-envelope-o"></i>&nbsp;<a href="mailto:<%= Info[:email] %>"><%= Info[:email] %></a> &mdash;
+    <i class="fa fa-phone"></i>&nbsp;<a href="tel:<%= Info[:phoneNumber] %>"><%= Info[:phoneNumber] %></a> &mdash;
+    <% Internet[0..2].each do |i| %>
+      <span class="fontawesome"><%= i[:icon]%></span>
+    <% end %>
+    <span class="fontawesome">&#xf2c6;</span>
+    <span class="fontawesome">&#xf17e;</span>
+    <a href="https://github.com/altamic">altamic</a>
+    </p>
+
+    <div id="updated-on" class="smaller">(curriculum vitæ updated on <%= DateTime.now.strftime('%B %Y') %>)</div>
+
+<h1 id="michelangelo-altamore-senior-mobile-developer-over-android-and-ios-platforms"><%= Info[:firstName] %> <%= Info[:lastName] %></h1>
+<h2><em><%= Info[:profileDescription] %></em></h2>
+<h2 id="summary">Summary</h2>
+<% Info[:summaryPreamble].split("\n\n").each do |p| %>
+  <p class="justify bigger"><%= p %></p>
+<% end %>
+<% Info[:summary].split("\n\n").each do |p| %>
+  <p class="justify bigger"><%= p %></p>
+<% end %>
+
+<h2 id="skills">Skills</h2>
+<% Skills.each do |skill| %>
+  <p class="bigger"><em><%= skill[:title] %>:</em> <%= skill[:tags] %></p>
+<% end %>
+
+<h2 id="professional-experiences">Professional experiences</h2>
+<% Experiences.each do |e| %>
+  <table>
+    <tbody>
+      <tr>
+        <td><em>Period:</em></td>
+        <td><%= e[:period] %></td>
+      </tr>
+      <tr>
+        <td><em>Role:</em></td>
+        <td><%= e[:role] %><br></td>
+      </tr>
+      <tr>
+        <td><em>Client:</em></td>
+        <td><%= e[:client] %><br></td>
+      </tr>
+      <tr>
+        <td><em>Experience:</em></td>
+        <td class="left"><%= e[:experience] %></td>
+      </tr>
+      <tr>
+        <td><em>Description:</em></td>
+        <td><%= e[:description] %></td>
+      </tr>      
+      <tr>
+        <td><em>Technologies:</em></td>
+        <td><%= e[:technologies] %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
+
+<h2 id="education">Education</h2>
+<h3 id="toc_id_7">Qualifications</h3>
+<% Qualifications.each do |q| %>
+<table>
+<thead>
+<tr class="header">
+<td><%= q[:year] %>:</td>
+<td><em><%= q[:description] %></em></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><em><%= q[:where] %></em><br/>
+<em><%= q[:location] %></em></td>
+</tr>
+<tr>
+<td></td>
+<td>Mark: <%= q[:mark] %></td>
+</tr>
+</tbody>
+</table>
+<% end %>
+<h3 id="toc_id_8">Languages</h3>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Understanding</th>
+<th>Speaking</th>
+<th>Writing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><em>Listening</em></td>
+<td><em>Reading</em></td>
+<td><em>Interaction</em></td>
+<td><em>Production</em></td>
+</tr>
+<tr>
+<td><em>Italian</em></td>
+<td>A1</td>
+<td>A1</td>
+<td>A1</td>
+<td>A1</td>
+</tr>
+<tr>
+<td><em>English</em></td>
+<td>B2</td>
+<td>B2</td>
+<td>B2</td>
+<td>B2</td>
+</tr>
+</tbody>
+</table>
+
+    <h2 id="toc_id_5">Open source projects</h2>
+    <div>
+      <% OpenSourceProjects.each do |oss| %>
+        <p class="bigger"><em><%= oss[:title] %>:</em>&nbsp;<%= oss[:description] %><br/>
+          <a href="<%= oss[:url] %>"><%= oss[:url] %></a>
+        </p>
+      <% end %>
+    </div>
+
+    <h2 id="toc_id_11">Other activities</h2>
+    <% OtherActivities.each do |oa| %>
+    <p class="bigger">
+      <em><%= oa[:date] %>:</em>&nbsp;<%= oa[:description] %>
+    </p>
+    <% end %>
+</body>
+</html>

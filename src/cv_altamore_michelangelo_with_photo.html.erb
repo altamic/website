@@ -61,9 +61,10 @@
 
       table { margin-bottom: 2em; font-size: 0.90em }
 
-      table tr td { text-align: justify; vertical-align: top; margin:0; padding-right: 1.6em; }
+      table tr td { text-align: justify; vertical-align: top; margin:0; padding-right: 1.6em; line-height: 1.2em; }
       
       table tr td:first-child { }
+      table th { font-weight: normal; font-size: 1.1em }
 
       td > ul { margin-top: 0.2em; margin-bottom: 0.2em; }
       td > ul > li { margin-bottom: 0.5em; }
@@ -85,7 +86,9 @@
 
       a { color: #3333B0; }
 
-      p { font-size: 0.8em }
+      p { font-size: 0.82em; }
+      p.bigger { font-size: 0.96em; }
+
       p.justify { text-align: justify; }
 
       .smaller { font-size: 0.4em; font-weight: normal; margin-bottom: 0.4em;}
@@ -259,7 +262,7 @@
                 <% elsif role.has_key? :periods %>
                   <em>Periods:</em><br/>
                     <% role[:periods].each do |period| %>
-                     - <%= period %><br/>
+                     • <%= period %><br/>
                     <% end %>
                 <% end %>
                 <em>Experience:</em> <%= role[:experience] %><br/>
@@ -280,90 +283,87 @@
     </table>
     <% end %>
 
-    <h2 id="toc_id_5">Open source projects</h2>
-    <div><% OpenSourceProjects.each do |oss| %>
-      <div><em><%= oss[:title] %>:</em>&nbsp;<%= oss[:description] %></div>
-      <div><a href="<%= oss[:url] %>"><%= oss[:url] %></a></div>
-      <div><br></div>
-    <% end %>
-    </div>
-
-    <h2 id="toc_id_6">Education</h2>
-
-    <h3 id="toc_id_7">Qualifications</h3>
-    <% Qualifications.each do |q| %>
-      <div><em><%= q[:year] %>:</em> <%= q[:description] %></div>
-      <br/>
-    <% end %>
-
-    <h3 id="toc_id_8">Languages</h3>
-    <table>
-      <tbody>
-        <tr>
-          <td></td>
-          <td><em>Written</em></td>
-          <td><em>Spoken</em></td>
-        </tr>
-        <tr>
-          <td><em>Italian</em></td>
-          <td>Excellent (native)</td>
-          <td>Excellent (native)</td>
-        </tr>
-        <tr>
-          <td><em>English</em></td>
-          <td>Intermediate (B2)</td>
-          <td>Intermediate (B2)</td>
-        </tr>
-      </tbody>
-    </table>
-
     <h2 id="toc_id_9">Other professional experiences outline</h2>
     <% OtherExperiencesOutline.each do |e| %>
       <em><%= e[:role]%>:</em> <%= e[:times] %> for <%= e[:totalMonths] %> in total <br/>
       <em>Technologies:</em> <%= e[:technologies] %> <br/>
       <br/>
     <% end %>
+    
+    <h2 id="toc_id_6">Education</h2>
 
-    <!--
-    <h2 id="toc_id_10">Other professional experiences</h2>
-    <% OtherExperiences.each do |e| %>
-      <table>
-        <tbody>
-          <tr>
-            <td><em>Role:</em></td>
-            <td><%= e[:role] %><br></td>
-          </tr>
-          <tr>
-            <td><em>Period:</em></td>
-            <td><%= e[:period] %></td>
-          </tr>
-          <tr>
-            <td><em>Client:</em></td>
-            <td><%= e[:client] %><br></td>
-          </tr>
-          <tr>
-            <td><em>Description:</em></td>
-            <td><%= e[:description] %></td>
-          </tr>
-          <tr>
-            <td><em>Experience:</em></td>
-            <td class="left"><%= e[:experience] %></td>
-          </tr>
-          <tr>
-            <td><em>Technologies:</em></td>
-            <td><%= e[:technologies] %></td>
-          </tr>
-        </tbody>
-      </table>
+    <h3 id="toc_id_7">Qualifications</h3>
+    <% Qualifications.each do |q| %>
+    <table>
+      <thead>
+        <tr class="header">
+          <td><%= q[:year] %>:</td>
+          <td><em><%= q[:description] %></em></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td><em><%= q[:where] %></em><br/>
+              <em><%= q[:location] %></em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Mark: <%= q[:mark] %></td>
+        </tr>
+      </tbody>
+    </table>
     <% end %>
-    -->
 
-    <h2 id="toc_id_11">Other activities</h2>
+    <h3 id="toc_id_8">Languages</h3>
+    <table>
+      <thead>
+      <tr class="header">
+        <th></th>
+        <th>Understanding</th>
+        <th>Speaking</th>
+        <th>Writing</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td><em>Listening</em></td>
+          <td><em>Reading</em></td>
+          <td><em>Interaction</em></td>
+          <td><em>Production</em></td>
+        </tr>
+        <tr>
+          <td><em>Italian</em></td>
+          <td>A1</td>
+          <td>A1</td>
+          <td>A1</td>
+          <td>A1</td>
+        </tr>
+        <tr>
+        <td><em>English</em></td>
+          <td>B2</td>
+          <td>B2</td>
+          <td>B2</td>
+          <td>B2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="toc_id_5">Open source projects</h2>
     <div>
-      <% OtherActivities.each do |oa| %>
-      <div><em><%= oa[:date] %>:</em>&nbsp;<%= oa[:description] %></div>
-      <div><br></div>
+      <% OpenSourceProjects.each do |oss| %>
+        <p class="bigger"><em><%= oss[:title] %>:</em>&nbsp;<%= oss[:description] %><br/>
+          <a href="<%= oss[:url] %>"><%= oss[:url] %></a>
+        </p>
       <% end %>
     </div>
+
+    <h2 id="toc_id_11">Other activities</h2>
+    <% OtherActivities.each do |oa| %>
+    <p class="bigger">
+      <em><%= oa[:date] %>:</em>&nbsp;<%= oa[:description] %>
+    </p>
+    <% end %>
   </body>
 </html>

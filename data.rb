@@ -97,7 +97,7 @@ ProjectsByClients = [
     {
       client: "tim",
       title: "MobileConnectProximity",
-      description: 'A turnkey appliance that provides identification services based on the OpenID Mobile Connect protocol that can be used by a third party for authorization services (payment, turnstile opening, and so on). It consists of a <em>Desktop PC application</em> able to get an <i>identification token</i> via WebCam (QrCode), Bluetooth LE (GATT), PC/SC NFC reader (HCE), a <em>Mobile application</em> for both Android and iOS platforms able to identificate a user through an OpenID login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop PC app</em>, a <em>Custom Bluetooth GATT Profile</em> and a <em>RESTful back-end</em>.',
+      description: 'A turnkey appliance that provides identification services based on OpenID Mobile Connect that can be used by third parties for authorize payments, turnstile opening, and so on. It consists of a <em>Desktop app</em> able to get an <i>identification token</i> via WebCam (QrCode), Bluetooth LE (GATT), PC/SC NFC reader (HCE), a <em>Mobile application</em> for both Android and iOS able to identificate a user through an OpenID login and receive <i>identification tokens</i> to be transmitted to a <em>Desktop app</em>, a <em>Custom Bluetooth GATT Profile</em> and a <em>RESTful back-end</em>.',
       released: "Released as a prototype in Nov 2015",
       roles: [
         {
@@ -250,7 +250,31 @@ OtherExperiencesOutline = [
   }
 ]
 
-OtherExperiences = [
+Experiences = [
+  {
+    role: "Mobile application developer",
+    period: "Mar 2017 – ongoing",
+    client: "Telecom Italia Lab",
+    description: "Evolution of a smartphone application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by TIM partners.",
+    experience: "Integration of banking APIs into an existing iOS application in order to provide banking services (virtualize physical credit cards, P2P payment between users, POS payments).",
+    technologies: "Swift, ApplePay, Apple Push Notifications, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods"
+  },
+  {
+    role: "Mobile application developer",
+    period: "Aug 2016 – Feb 2017",
+    client: "Telecom Italia Lab",
+    description: "Development of a smartphone application that provides recognition services (SPID) based on SIM to access third party services: gain access to public administration services or payment for goods/services of business partners. The application provides other ancillary services (purchase of bus tickets and parking) and is also able to capture and virtualize loyalty cards",
+    experience: "Native iOS application development targeted at consumer market",
+    technologies: "Swift, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods",
+  },
+  {
+    role: "Mobile application developer",
+    period: "Jan 2016 – Aug 2016",
+    client: "Telecom Italia Lab",
+    description: "Development of a smartphone application that provides recognition services (SPID) based on SIM to access third party services: gain access to public administration services or payment for goods/services of business partners. The application provides other ancillary services (purchase of bus tickets and parking) and is also able to capture and virtualize loyalty cards",
+    experience: "Native Android application development targeted at consumer market",
+    technologies: "RxJava, EventBus, Retrofit, Java, Android Studio, Android"
+  },
   {
     role: "Desktop application developer",
     period: "Nov 2015 – Dec 2015",
@@ -288,7 +312,7 @@ OtherExperiences = [
     period: "Sep 2014 – Dec 2014",
     client: 'Telecom Italia Lab',
     description: "Automate build of team's projects/libraries and artifacts distribution.",
-    experience: "Implement a centralized build system for team's projects with internal Issue Tracker integration by custom scripts",
+    experience: "Implement a centralized build system for team's projects with internal issue tracker integration by custom scripts",
     technologies: "Jenkins, Gradle, Maven, Artifactory, Redmine, Ruby, Bash"
   },
   {
@@ -376,11 +400,17 @@ OtherExperiences = [
 Qualifications = [
   {
     year: "2006",
-    description: "Bachelor's degree (5 years) in Computer Science at Catania University<br/><em>Mark:</em> 108/110"
+    description: "Bachelor's degree (5 years) in Computer Science",
+    where: "Mathematics and Computer Science Department",
+    location: "University of Catania, Italy",
+    mark: "108/110"
   },
   {
     year: "1996",
-    description: "High school diploma specializing in science education at \"Liceo Don Bosco\", Catania&nbsp;<br/><em>Mark:</em> 60/60"
+    description: "Senior high school diploma specializing in science education",
+    where: "Liceo “Don Bosco”",
+    location: "Catania, Italy",
+    mark: "60/60"
   }
 ]
 
