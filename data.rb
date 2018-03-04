@@ -835,7 +835,7 @@ AltreAttivita = [
   },
   {
     data: "Gennaio 2009",
-    descrizione: 'partecipa alla fondazione del <a href="http://cataniarb.org">Catania Ruby User Group</a> e organizzatore di incontri periodici.',
+    descrizione: 'partecipa alla fondazione del <a href="http://cataniarb.org">Catania Ruby User Group</a> e organizza incontri periodici.',
   }
 ]
 
