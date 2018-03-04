@@ -429,17 +429,12 @@ OtherActivities = [
   },
   {
     date: "Apr 2009",
-    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the <em>Telecom Working Capital Barcamp</em> entitled: <em>Redis, an high performance service for data structures storage</em>.',
+    description: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> at the <em>Telecom Working Capital Barcamp</em> entitled <em>“Redis, an high performance service for data structures storage”</em>.',
   },
   {
     date: "Jan 2009",
     description: 'co-founder of <a href="http://cataniarb.org">Catania Ruby User Group</a> and organizer of regular meetings.',
   }
-  # ,
-  # {
-  #   date: "May 2008",
-  #   description: "design a web application for management of clinical data for patients affected by <em>Leukemia Chronic Myelogenous</em>."
-  # }
 ]
 
 OpenSourceProjects = [
@@ -499,6 +494,121 @@ Internet = [
     url: "https://twitter.com/altamic_",
     nickname: "altamic",
     icon: "&#xf099;"
+  }
+]
+
+# Italian
+
+Dati = {
+  luogoDiNascita: "Catania (Italia)",
+  nazionalita: "Italiana",
+  descrizioneProfilo: "Senior mobile developer su piattaforme Android e iOS",
+  preambolo: "Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come telecomunicazioni, grande distribuzione organizzata e clinica medica.\n\n",
+  sommario: "Lavoro attualmente come consulente in un team <em>agile</em> che adotta la metodologia SCRUM da inizio 2015, nel ruolo di sviluppatore iOS senior. Ho anche una conoscenza approfondita della piattaforma Android. Nel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.\n\nSono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Java, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).",
+  caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con strumenti appropriati, problem solver esperto e membro proattivo del team",
+}
+
+Competenze = [
+  { titolo: 'Paradigmi di programmazione', nomi: 'Orientato agli oggetti, Funzionale' },
+  { titolo: 'Languaggi', nomi: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript' },
+  { titolo: 'Piattaforme', nomi: 'Android, iOS, MacOS X, Linux, Windows'},
+  { titolo: 'Paradigmi API', nomi: 'HTTP REST (JSON, XML), RPC (SOAP)'},
+  { titolo: 'Frameworks', nomi: 'RxKotlin/RxJava, RxSwift/PromiseKit' },
+  { titolo: 'Specializzazioni', nomi: 'Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
+  { titolo: 'Sistemi di versionamento', nomi: 'Git, SVN' }
+]
+
+Esperienze = [  
+  {
+    periodo: "Marzo 2017 – in corso",
+    esperienza: "Sviluppo applicazione nativa iOS per il mercato consumer",    
+    ruolo: "iOS mobile application developer",
+    cliente: "Telecom Italia Lab",
+    obiettivi: "Integrazione di API bancarie in una applicazione iOS esistente al fine di fornire servizi bancari (virtualizzazione carte fisiche, pagamenti P2P tra utenti, pagamenti POS). Implementazione nuova interfaccia grafica",
+    descrizione: "Evoluzione di applicazione iOS che consente all'utente di impostare un PIN segreto sulla propria SIM, eventualmente associabile ad una Carta di Credito per accedere e/o acquistare servizi offerti da partners",    
+    tecnologie: "Swift, ApplePay, Apple Push Notifications, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods"
+  },
+  {
+    periodo: " – ",
+    esperienza: "",
+    ruolo: "",    
+    cliente: "",
+    obiettivi: "",
+    descrizione: "",
+    tecnologie: ""
+  }
+]
+
+Qualifiche = [
+  {
+    anno: "2006",
+    descrizione: "Laurea quinquennale in Informatica",
+    dove: "Dipartimento di Matematica e Informatica",
+    luogo: "Università di Catania",
+    votazione: "108/110"
+  },
+  {
+    anno: "1996",
+    descrizione: "Diploma di Maturità Scientifica",
+    dove: "Liceo Scientifico “Don Bosco”",
+    luogo: "Catania",
+    votazione: "60/60"
+  }
+]
+
+AltreAttivita = [
+  {
+    data: "Novembre 2009",
+    descrizione: "implementazione back-end per gestione online di seminari tematici."
+  },
+  {
+    data: "Agosto 2009",
+    descrizione: "implementazione back-end applicazione web per calcolare preventivi analisi chimiche."
+  },
+  {
+    data: "Giugno 2009",
+    descrizione: "pubblicazione articolo introduttivo all’uso del Test Driven Development con Ruby on Rails su <em>Rails Magazine</em>."
+  },
+  {
+    data: "Apr 2009",
+    descrizione: '<a href="http://michelangelo.altamore.org/redis_presentation/">talk</a> al <em>Telecom Working Capital Barcamp</em> intitolato <em>“Redis, un servizio ad alte prestazioni per lo storage di strutture dati”</em>.',
+  },
+  {
+    data: "Jan 2009",
+    descrizione: 'partecipa alla fondazione del <a href="http://cataniarb.org">Catania Ruby User Group</a> e organizzatore di incontri periodici.',
+  }
+]
+
+ProgettiOpenSource = [
+  {
+    titolo: 'Privablic',
+    descrizione: 'consente di accedere a membri e metodi privati di strutture e classi C++',
+    url: 'https://github.com/altamic/privablic'
+  },
+  {
+    titolo: 'Bitcoin Protocol',
+    descrizione: 'implementazione del protocollo Bitcoin in Ruby',
+    url: 'https://github.com/altamic/bitcoin-protocol'
+  },
+  {
+    titolo: 'Binary Finery',
+    descrizione: 'libreria per la scrittura/lettura di dati binari in Ruby',
+    url: 'https://github.com/altamic/binary_finery'
+  },
+  {
+    titolo: 'Clinikr',
+    descrizione: 'applicazione web per la gestione dei preventivi analisi cliniche e relativi esami',
+    url: 'http://user:password@clinikr.com'
+  },
+  {
+    titolo: 'Mainteinancer',
+    descrizione: 'applicazione web per la gestione di manutenzioni per macchinari',
+    url: 'https://github.com/altamic/maintenancer'
+  },
+  {
+    titolo: 'Gestione Referti',
+    descrizione: 'applicazione web per l’accettazione di esami clinici con funzioni statistiche',
+    url: 'https://github.com/altamic/gestione_referti'
   }
 ]
 

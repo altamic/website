@@ -124,27 +124,62 @@
     <div id="updated-on" class="smaller">(curriculum vitæ aggiornato a Marzo 2018)</div>
 
 <h1 id="michelangelo-altamore-senior-mobile-developer-su-piattaforme-android-e-ios"><%= Info[:firstName] %> <%= Info[:lastName] %></h1>
-<h2><em>Senior mobile developer su piattaforme Android e iOS</em></h2>
+<h2><em><%= Dati[:descrizioneProfilo] %></em></h2>
 <h2 id="profilo">Profilo</h2>
-<p class="justify bigger">Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come telecomunicazioni, grande distribuzione organizzata e clinica medica.</p>
-<p class="justify bigger">Lavoro attualmente come consulente nel ruolo di sviluppatore iOS senior. Ho anche una conoscenza approfondita della piattaforma Android. Nel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.</p>
-<p class="justify bigger">Sono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Java, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).</p>
+<% Dati[:preambolo].split("\n\n").each do |p| %>
+  <p class="justify bigger"><%= p %></p>
+<% end %>
+<% Dati[:sommario].split("\n\n").each do |p| %>
+  <p class="justify bigger"><%= p %></p>
+<% end %>
 
-<h2 id="skills">Skills</h2>
-<p class="bigger"><em>Paradigmi di programmazione:</em> Object Oriented, Funzionale</p>
-<p class="bigger"><em>Linguaggi di programmazione:</em> Kotlin, Java, Swift, Obj-C, C, Ruby, Javascript</p>
-<p class="bigger"><em>Piattaforme:</em> Android, iOS, MacOS X, Linux, Windows</p>
-<p class="bigger"><em>Paradigmi di API remote:</em> HTTP REST (JSON, XML), RPC (SOAP)</p>
-<p class="bigger"><em>Frameworks:</em> RxKotlin/RxJava, RxSwift/PromiseKit</p>
-<p class="bigger"><em>Specializzazioni:</em> Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE</p>
-<p class="bigger"><em>Version Control Systems:</em> Git, SVN</p>
+<h2 id="competenze">Competenze</h2>
+<% Competenze.each do |c| %>
+  <p class="bigger"><em><%= c[:titolo] %>:</em> <%= c[:nomi] %></p>
+<% end %>
 
 <h2 id="esperienze-professionali">Esperienze professionali</h2>
+<!--
+<% Esperienze.each do |e| %>
+  <table>
+    <tbody>
+      <tr>
+        <td><em>Periodo:</em></td>
+        <td><%= e[:periodo] %></td>
+      </tr>
+      <tr>
+        <td><em>Esperienza:</em></td>
+        <td class="left"><%= e[:esperienza] %></td>
+      </tr>      
+      <tr>
+        <td><em>Ruolo:</em></td>
+        <td><%= e[:ruolo] %><br></td>
+      </tr>
+      <tr>
+        <td><em>Cliente:</em></td>
+        <td><%= e[:cliente] %><br></td>
+      </tr>
+      <tr>
+        <td><em>Obiettivi:</em></td>
+        <td><%= e[:obiettivi] %></td>
+      </tr>
+      <tr>
+        <td><em>Descrizione:</em></td>
+        <td><%= e[:descrizione] %></td>
+      </tr>      
+      <tr>
+        <td><em>Tecnologie:</em></td>
+        <td><%= e[:tecnologie] %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
+-->
 <table>
 <tbody>
 <tr>
 <td><em>Periodo:</em></td>
-<td>3-2017 – in corso</td>
+<td>Marzo 2017 – in corso</td>
 </tr>
 <tr>
 <td><em>Esperienza:</em></td>
@@ -1135,43 +1170,27 @@
 
 <h2 id="formazione">Formazione</h2>
 <h3 id="qualifiche">Qualifiche</h3>
+<% Qualifiche.each do |q| %>
 <table>
 <thead>
 <tr class="header">
-<td>1996 - 2006:</td>
-<td><em>Laurea quinquennale in Informatica</em></td>
+<td><%= q[:anno] %>:</td>
+<td><em><%= q[:descrizione] %></em></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td></td>
-<td><em>Dipartimento di Matematica e Informatica </em><br/>
-	<em>Università di Catania</em></td>
+<td><em><%= q[:dove] %></em><br/>
+<em><%= q[:luogo] %></em></td>
 </tr>
 <tr>
 <td></td>
-<td>Votazione: 108/110</td>
+<td>Mark: <%= q[:votazione] %></td>
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr class="header">
-<td>1991 - 1996</td>
-<td><em>Diploma di Maturità Scientifica</em></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td><em>Liceo Scientifico “Don Bosco” Catania</em></td>
-</tr>
-<tr>
-<td></td>
-<td>Votazione: 60/60</td>
-</tr>
-</tbody>
-</table>
+<% end %>
 <h3 id="lingue">Lingue</h3>
 <table>
 <thead>
@@ -1206,25 +1225,20 @@
 </tr>
 </tbody>
 </table>
-<h2 id="progetti-open-source">Progetti Open Source</h2>
-<p class="bigger"><em>Privablic:</em> consente di accedere a membri e metodi privati di strutture e classi C++<em><br />
-</em><a href="https://github.com/altamic/privablic"><span class="underline">https://github.com/altamic/privablic</span></a></p>
-<p class="bigger"><em>Bitcoin Protocol:</em> implementazione del protocollo Bitcoin in Ruby<br />
-<a href="https://github.com/altamic/bitcoin-protocol#_blank"><span class="underline">https://github.com/altamic/bitcoin-protocol</span></a></p>
-<p class="bigger"><em>Binary Finery:</em> libreria per la scrittura/lettura di dati binari in Ruby<br />
-<a href="https://github.com/altamic/binary_finery#_blank"><span class="underline">https://github.com/altamic/binary_finery</span></a></p>
-<p class="bigger"><em>Mainteinancer:</em> applicazione web per la gestione di manutenzioni per macchinari<br />
-<a href="https://github.com/altamic/maintenancer#_blank"><span class="underline">https://github.com/altamic/maintenancer</span></a></p>
-<p class="bigger"><em>Gestione Referti:</em> applicazione web per l’accettazione di esami clinici con funzioni statistiche<br />
-<a href="https://github.com/altamic/gestione_referti#_blank"><span class="underline">https://github.com/altamic/gestione_referti</span></a></p>
-<p class="bigger"><em>Clinikr:</em> applicazione web per la gestione dei preventivi analisi cliniche e relativi esami<br />
-<a href="https://github.com/altamic/clinikr"><span class="underline">https://github.com/altamic/clinikr</span></a></p>
+    <h2 id="progetti-open-source">Progetti Open Source</h2>
+    <div>
+      <% ProgettiOpenSource.each do |oss| %>
+        <p class="bigger"><em><%= oss[:titolo] %>:</em>&nbsp;<%= oss[:descrizione] %><br/>
+          <a href="<%= oss[:url] %>"><%= oss[:url] %></a>
+        </p>
+      <% end %>
+    </div>
 
-<h2 id="altre-attività">Altre attività</h2>
-<p class="bigger"><em>Novembre 2009:</em> implementazione back-end per gestione online di seminari tematici.</p>
-<p class="bigger"><em>Agosto 2009:</em> Implementazione back-end applicazione web per calcolare preventivi analisi chimiche.</p>
-<p class="bigger"><em>Giugno 2009:</em> pubblicazione articolo introduttivo all’uso del Test Driven Development con Ruby on Rails su Rails Magazine.</p>
-<p class="bigger"><em>Aprile 2009:</em> talk al Telecom Working Capital Barcamp intitolato: Redis, un servizio ad alte prestazioni per lo storage di strutture dati.</p>
-<p class="bigger"><em>Gennaio 2009:</em> partecipa alla fondazione del Catania Ruby User Group e organizza incontri periodici.</p>
+    <h2 id="altre-attività">Altre attività</h2>
+    <% AltreAttivita.each do |a| %>
+    <p class="bigger">
+      <em><%= a[:data] %>:</em>&nbsp;<%= a[:descrizione] %>
+    </p>
+    <% end %>
 </body>
 </html>
