@@ -399,14 +399,14 @@ Experiences = [
 
 Qualifications = [
   {
-    year: "2006",
+    year: "July 2006",
     description: "Bachelor's degree (5 years) in Computer Science",
     where: "Mathematics and Computer Science Department",
     location: "University of Catania, Italy",
     mark: "108/110"
   },
   {
-    year: "1996",
+    year: "June 1996",
     description: "Senior high school diploma specializing in science education",
     where: "Liceo “Don Bosco”",
     location: "Catania, Italy",
@@ -801,14 +801,14 @@ Esperienze = [
 
 Qualifiche = [
   {
-    anno: "2006",
+    anno: "Luglio 2006",
     descrizione: "Laurea quinquennale in Informatica",
     dove: "Dipartimento di Matematica e Informatica",
     luogo: "Università di Catania",
     votazione: "108/110"
   },
   {
-    anno: "1996",
+    anno: "Giugno 1996",
     descrizione: "Diploma di Maturità Scientifica",
     dove: "Liceo Scientifico “Don Bosco”",
     luogo: "Catania",
