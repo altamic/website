@@ -2,7 +2,7 @@
 # altamic's web site #
 
 A git repository containing my actual web site deployed at
-[michelangelo.altamore.org](http://michelangelo.altamore.org).
+[michelangelo.altamore.org](https://michelangelo.altamore.org).
 
 It has been designed from scratch. It is simple, fast, responsive and with a clean look.
 
