@@ -62,7 +62,7 @@ ProjectsByClients = [
   projects: [
     {
       client: "tim",
-      title: "TIMpersonal v2",
+      title: "TIMpersonal v2.x",
       description: 'Integration of banking APIs into an existing iOS application in order to provide banking services (virtualize physical credit cards, P2P payment between users, POS payments).',
       released: "Released publicly in January 2018",
       roles: [
@@ -70,7 +70,7 @@ ProjectsByClients = [
           title: "Mobile application developer (iOS)",
           period: "March 2017 – ongoing",
           experience: 'Integrating REST web services and a new UI into an existing iPhone app',
-          technologies: "ApplePay, Apple Push Notifications, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
+          technologies: "ApplePay, Apple Push Notifications, Firebase, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
         }
       ]
     },
@@ -257,7 +257,7 @@ Experiences = [
     client: "Telecom Italia Lab",
     description: "Evolution of a smartphone application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by TIM partners.",
     experience: "Integration of banking APIs into an existing iOS application in order to provide banking services (virtualize physical credit cards, P2P payment between users, POS payments).",
-    technologies: "Swift, ApplePay, Apple Push Notifications, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods"
+    technologies: "Swift, ApplePay, Apple Push Notifications, Firebase, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods"
   },
   {
     role: "Mobile application developer",
@@ -521,17 +521,17 @@ Competenze = [
 Esperienze = [
   {
     periodo: "Marzo 2017 – in corso",
-    esperienza: "Sviluppo applicazione nativa iOS per il mercato consumer",    
+    esperienza: "Sviluppo applicazione nativa iOS per il mercato consumer",
     ruolo: "iOS mobile application developer",
     cliente: "Telecom Italia Lab",
     obiettivi: "Integrazione di API bancarie in una applicazione iOS esistente al fine di fornire servizi bancari (virtualizzazione carte fisiche, pagamenti P2P tra utenti, pagamenti POS). Implementazione nuova interfaccia grafica",
-    descrizione: "Evoluzione di applicazione iOS che consente all'utente di impostare un PIN segreto sulla propria SIM, eventualmente associabile ad una Carta di Credito per accedere e/o acquistare servizi offerti da partners",    
-    tecnologie: "Swift, ApplePay, Apple Push Notifications, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods"
+    descrizione: "Evoluzione di applicazione iOS che consente all'utente di impostare un PIN segreto sulla propria SIM, eventualmente associabile ad una Carta di Credito per accedere e/o acquistare servizi offerti da partners",
+    tecnologie: "Swift, ApplePay, Apple Push Notifications, Firebase, PromiseKit, RxSwift, iOS, Alamofire, Xcode, CocoaPods"
   },
   {
     periodo: "Agosto 2016 – Febbraio 2017",
     esperienza: "Sviluppo applicazione iOS per mercato consumer",
-    ruolo: "Mobile application developer",    
+    ruolo: "Mobile application developer",
     cliente: "Telecom Italia Lab",
     obiettivi: "Progettazione, implementazione applicazione iOS che consenta all'utente di impostare un PIN segreto sulla propria SIM, eventualmente associabile ad una Carta di Credito per accedere e/o acquistare servizi offerti da partner Telecom",
     descrizione: "Sviluppo applicazione per smartphone che fornisce servizi di riconoscimento (SPID) basato su SIM per accedere a servizi di consultazione della pubblica amministrazione o pagamento per beni/servizi di partner commerciali Telecom. L'applicazione fornisce altri servizi accessori (acquisto di biglietti bus e parcheggi nelle citta' convenzionate) e' inoltre possibile acquisire carte fedelta' in modo digitale per virtualizzarle.",
@@ -599,7 +599,7 @@ Esperienze = [
     obiettivi: "Editor visuale per la produzione di documenti XML",
     descrizione: "Implementazione di un editor visuale per la produzione di documenti XML di tipo Widget customizzati, validati con un insieme di schemi XSD e scaricabili come file zip.",
     tecnologie: "Jquery, Underscore, HTML 5"
-  },  
+  },
   {
     periodo: "Gennaio 2015 – Marzo 2015",
     esperienza: "Sviluppo ambito mobile Android nativo",
