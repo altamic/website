@@ -13,8 +13,8 @@ Info = {
   yearsExperience: "11",
   appsDeliveredCount: "10",
   appsRunningCount: "6",
-  totalUsers: "~ 60k",
-  grandTotalCommits: "~ 7.4k"
+  totalUsers: "~ 80k",
+  grandTotalCommits: "~ 7.7k"
 }
 
 Skills = [
@@ -221,13 +221,13 @@ OtherExperiencesOutline = [
   {
     role: "Full stack web developer",
     times: "6 times",
-    totalMonths: "31 months",
+    totalMonths: "2 years and 7 months",
     technologies: "Ruby, Ruby on Rails, Postgres, MySQL, Javascript, jQuery, jQuery UI, HTML/CSS, PHP, PRADO, Apache, SQL Server"
   },
   {
     role: "Desktop application developer",
     times: "3 times",
-    totalMonths: "15 months",
+    totalMonths: "1 year and 3 months",
     technologies: "Java, Swing/AWT, JavaFx, PC/SC NFC, DB2 UDB"
   },
   {
@@ -871,6 +871,3 @@ ProgettiOpenSource = [
     url: 'https://github.com/altamic/gestione_referti'
   }
 ]
-
-
-
