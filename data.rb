@@ -12,7 +12,7 @@ Info = {
   profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
   yearsExperience: "11",
   appsDeliveredCount: "10",
-  appsRunningCount: "6",
+  appsRunningCount: "4",
   totalUsers: "~ 80k",
   grandTotalCommits: "~ 7.7k"
 }
