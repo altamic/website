@@ -7,14 +7,14 @@ Info = {
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
   profileDescription: "Mobile developer over Android and iOS platforms",
-  summaryPreamble: "I got a five-years Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as telecommunications, mass retail and medical.\n\n",
-  summary: "I currently work as senior iOS software developer for an agile team that adopts SCRUM methodology since early 2015, at TIM, the biggest Italian telecommunications company. I also have an extensive experience of the Android mobile platform. During my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Java, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
+  summaryPreamble: "I got a five-years Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as finance, telecommunications, mass retail and medical.\n\n",
+  summary: "I've been working as mobile software developer for about seven years. Currently I am working as Android developer but I also have a good experience of the iOS mobile platform.\n\nDuring my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches such as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
   profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
-  yearsExperience: "11",
-  appsDeliveredCount: "10",
-  appsRunningCount: "4",
+  yearsExperience: "12",
+  appsDeliveredCount: "11",
+  appsRunningCount: "3",
   totalUsers: "~ 80k",
-  grandTotalCommits: "~ 7.7k"
+  grandTotalCommits: "~ 7.9k"
 }
 
 Skills = [
@@ -27,12 +27,13 @@ Skills = [
   { title: 'Version Control Systems', tags: 'Git, SVN' }
 ]
 
-require 'date'
 Timeline = {
   items: [
+    ["Jan 2019", "Deliver a native Android app", 3],
+    ["Aug 2018", "Ship a new milestone of a native iOS app", 3],
     ["Jan 2018", "Deliver a native iOS app supporting Apple Pay", 3],
     ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 2],
-    ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 3],
+    ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 2],
     ["Aug 2016", "Replace a team leader dev for an iOS app in Swift", 3],
     ["Jan 2016", "Take part in development of a new Android app", 1],
     ["Dec 2015", "Turn an in-house sw solution into a lib and release it as an SDK", 1],
@@ -46,10 +47,10 @@ Timeline = {
     ["Jan 2013", "Dispense a course on native Android development", 1],
     ["Dec 2012", "Take part in development of a native mobile iOS app", 2],
     ["Sep 2012", "Prototype a multi-platforms hybrid app", 3],
-    ["Apr 2012", "Ship a native Windows Phone app", 5],
+    ["Apr 2012", "Ship a native Windows Phone app", 4],
     ["Dec 2011", "Ship a cross platform iOS app", 2],
     ["Oct 2011", "Ship a cross platform Symbian app", 1],
-    ["Sep 2011", "Begin working as Mobile Developer", 5],
+    ["Sep 2011", "Begin working as Mobile Developer", 3],
     ["Apr 2007", "Begin working as Full Stack Web Developer", 3],
     ["Dec 2006", "Begin working as Java developer", 3],
     ["Jul 2006", "BS degree in Computer Science", 1]
@@ -57,6 +58,25 @@ Timeline = {
 }
 
 ProjectsByClients = [
+{
+  sector: "Finance",
+  projects: [
+    {
+      client: "unicredit",
+      title: "B.link v1.2",
+      description: 'Integration of REST APIs into an existing Android application in order to visualize a financial overview of customers.',
+      released: "Released for corporate employees in January 2019",
+      roles: [
+        {
+          title: "Mobile application developer (Android)",
+          period: "September 2018 – ongoing",
+          experience: 'Integrating REST web services and UI into an existing Android app',
+          technologies: "Kotlin, MVP, RxJava, Retrofit, Realm"
+        }
+      ]
+    }
+  ]
+},
 {
   sector: "TLC",
   projects: [
@@ -68,7 +88,7 @@ ProjectsByClients = [
       roles: [
         {
           title: "Mobile application developer (iOS)",
-          period: "March 2017 – ongoing",
+          period: "March 2017 – August 2018",
           experience: 'Integrating REST web services and a new UI into an existing iPhone app',
           technologies: "ApplePay, Apple Push Notifications, Firebase, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
         }
@@ -208,7 +228,7 @@ The application also manage the booking of corporate resources (classrooms meeti
         {
           title: "Teacher",
           period: "January 2013 – March 2013",
-          experience: "Introduce the Android OS, its components and relative application programming techniques through a theoretical introduction accompanied by the development of a sample app that integrates ListView, database management, position management, maps, notifications, media, WebView and fragments",
+          experience: "Introduce the Android OS, its components and relative application programming techniques through a theoretical introduction with the development of a sample app integrating ListView, database, geolocalization, maps, notifications, media, WebView and fragments",
           technologies: "Java, Android, Eclipse"
         }
       ]
@@ -253,7 +273,15 @@ OtherExperiencesOutline = [
 Experiences = [
   {
     role: "Mobile application developer",
-    period: "March 2017 – ongoing",
+    period: "September 2018 – ongoing",
+    client: "UniCredit Bank",
+    description: "Evolution of a mobile application that allows a corporate user to obtain financial data about client's obligations in different industrial sectors.",
+    experience: "Integration of REST APIs into an existing Android application.",
+    technologies: "Kotlin, MVP, RxJava, Retrofit, Realm"
+  },
+  {
+    role: "Mobile application developer",
+    period: "March 2017 – August 2018",
     client: "Telecom Italia Lab",
     description: "Evolution of a smartphone application that allows the user to set a secret PIN on a SIM, that can be associated to a credit card to access and/or purchase services offered by TIM partners.",
     experience: "Integration of banking APIs into an existing iOS application in order to provide banking services (virtualize physical credit cards, P2P payment between users, POS payments).",
@@ -415,14 +443,14 @@ Qualifications = [
 ]
 
 OtherActivities = [
-  {
-    date: "November 2009",
-    description: "implement a web application to manage thematic seminars."
-  },
-  {
-    date: "August 2009",
-    description: "implement a web application to manage chemical analysis estimates."
-  },
+  # {
+  #   date: "November 2009",
+  #   description: "implement a web application to manage thematic seminars."
+  # },
+  # {
+  #   date: "August 2009",
+  #   description: "implement a web application to manage chemical analysis estimates."
+  # },
   {
     date: "June 2009",
     description: "publish an introductory article about the use of Test Driven Development with Ruby on Rails on the <em>Rails Magazine</em>."
@@ -448,26 +476,26 @@ OpenSourceProjects = [
     description: 'Bitcoin protocol implementation in Ruby',
     url: 'https://github.com/altamic/bitcoin-protocol'
   },
-  {
-    title: 'Binary Finery',
-    description: 'library for reading/writing binary data in Ruby',
-    url: 'https://github.com/altamic/binary_finery'
-  },
-  {
-    title: 'Clinikr',
-    description: 'web application for estimating quotes for clinical analysis and related examinations',
-    url: 'http://user:password@clinikr.com'
-  },
-  {
-    title: 'Mainteinancer',
-    description: 'web application for managing maintenance of machinery',
-    url: 'https://github.com/altamic/maintenancer'
-  },
-  {
-    title: 'Gestione Referti',
-    description: 'web application for the acceptance of clinical tests with statistical functions',
-    url: 'https://github.com/altamic/gestione_referti'
-  }
+  # {
+  #   title: 'Binary Finery',
+  #   description: 'library for reading/writing binary data in Ruby',
+  #   url: 'https://github.com/altamic/binary_finery'
+  # },
+  # {
+  #   title: 'Clinikr',
+  #   description: 'web application for estimating quotes for clinical analysis and related examinations',
+  #   url: 'http://user:password@clinikr.com'
+  # },
+  # {
+  #   title: 'Mainteinancer',
+  #   description: 'web application for managing maintenance of machinery',
+  #   url: 'https://github.com/altamic/maintenancer'
+  # },
+  # {
+  #   title: 'Gestione Referti',
+  #   description: 'web application for the acceptance of clinical tests with statistical functions',
+  #   url: 'https://github.com/altamic/gestione_referti'
+  # }
 ]
 
 Internet = [
@@ -502,10 +530,10 @@ Internet = [
 Dati = {
   luogoDiNascita: "Catania (Italia)",
   nazionalita: "Italiana",
-  descrizioneProfilo: "Senior mobile developer su piattaforme Android e iOS",
-  preambolo: "Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come telecomunicazioni, grande distribuzione organizzata e clinica medica.\n\n",
-  sommario: "Lavoro attualmente come consulente in un team <em>agile</em> che adotta la metodologia SCRUM da inizio 2015, nel ruolo di sviluppatore iOS senior. Ho anche una conoscenza approfondita della piattaforma Android. Nel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.\n\nSono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Java, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).",
-  caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con strumenti appropriati, problem solver esperto e membro proattivo del team",
+  descrizioneProfilo: "Mobile developer su piattaforme Android e iOS",
+  preambolo: "Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come finanza, telecomunicazioni, grande distribuzione organizzata e clinica medica.\n\n",
+  sommario: "Ho lavorato come sviluppatore in ambito Mobile per circa sette anni. Lavoro attualmente come consulente in un team <em>agile</em>, nel ruolo di sviluppatore Android. Dispongo anche di una buona conoscenza della piattaforma iOS.\n\nNel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.\n\nSono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).",
+  caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con strumenti appropriati, problem solver e membro proattivo nel team",
 }
 
 Competenze = [
@@ -520,8 +548,17 @@ Competenze = [
 
 Esperienze = [
   {
-    periodo: "Marzo 2017 – in corso",
-    esperienza: "Sviluppo applicazione nativa iOS per il mercato consumer",
+    periodo: "Settembre 2018 – in corso",
+    esperienza: "Sviluppo applicazione Android in ambito corporate",
+    ruolo: "Android mobile application developer",
+    cliente: "UniCredit Bank",
+    obiettivi: "Integrazione di REST API in applicazione Android. Implementazione nuova interfaccia grafica",
+    descrizione: "Evoluzione applicazione Android preesistente al fine di fornire una panoromica sui rapporti finanziari con i clienti in vari settori industriali",
+    tecnologie: "Kotlin, MVP, RxJava, Retrofit, Realm"
+  },
+  {
+    periodo: "Marzo 2017 – Agosto 2018",
+    esperienza: "Sviluppo applicazione iOS per il mercato consumer",
     ruolo: "iOS mobile application developer",
     cliente: "Telecom Italia Lab",
     obiettivi: "Integrazione di API bancarie in una applicazione iOS esistente al fine di fornire servizi bancari (virtualizzazione carte fisiche, pagamenti P2P tra utenti, pagamenti POS). Implementazione nuova interfaccia grafica",
@@ -817,14 +854,14 @@ Qualifiche = [
 ]
 
 AltreAttivita = [
-  {
-    data: "Novembre 2009",
-    descrizione: "implementazione back-end per gestione online di seminari tematici."
-  },
-  {
-    data: "Agosto 2009",
-    descrizione: "implementazione back-end applicazione web per calcolare preventivi analisi chimiche."
-  },
+  # {
+  #   data: "Novembre 2009",
+  #   descrizione: "implementazione back-end per gestione online di seminari tematici."
+  # },
+  # {
+  #   data: "Agosto 2009",
+  #   descrizione: "implementazione back-end applicazione web per calcolare preventivi analisi chimiche."
+  # },
   {
     data: "Giugno 2009",
     descrizione: "pubblicazione articolo introduttivo all’uso del Test Driven Development con Ruby on Rails su <em>Rails Magazine</em>."
@@ -850,24 +887,24 @@ ProgettiOpenSource = [
     descrizione: 'implementazione del protocollo Bitcoin in Ruby',
     url: 'https://github.com/altamic/bitcoin-protocol'
   },
-  {
-    titolo: 'Binary Finery',
-    descrizione: 'libreria per la scrittura/lettura di dati binari in Ruby',
-    url: 'https://github.com/altamic/binary_finery'
-  },
-  {
-    titolo: 'Clinikr',
-    descrizione: 'applicazione web per la gestione dei preventivi analisi cliniche e relativi esami',
-    url: 'http://user:password@clinikr.com'
-  },
-  {
-    titolo: 'Mainteinancer',
-    descrizione: 'applicazione web per la gestione di manutenzioni per macchinari',
-    url: 'https://github.com/altamic/maintenancer'
-  },
-  {
-    titolo: 'Gestione Referti',
-    descrizione: 'applicazione web per l’accettazione di esami clinici con funzioni statistiche',
-    url: 'https://github.com/altamic/gestione_referti'
-  }
+  # {
+  #   titolo: 'Binary Finery',
+  #   descrizione: 'libreria per la scrittura/lettura di dati binari in Ruby',
+  #   url: 'https://github.com/altamic/binary_finery'
+  # },
+  # {
+  #   titolo: 'Clinikr',
+  #   descrizione: 'applicazione web per la gestione dei preventivi analisi cliniche e relativi esami',
+  #   url: 'http://user:password@clinikr.com'
+  # },
+  # {
+  #   titolo: 'Mainteinancer',
+  #   descrizione: 'applicazione web per la gestione di manutenzioni per macchinari',
+  #   url: 'https://github.com/altamic/maintenancer'
+  # },
+  # {
+  #   titolo: 'Gestione Referti',
+  #   descrizione: 'applicazione web per l’accettazione di esami clinici con funzioni statistiche',
+  #   url: 'https://github.com/altamic/gestione_referti'
+  # }
 ]
