@@ -63,3 +63,36 @@ end
 
 task :default => :build
 
+
+# Utils
+ita_locale = [
+  {'Gennaio' => 1, 'Febbraio' => 2, 'Marzo' => 3, 'Aprile' => 4, 'Maggio' => 5, 'Giugno' => 6, 'Luglio' => 7, 'Agosto' => 8, 'Settembre'=> 9, 'Ottobre' =>10, 'Novembre' =>11, 'Dicembre' => 12},
+  {'Domenica' => 0, 'Lunedì' => 1, 'Martedì' => 2, 'Mercoledì' => 3, 'Giovedì'=> 4, 'Venerdì' => 5, 'Sabato' => 6},
+  {'gen' => 1, 'feb' => 2, 'mar' => 3, 'apr' => 4, 'mag' => 5, 'giu' => 6, 'lug' => 7, 'ago' => 8, 'set' => 9, 'ott' =>10, 'nov' =>11, 'dic' => 12},
+  {'dom' => 0, 'lun' => 1, 'mar' => 2, 'mer' => 3, 'gio' => 4, 'ven' => 5, 'sab' => 6},
+  [nil] + %w(Gennaio Febbraio Marzo Aprile Maggio Giugno Luglio Agosto Settembre Ottobre Novembre Dicembre),
+  %w(Domenica Lunedì Martedì Mercoledì Giovedì Venerdì Sabato),
+  [nil] + %w(gen feb mar apr mag giu lug ago set ott nov dic),
+  %w(dom lun mar mer gio ven sab)
+]
+
+Date::ITALIAN_MONTHS=ita_locale[0]
+Date::ITALIAN_DAYS=ita_locale[1]
+Date::ITALIAN_ABBR_MONTHS=ita_locale[2]
+Date::ITALIAN_ABBR_DAYS=ita_locale[3]
+Date::ITALIAN_MONTHNAMES=ita_locale[4]
+Date::ITALIAN_DAYNAMES=ita_locale[5]
+Date::ITALIAN_ABBR_MONTHNAMES=ita_locale[6]
+Date::ITALIAN_ABBR_DAYNAMES=ita_locale[7]
+
+class DateTime
+  def strftime_italian(format)
+    format = format.dup
+    format.gsub!(/%a/, Date::ITALIAN_ABBR_DAYNAMES[self.wday])
+    format.gsub!(/%A/, Date::ITALIAN_DAYNAMES[self.wday])
+    format.gsub!(/%b/, Date::ITALIAN_ABBR_MONTHNAMES[self.mon])
+    format.gsub!(/%B/, Date::ITALIAN_MONTHNAMES[self.mon])
+    self.strftime(format)
+  end
+end
+
