@@ -8,13 +8,13 @@ Info = {
   nickName: "altamic",
   profileDescription: "Mobile developer over Android and iOS platforms",
   summaryPreamble: "I got a five-years Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as finance, telecommunications, mass retail and medical.\n\n",
-  summary: "I've been working as mobile software developer for about seven years. Currently I am working as Android developer but I also have a good experience of the iOS mobile platform.\n\nDuring my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches such as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
+  summary: "I've been developing software as mobile developer for about eight years. I am now working at MOLO17 as Android developer. I also have a good experience of the iOS mobile platform.\n\nDuring my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches such as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
   profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
   yearsExperience: "12",
   appsDeliveredCount: "11",
   appsRunningCount: "3",
-  totalUsers: "~ 80k",
-  grandTotalCommits: "~ 7.9k"
+  totalUsers: "~ 95k",
+  grandTotalCommits: "~ 8.1k"
 }
 
 Skills = [
@@ -29,8 +29,8 @@ Skills = [
 
 Timeline = {
   items: [
-    ["Jan 2019", "Deliver a native Android app", 3],
-    ["Aug 2018", "Ship a new milestone of a native iOS app", 3],
+    ["July 2019", "Deliver a native Android app", 4],
+    ["Aug 2018", "Ship a new milestone of a native iOS app", 2],
     ["Jan 2018", "Deliver a native iOS app supporting Apple Pay", 3],
     ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 2],
     ["Jan 2017", "Deliver a native app for both Android and iOS platforms", 2],
@@ -38,7 +38,7 @@ Timeline = {
     ["Jan 2016", "Take part in development of a new Android app", 1],
     ["Dec 2015", "Turn an in-house sw solution into a lib and release it as an SDK", 1],
     ["Nov 2015", "Deliver a native Android app", 2],
-    ["Aug 2015", "Ship a native Android app", 4],
+    ["Aug 2015", "Ship a native Android app", 3],
     ["Jan 2015", "Enhance and fix apps in production", 3],
     ["Sep 2014", "Automate builds and releases for Android apps", 3],
     ["Jun 2014", "Deliver a native Android app", 3],
@@ -62,16 +62,16 @@ ProjectsByClients = [
   sector: "Finance",
   projects: [
     {
-      client: "unicredit",
-      title: "B.link v1.2",
-      description: 'Integration of REST APIs into an existing Android application in order to visualize a financial overview of customers.',
-      released: "Released for corporate employees in January 2019",
+      client: "undisclosed", #"unicredit",
+      title: "Undisclosed project", #"B.link v1.2",
+      description: 'Summarize financial KPIs overview of customers, track progress and manage proposed financial products.',
+      released: "Released for corporate employees in July 2019",
       roles: [
         {
-          title: "Mobile application developer (Android)",
+          title: "Mobile application developer (Android/Kotlin)",
           period: "September 2018 – ongoing",
-          experience: 'Integrating REST web services and UI into an existing Android app',
-          technologies: "Kotlin, MVP, RxJava, Retrofit, Realm"
+          experience: 'Integration of REST web services and relative UI adaptation for an existing app',
+          technologies: "MVP, Dagger, RxJava, Retrofit, Realm"
         }
       ]
     }
@@ -87,7 +87,7 @@ ProjectsByClients = [
       released: "Released publicly in January 2018",
       roles: [
         {
-          title: "Mobile application developer (iOS)",
+          title: "Mobile application developer (iOS/Swift)",
           period: "March 2017 – August 2018",
           experience: 'Integrating REST web services and a new UI into an existing iPhone app',
           technologies: "ApplePay, Apple Push Notifications, Firebase, Alamofire, PromiseKit, RESTful APIs integration, OpenID Mobile Connect"
@@ -101,16 +101,16 @@ ProjectsByClients = [
       released: "Released publicly in January 2017",
       roles: [
         {
-          title: "Mobile application developer (iOS)",
+          title: "Mobile application developer (iOS/Swift)",
           period: "August 2016 – February 2017",
           experience: "Introduce an event based architecture, refactor and/or port ObjC code to Swift, implement features, introduce bug fixes, profile and improve performances",
-          technologies: "Swift, RxSwift, iOS, Alamofire, Realm, Xcode, CocoaPods"
+          technologies: "RxSwift, iOS, Alamofire, Realm"
         },
         {
-          title: "Mobile application developer (Android)",
+          title: "Mobile application developer (Android/Java)",
           period: "January 2016 – August 2016",
           experience: "Implement business logic flows pertaining the APIs with reactive programming and link them with the UI through an event based architecture, introduce planned features",
-          technologies: "RxJava, EventBus, Retrofit, Java, Android Studio, Gradle"
+          technologies: "RxJava, EventBus, Retrofit"
         }
       ]
     },
@@ -121,10 +121,10 @@ ProjectsByClients = [
       released: "Released as prototype in November 2015",
       roles: [
         {
-          title: "Mobile application developer (Android)",
+          title: "Mobile application developer (Android/Java)",
           period: "August 2015 – October 2015",
           experience: "Design and implement methods to enable an OpenID  Mobile Connect login; intercept an SMS with a PIN number in order to verify the phone number associated with a customer's data base, call a remote API to receive identification tokens that can be transferred by NFC technology (HCE), QrCode or via Bluetooth LE",
-          technologies: "Bluetooth, HCE, OAuth, OpenID Connect, Android Studio, Java"
+          technologies: "Bluetooth, HCE, OAuth, OpenID Connect, Android Studio"
         }
       ]
     },
@@ -135,10 +135,10 @@ ProjectsByClients = [
       released: "Released as a prototype in August 2015",
       roles: [
         {
-          title: "Mobile application developer (Android)",
+          title: "Mobile application developer (Android/Java)",
           period: "June 2015 – August 2015",
           experience: "Design and implement an app to acquire and manage coupons captured by a QrCode or transferred via NFC interfacing with back-end via REST APIs",
-          technologies: "Android, RecyclerView, CardView, Volley, REST APIs"
+          technologies: "RecyclerView, CardView, Volley, REST APIs"
         }
       ]
     },
@@ -150,7 +150,7 @@ The application also manage the booking of corporate resources (classrooms meeti
       released: "Released for corporate employees in June 2014",
       roles: [
         {
-          title: "Mobile application developer (Android)",
+          title: "Mobile application developer (Android/Java)",
           periods: [
             "January 2015 – March 2015",
             "February 2014 – June 2014",
@@ -168,7 +168,7 @@ The application also manage the booking of corporate resources (classrooms meeti
       released: "Released publicly in September 2013",
       roles: [
         {
-          title: "Mobile application developer (BlackBerry)",
+          title: "Mobile application developer (BlackBerry/Java ME)",
           period: "August 2013 – September 2013",
           experience: "Interface to communicate to/from SIM NFC and NFC terminals (POS), implement management of service subscriptions (request, removal, operations related to payments, sending identity in terminals), management of PIN/PUK application integrated at the SIM Level",
           technologies: "Java Micro Edition, BlackBerry, NFC"
@@ -182,7 +182,7 @@ The application also manage the booking of corporate resources (classrooms meeti
       released: "Released as a prototype in April 2012",
       roles: [
         {
-          title: "Mobile application developer (Windows Phone)",
+          title: "Mobile application developer (Windows Phone/C#)",
           period: "January 2012 – April 2012",
           experience: "Develop a Windows Phone app with platform's UI native components, interface with RESTful back-end APIs",
           technologies: "C#, XAML"
@@ -208,10 +208,10 @@ The application also manage the booking of corporate resources (classrooms meeti
       released: "Released publicly in October 2011",
       roles: [
         {
-          title: "Mobile application developer (Symbian)",
+          title: "Mobile application developer (Symbian/Javascript)",
           period: "September 2011 – October 2011",
           experience: "Develop a mobile application with a cross platform environment",
-          technologies: "Rhomobile, Javascript, jQuery, Ruby, HTML/CSS"
+          technologies: "Rhomobile, jQuery, Ruby, HTML/CSS"
         }
       ]
     }
@@ -228,7 +228,7 @@ The application also manage the booking of corporate resources (classrooms meeti
         {
           title: "Teacher",
           period: "January 2013 – March 2013",
-          experience: "Introduce the Android OS, its components and relative application programming techniques through a theoretical introduction with the development of a sample app integrating ListView, database, geolocalization, maps, notifications, media, WebView and fragments",
+          experience: "Introduce the Android OS, its components and application programming techniques through a theoretical introduction and practical development of a sample app with fragments, list views, database, maps and media.",
           technologies: "Java, Android, Eclipse"
         }
       ]
@@ -274,10 +274,10 @@ Experiences = [
   {
     role: "Mobile application developer",
     period: "September 2018 – ongoing",
-    client: "UniCredit Bank",
-    description: "Evolution of a mobile application that allows a corporate user to obtain financial data about client's obligations in different industrial sectors.",
+    client: "Undisclosed financial multinational", #"UniCredit Bank",
+    description: "Evolution of a mobile application that summarizes financial KPIs overview of customers, tracks progress and manages proposed financial products.",
     experience: "Integration of REST APIs into an existing Android application.",
-    technologies: "Kotlin, MVP, RxJava, Retrofit, Realm"
+    technologies: "Kotlin, MVP, Dagger, RxJava, Retrofit, Realm"
   },
   {
     role: "Mobile application developer",
@@ -309,7 +309,7 @@ Experiences = [
     client: 'Telecom Italia Lab',
     description: "Identification turnkey solution (MobileConnectProximity)",
     experience: "Design and implement two Desktop PC applications: the first to be used as <em>back office</em>: able to receive identification tokens via OpenID Mobile Connect and transfer them onto a USB device equipped with an NFC Smartcard interface capable of transmitting such tokens in HCE mode; the second one intended for a <em>third party</em>: able to acquire identification tokens and transfer them via REST API after verification",
-    technologies: "Java, Swing/Awt, JavaFx, PC/SC NFC"
+    technologies: "Java, Swing/AWT, JavaFx, PC/SC NFC"
   },
   {
     role: "Firmware software developer",
@@ -532,7 +532,7 @@ Dati = {
   nazionalita: "Italiana",
   descrizioneProfilo: "Mobile developer su piattaforme Android e iOS",
   preambolo: "Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come finanza, telecomunicazioni, grande distribuzione organizzata e clinica medica.\n\n",
-  sommario: "Ho lavorato come sviluppatore in ambito Mobile per circa sette anni. Lavoro attualmente come consulente in un team <em>agile</em>, nel ruolo di sviluppatore Android. Dispongo anche di una buona conoscenza della piattaforma iOS.\n\nNel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.\n\nSono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).",
+  sommario: "Ho sviluppato software in ambito Mobile per circa otto anni. Attualmente lavoro in MOLO17 ricoprendo il ruolo di sviluppatore su piattaforma Android. Dispongo anche di una buona conoscenza della piattaforma iOS.\n\nNel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.\n\nSono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).",
   caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con strumenti appropriati, problem solver e membro proattivo nel team",
 }
 
@@ -551,10 +551,10 @@ Esperienze = [
     periodo: "Settembre 2018 – in corso",
     esperienza: "Sviluppo applicazione Android in ambito corporate",
     ruolo: "Android mobile application developer",
-    cliente: "UniCredit Bank",
+    cliente: "Banca di rilievo internazionale", #"UniCredit Bank",
     obiettivi: "Integrazione di REST API in applicazione Android. Implementazione nuova interfaccia grafica",
-    descrizione: "Evoluzione applicazione Android preesistente al fine di fornire una panoromica sui rapporti finanziari con i clienti in vari settori industriali",
-    tecnologie: "Kotlin, MVP, RxJava, Retrofit, Realm"
+    descrizione: "Evoluzione applicazione che mostra KPIs dei clienti in vari settori industriali e traccia l'andamento dei relativi prodotti finanziari proposti",
+    tecnologie: "Kotlin, MVP, Dagger, RxJava, Retrofit, Realm"
   },
   {
     periodo: "Marzo 2017 – Agosto 2018",
