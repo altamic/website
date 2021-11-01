@@ -213,10 +213,10 @@
 </tr>
 <tr>
 <td><em>Italian</em></td>
-<td>A1</td>
-<td>A1</td>
-<td>A1</td>
-<td>A1</td>
+<td>C2</td>
+<td>C2</td>
+<td>C2</td>
+<td>C2</td>
 </tr>
 <tr>
 <td><em>English</em></td>
@@ -243,5 +243,8 @@
       <em><%= oa[:date] %>:</em>&nbsp;<%= oa[:description] %>
     </p>
     <% end %>
+
+    <%= File.new("#{__dir__}/src/personal_interests.html.erb").read %>
+
 </body>
 </html>

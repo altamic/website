@@ -6,30 +6,32 @@ Info = {
   nationality: "Italian",
   phoneNumber: "+39 320 948 66 63",
   nickName: "altamic",
-  profileDescription: "Mobile developer over Android and iOS platforms",
+  profileDescription: "Android &amp; iOS Mobile Developer",
   summaryPreamble: "I got a five-years Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as finance, telecommunications, mass retail and medical.\n\n",
-  summary: "I've been developing software as mobile developer for about eight years. I am now working at MOLO17 as Android developer. I also have a good experience of the iOS mobile platform.\n\nDuring my decennial career I've been involved in a wide range of software projects spanning from firmware to back-end development.\n\nI am interested in the latest advancements of both statically typed programming languages (Kotlin, Swift) and dynamic ones (Ruby, Javascript). I am experieced with different programming paradigms (Object Oriented/Functional) and methodological approaches such as Reactive Programming (RxJava, RxSwift). I have also some knowledge about CI/CD (Jenkins, Artifactory, Maven, Gradle, Scripting, Puppet, Vagrant).",
+  summary: "I've been developing Mobile Apps for about ten years. I currently work in MOLO17 as an Android developer. I also have a good knowledge of the iOS platform.\n\nDuring my career, I have been involved in a wide spectrum of software projects ranging from firmware development to back-end development sometimes with the role of Team Leader.\n\nBeside the advancements of various programming languages &mdash;I\'ve started experimenting with Kotlin in 2013 and Swift since its inception, now I follow with great interest Kotlin/Native and its use in Multiplatform projects with Android and iOS targets. I remain focused onto the evolution of the <em>best practices</em> in the field of software architecture, for which I have empirically developed the belief that <em>Clean Architecture</em> is always desirable at the application level.\n\nI have experience with different programming paradigms (Object Oriented/Functional/Logical) and I am actively interested in the automation of software life cycle processes during both build and delivery phases (Bitrise/Fastlane).\n\nI have studied and am interested in <em>on device Digital Payments protocols</em>, nowadays offered through <em>Host-based Card Emulation</em> of Type 4 tags by Apple Pay and Google Pay.",
   profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
-  yearsExperience: "12",
-  appsDeliveredCount: "11",
-  appsRunningCount: "3",
-  totalUsers: "~ 95k",
-  grandTotalCommits: "~ 8.1k"
+  yearsExperience: "15",
+  appsDeliveredCount: "14",
+  appsRunningCount: "5",
+  totalUsers: "~ 200k",
+  grandTotalCommits: "~ 10k"
 }
 
 Skills = [
-  { title: 'Programming paradigms', tags: 'Object Oriented, Functional' },
-  { title: 'Languages', tags: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript' },
+  { title: 'Programming paradigms', tags: 'Object Oriented, Functional, Logical' },
+  { title: 'Languages', tags: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript, Prolog' },
   { title: 'Platforms', tags: 'Android, iOS, MacOS X, Linux, Windows'},
   { title: 'Remote API paradigms', tags: 'HTTP REST (JSON, XML), RPC (SOAP)'},
-  { title: 'Frameworks', tags: 'RxKotlin/RxJava, RxSwift/PromiseKit' },
-  { title: 'Specialties', tags: 'Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
-  { title: 'Version Control Systems', tags: 'Git, SVN' }
+  { title: 'Frameworks', tags: 'JetPack Compose, SwiftUI, Coroutines, RxKotlin/RxJava, RxSwift/PromiseKit' },
+  { title: 'Specialties', tags: 'Digital Payments: ISO/IEC 14443, ISO/IEC 15693; Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
+  { title: 'Version Control Systems', tags: 'Git (git-flow)' }
 ]
 
 Timeline = {
   items: [
-    ["July 2019", "Deliver a native Android app", 4],
+    ["Sep 2020", "Deliver a native Android tablet app", 3],
+    ["Mar 2020", "Deliver a Kotlin Multiplatform Android/iOS app", 1],
+    ["Dec 2019", "Many releases of a native Android app", 3],
     ["Aug 2018", "Ship a new milestone of a native iOS app", 2],
     ["Jan 2018", "Deliver a native iOS app supporting Apple Pay", 3],
     ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 2],
@@ -41,13 +43,13 @@ Timeline = {
     ["Aug 2015", "Ship a native Android app", 3],
     ["Jan 2015", "Enhance and fix apps in production", 3],
     ["Sep 2014", "Automate builds and releases for Android apps", 3],
-    ["Jun 2014", "Deliver a native Android app", 3],
-    ["Feb 2014", "Ship a native Android app", 4],
+    ["Jun 2014", "Deliver a native Android app", 2],
+    ["Feb 2014", "Ship a native Android app", 3],
     ["Sep 2013", "Deliver a native BlackBerry app", 3],
     ["Jan 2013", "Dispense a course on native Android development", 1],
     ["Dec 2012", "Take part in development of a native mobile iOS app", 2],
     ["Sep 2012", "Prototype a multi-platforms hybrid app", 3],
-    ["Apr 2012", "Ship a native Windows Phone app", 4],
+    ["Apr 2012", "Ship a native Windows Phone app", 2],
     ["Dec 2011", "Ship a cross platform iOS app", 2],
     ["Oct 2011", "Ship a cross platform Symbian app", 1],
     ["Sep 2011", "Begin working as Mobile Developer", 3],
@@ -59,19 +61,76 @@ Timeline = {
 
 ProjectsByClients = [
 {
+  sector: "Point-Of-Sale Systems",
+  projects: [
+    {
+      client: "rch",
+      title: "A Touch System",
+      description: 'Implementation of evolutionary changes for the introduction of new features. Ad hoc customizations and various additions (e.g. SumUp terminals, MQTT protocol, NFC canteen badges and so on…)',
+      released: "Multiple periodic releases since September 2020",
+      roles: [
+        {
+          title: "Native Android application development.",
+          period: "September 2020 - ongoing",
+          experience: 'Ad hoc customizations and various additions (e.g. SumUp terminals, MQTT protocol, NFC canteen badges, etc ...)',
+          technologies: "Java, Android"
+        }
+      ]
+    }
+  ]
+},
+{
+  sector: "Medical Emergency",
+  projects: [
+    {
+      client: "zulu_medical",
+      title: "Zulu.E 2.0",
+      description: 'Design and implementation of an Android tablet application able to collect clinical data in the context of EMS, able to operate offline and sync collected data coming from on-site operators or medical equipment devices.',
+      released: "Released in September 2020",
+      roles: [
+        {
+          title: "Native Android application development.",
+          period: "March 2020 - September 2020",
+          experience: 'Team Leader, System Analyst, Mobile Developer',
+          technologies: "Clean Architecture, Kotlin/coroutines, Android, Dagger, Couchbase, Android Architecture components."
+        }
+      ]
+    }
+  ]
+},
+{
   sector: "Finance",
   projects: [
     {
-      client: "undisclosed", #"unicredit",
-      title: "Undisclosed project", #"B.link v1.2",
+      client: "leonteq",
+      title: "LynQs",
+      description: 'Evolution of a mobile application providing a digital marketplace of financial products, investment ideas, lifecycle analytics, portfolio analytics and market events notifications.',
+      released: "Released during March 2020 for both AppStore and PlayStore",
+      roles: [
+        {
+          title: "Native cross platform mobile application developer (Kotlin Multiplatform, Kotlin/Native)",
+          period: "February 2020 - March 2020",
+          experience: 'Evolutive change requests for an existing built in house KMP iOS/Android native application.',
+          technologies: "Clean Architecture, Kotlin, Kotlin Multiplatform Project, Coroutines, RxSwift, KTor, Kotlin Serialization"
+        }
+      ]
+    }
+  ]
+},
+{
+  sector: "Finance",
+  projects: [
+    {
+      client: "unicredit",
+      title: "B.link v1.2",
       description: 'Summarize financial KPIs overview of customers, track progress and manage proposed financial products.',
       released: "Released for corporate employees in July 2019",
       roles: [
         {
           title: "Mobile application developer (Android/Kotlin)",
-          period: "September 2018 – ongoing",
+          period: "September 2018 – February 2020",
           experience: 'Integration of REST web services and relative UI adaptation for an existing app',
-          technologies: "MVP, Dagger, RxJava, Retrofit, Realm"
+          technologies: "Clean Architecture, MVP, Dagger, RxJava, Retrofit, Realm"
         }
       ]
     }
@@ -271,13 +330,37 @@ OtherExperiencesOutline = [
 ]
 
 Experiences = [
+    {
+    role: "Android mobile application developer",
+    period: "September 2020 - ongoing",
+    client: "RCH",
+    description: "Ad hoc customizations and various additions (e.g. SumUp terminals, MQTT protocol, NFC canteen badges and so on…)",
+experience: "Implementation of evolutionary changes for the introduction of new features",
+    technologies: "Java, Android"
+  },
+  {
+    role: "Team Leader, System Analyst, Android mobile application developer",
+    period: "March 2020 - September 2020",
+    client: "Zulu Medical",
+    description: "Implementation of a Medical Emergency Android tablet application as part of a turnkey solution.",
+    experience: "Discuss and collect system requirements, interact with Product Owner, design and implementation of the software architecture, define goals and coordinates the mobile team withn an agile environment.",
+    technologies: "Clean Architecture, Kotlin, Kotlin Multiplatform, Clean Architecture, Coroutines, RxSwift"
+  },
+  {
+    role: "Native mobile cross platform application developer (Android/iOS)",
+    period: "February 2020 - March 2020",
+    client: "Leonteq",
+    description: "Evolution of a mobile application providing a digital marketplace of financial products, investment ideas, lifecycle analytics, portfolio analytetics and event notifications",
+    experience: "Evolutive change requests for an existing built in house KMP iOS/Android native application.",
+    technologies: "Clean Architecture, Kotlin, Kotlin Multiplatform Project, Coroutines, RxSwift, KTor, Kotlin Serialization"
+  },
   {
     role: "Mobile application developer",
-    period: "September 2018 – ongoing",
-    client: "Undisclosed financial multinational", #"UniCredit Bank",
+    period: "September 2018 – February 2020",
+    client: "UniCredit Bank",
     description: "Evolution of a mobile application that summarizes financial KPIs overview of customers, tracks progress and manages proposed financial products.",
     experience: "Integration of REST APIs into an existing Android application.",
-    technologies: "Kotlin, MVP, Dagger, RxJava, Retrofit, Realm"
+    technologies: "Clean Architecture, Kotlin, MVP, Dagger, RxJava, Retrofit, Realm"
   },
   {
     role: "Mobile application developer",
@@ -532,29 +615,56 @@ Dati = {
   nazionalita: "Italiana",
   descrizioneProfilo: "Mobile developer su piattaforme Android e iOS",
   preambolo: "Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come finanza, telecomunicazioni, grande distribuzione organizzata e clinica medica.\n\n",
-  sommario: "Ho sviluppato software in ambito Mobile per circa otto anni. Attualmente lavoro in MOLO17 ricoprendo il ruolo di sviluppatore su piattaforma Android. Dispongo anche di una buona conoscenza della piattaforma iOS.\n\nNel corso della mia carriera più che decennale, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end.\n\nSono interessato agli ultimi avanzamenti sia dei linguaggi di programmazione staticamente tipati (Kotlin, Swift) che di quelli dinamici (Ruby, Javascript). Ho esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale) e approcci metodologici come Reactive Programming (RxJava, RxSwift). Dispongo inoltre di conoscenze su automazione dei processi del ciclo di vita del software (Jenkins, Artifactory, Maven, Gradle, Puppet, Vagrant).",
+  sommario: "Sviluppo applicazioni per smartphones da circa dieci anni. Lavoro in MOLO17 e ricopro attualmente il ruolo di sviluppatore su Android. Dispongo anche di una buona conoscenza della piattaforma iOS.\n\nNel corso della mia carriera, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end, talvolta con ruolo di Team Leader.\n\nOltre agli avanzamenti di vari linguaggi di programmazione (Kotlin/Swift/Haskell/Ruby), &mdash;ho iniziato a sperimentare Kotlin nel 2013 mentre con Swift sin dal suo primo rilascio, oggi seguo con molto interesse Kotlin/Native ed il suo uso in progetti Multiplatform con target Android ed iOS.\n\nRimango focalizzato sulle evoluzioni delle <em>best practices</em> in ambito di architettura software, per cui ho empiricamente maturato la convinzione che la <em>Clean Architecture</em> sia sempre auspicabile a livello applicativo.\n\nHo esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale/Logico) e mi interesso attivamente di automazione dei processi del ciclo di vita del software in fase di build che delivery (Bitrise/Fastlane).\n\nHo approfondito e mi interesso di <em>protocolli per pagamenti digitali</em>, oggi offerti tramite <em>Host-based Card Emulation</em> in tag di 4º tipo da Apple Pay e Google Pay.",
   caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con strumenti appropriati, problem solver e membro proattivo nel team",
 }
 
 Competenze = [
-  { titolo: 'Paradigmi di programmazione', nomi: 'Orientato agli oggetti, Funzionale' },
-  { titolo: 'Languaggi', nomi: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript' },
+  { titolo: 'Paradigmi di programmazione', nomi: 'Orientato agli oggetti, Funzionale, Logico' },
+  { titolo: 'Languaggi', nomi: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript, Prolog' },
   { titolo: 'Piattaforme', nomi: 'Android, iOS, MacOS X, Linux, Windows'},
   { titolo: 'Paradigmi API', nomi: 'HTTP REST (JSON, XML), RPC (SOAP)'},
-  { titolo: 'Frameworks', nomi: 'RxKotlin/RxJava, RxSwift/PromiseKit' },
-  { titolo: 'Specializzazioni', nomi: 'Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
-  { titolo: 'Sistemi di versionamento', nomi: 'Git, SVN' }
+  { titolo: 'Frameworks', nomi: 'JetPack Compose, SwiftUI, Coroutines, RxKotlin/RxJava, RxSwift/PromiseKit' },
+  { titolo: 'Specializzazioni', nomi: 'Digital Payments: ISO/IEC 14443, ISO/IEC 15693; Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
+  { titolo: 'Sistemi di versionamento', nomi: 'Git (git-flow)' }
 ]
 
 Esperienze = [
   {
-    periodo: "Settembre 2018 – in corso",
+    periodo: "Settembre 2020 - in corso",
+    esperienza: "Sviluppo applicazione Android in ambito corporate",
+    ruolo: "Android mobile developer",
+    cliente: "RCH",
+    obiettivi: "Customizzazioni ad hoc e integrazioni varie (es. terminali SumUp, protocollo MQTT, Badge mensa NFC, etc…)",
+    descrizione: "Implementazione modifiche evolutive per introduzione di nuove funzionalità",
+    tecnologie: "Java, Android"
+  },
+  {
+    periodo: "Marzo 2020 - Settembre 2020",
+    esperienza: 'Progettazione ed implementazione di applicazione Android per tablet per la gestione dell\'emergenza medica, in grado di operare offline e sincronizzare i dati raccolti dagli operatori sul campo o provenienti da apparecchiature mediche.',
+    ruolo: "Team leader, System analyst, Android mobile developer",
+    cliente: "Zulu Medical",
+    obiettivi: "Raccolta requisiti, architettura di sistema, coordinamento team mobile, implementazione features",
+    descrizione: "Evoluzione applicazione che mostra KPIs dei clienti in vari settori industriali e traccia l'andamento dei relativi prodotti finanziari proposti",
+    tecnologie: "Clean Architecture, Kotlin/coroutines, Android, Dagger, Couchbase, Android Architecture components."
+  },
+  {
+    periodo: "Febbraio 2020 - Marzo 2020",
+    esperienza: "Sviluppo applicazione Android in ambito corporate",
+    ruolo: "Native mobile cross platform application developer (Android/iOS)",
+    cliente: "Leonteq",
+    obiettivi: 'Evolutive applicazione mobile che offre un mercato di prodotti finanziari, idee di investimento, analitiche sul ciclo di vita dei prodotti, analitiche sul portfolio investimenti e notifiche sugli eventi di mercato.',
+    descrizione: "Evoluzione applicazione che mostra KPIs dei clienti in vari settori industriali e traccia l'andamento dei relativi prodotti finanziari proposti",
+    tecnologie: "Clean Architecture, Kotlin, Kotlin Multiplatform Project, Coroutines, RxSwift, KTor, Kotlin Serialization"
+  },
+  {
+    periodo: "Settembre 2018 – Febbraio 2020",
     esperienza: "Sviluppo applicazione Android in ambito corporate",
     ruolo: "Android mobile application developer",
-    cliente: "Banca di rilievo internazionale", #"UniCredit Bank",
+    cliente: "UniCredit Bank",
     obiettivi: "Integrazione di REST API in applicazione Android. Implementazione nuova interfaccia grafica",
     descrizione: "Evoluzione applicazione che mostra KPIs dei clienti in vari settori industriali e traccia l'andamento dei relativi prodotti finanziari proposti",
-    tecnologie: "Kotlin, MVP, Dagger, RxJava, Retrofit, Realm"
+    tecnologie: "Clean Architecture, Kotlin, MVP, Dagger, RxJava, Retrofit, Realm"
   },
   {
     periodo: "Marzo 2017 – Agosto 2018",
