@@ -8,30 +8,31 @@ Info = {
   nickName: "altamic",
   profileDescription: "Android &amp; iOS Mobile Developer",
   summaryPreamble: "I got a five-years Bachelor's degree in Computer Science in 2006. Since then I am working as a consultant for private corporations providing software development in fields such as finance, telecommunications, mass retail and medical.\n\n",
-  summary: "I've been developing Mobile Apps for about ten years. I currently work in MOLO17 as an Android developer. I also have a good knowledge of the iOS platform.\n\nDuring my career, I have been involved in a wide spectrum of software projects ranging from firmware development to back-end development sometimes with the role of Team Leader.\n\nBeside the advancements of various programming languages &mdash;I\'ve started experimenting with Kotlin in 2013 and Swift since its inception, now I follow with great interest Kotlin/Native and its use in Multiplatform projects with Android and iOS targets. I remain focused onto the evolution of the <em>best practices</em> in the field of software architecture, for which I have empirically developed the belief that <em>Clean Architecture</em> is always desirable at the application level.\n\nI have experience with different programming paradigms (Object Oriented/Functional/Logical) and I am actively interested in the automation of software life cycle processes during both build and delivery phases (Bitrise/Fastlane).\n\nI have studied and am interested in <em>on device Digital Payments protocols</em>, nowadays offered through <em>Host-based Card Emulation</em> of Type 4 tags by Apple Pay and Google Pay.",
+  summary: "I've been developing mobile Apps for ten years and more. I work fully remotely since 2018, now at Playtomic as an Android and iOS native Mobile developer. During my career, I have been involved in a wide spectrum of software projects ranging from firmware development to back-end development sometimes as a Team Leader.\n\nBeside my general interests in programming languages, I follow with enthusiasm Kotlin/Native and its use in Multiplatform projects. I remain focused onto the evolution of the <em>best practices</em> in the field of software architecture, for which I have empirically developed the belief that <em>Clean Architecture</em> is always desirable at the application level.\n\nI have experience with different programming paradigms (Object Oriented/Functional/Logical), specializing with <em>on device Digital Payments protocols</em>, nowadays offered through <em>Host-based Card Emulation</em> of Type 4 tags by Apple Pay and Google Pay and in the automation of software life cycle processes.",
   profileInfo: "Self-motivated fast learner, enthusiast to tackle problems using appropriate tools, result-driven problem solver and proactive team player.",
   yearsExperience: "15",
-  appsDeliveredCount: "14",
-  appsRunningCount: "5",
-  totalUsers: "~ 200k",
-  grandTotalCommits: "~ 10k"
+  appsDeliveredCount: "17",
+  appsRunningCount: "4",
+  totalUsers: "~ 100K/monthly",
+  grandTotalCommits: "~ 15k"
 }
 
 Skills = [
   { title: 'Programming paradigms', tags: 'Object Oriented, Functional, Logical' },
-  { title: 'Languages', tags: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript, Prolog' },
+  { title: 'Languages', tags: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Prolog' },
   { title: 'Platforms', tags: 'Android, iOS, MacOS X, Linux, Windows'},
   { title: 'Remote API paradigms', tags: 'HTTP REST (JSON, XML), RPC (SOAP)'},
-  { title: 'Frameworks', tags: 'JetPack Compose, SwiftUI, Coroutines, RxKotlin/RxJava, RxSwift/PromiseKit' },
+  { title: 'Frameworks', tags: 'JetPack Compose, SwiftUI, Coroutines, RxKotlin, RxSwift' },
   { title: 'Specialties', tags: 'Digital Payments: ISO/IEC 14443, ISO/IEC 15693; Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
   { title: 'Version Control Systems', tags: 'Git (git-flow)' }
 ]
 
 Timeline = {
   items: [
-    ["Sep 2020", "Deliver a native Android tablet app", 3],
+    ["Apr 2022", "Participate in development of a native app (Android/iOS)", 2],
+    ["Sep 2020", "Deliver a native Android tablet app", 1],
     ["Mar 2020", "Deliver a Kotlin Multiplatform Android/iOS app", 1],
-    ["Dec 2019", "Many releases of a native Android app", 3],
+    ["Dec 2019", "Many releases of a native Android app", 2],
     ["Aug 2018", "Ship a new milestone of a native iOS app", 2],
     ["Jan 2018", "Deliver a native iOS app supporting Apple Pay", 3],
     ["Mar 2017", "Integrate third-party financial APIs into an existing iOS app in Swift", 2],
@@ -61,6 +62,44 @@ Timeline = {
 
 ProjectsByClients = [
 {
+  sector: "Sport activities reservation systems",
+  projects: [
+  {
+      client: "playtomic",
+      title: "Playtomic mobile app",
+      description: 'Implementation of evolutionary changes of an existing native mobile application aimed at finding and booking courts to play Padel, Tennis and other club sports',
+      released: "Currently on PlayStore and AppStore",
+      roles: [
+        {
+          title: "Native Android and iOS application development",
+          period: "April 2022 - ongoing",
+          experience: 'Development of a native Android and iOS consumer app aimed at sport activities reservation and social engagement with other sport players',
+          technologies: "SOLID principles, Clean Architecture; Android: Kotlin, Jetpack, Android Studio, Bitrise, Zeplin; iOS: Xcode, Swift, UIKit, SwiftUI, MVP, MVVM."
+        }
+      ]
+    }
+  ]
+},
+{
+  sector: "Medical research",
+  projects: [
+    {
+      client: "dhi_global",
+      title: "DHI Mobile app",
+      description: 'Mobile app prototype able to perform human hair recognition and 3D reconstruction, aimed at realistic human hair modeling and rendering',
+      released: "Released internally during February 2022",
+      roles: [
+        {
+          title: "Native Android and iOS application development.",
+          period: "December 2021 - March 2022",
+          experience: 'Human hair segmentation and 3D modeling by 2D pictures with generative techniques, exploration of iOS LiDAR API and other AR techniques',
+          technologies: "iOS, Swift, Deep Learning techniques, Google MediaPipe, TensorFlow Lite, ARKit 5, SceneKit, Reality Composer"
+        }
+      ]
+    }
+  ]
+},
+{
   sector: "Point-Of-Sale Systems",
   projects: [
     {
@@ -71,7 +110,7 @@ ProjectsByClients = [
       roles: [
         {
           title: "Native Android application development.",
-          period: "September 2020 - ongoing",
+          period: "September 2020 - December 2021",
           experience: 'Ad hoc customizations and various additions (e.g. SumUp terminals, MQTT protocol, NFC canteen badges, etc ...)',
           technologies: "Java, Android"
         }
@@ -330,9 +369,25 @@ OtherExperiencesOutline = [
 ]
 
 Experiences = [
-    {
+  {
+    role: "Android and iOS mobile application developer",
+    period: "April 2022 - ongoing",
+    client: "Playtomic",
+    description: "Implementation of evolutionary changes of an existing native mobile application aimed at finding and booking courts to play Padel, Tennis and other club sports",
+    experience: "Development of a native Android and iOS consumer app aimed at sport activities reservation and social engagement with other sport players",
+    technologies: "SOLID principles, Clean Architecture; Android: Kotlin, Jetpack, Android Studio, Bitrise, Zeplin; iOS: Xcode, Swift, UIKit, SwiftUI, MVP, MVVM."
+  },
+  {
+    role: "iOS mobile application developer",
+    period: "December 2021 - March 2022",
+    client: "DHI Global",
+    description: "Mobile app prototype able to perform human hair recognition and 3D reconstruction, aimed at realistic human hair modeling and rendering",
+    experience: "Human hair segmentation and 3D modeling by 2D pictures with generative techniques, exploration of iOS LiDAR API and other AR techniques",
+    technologies: "iOS, Swift, Deep Learning techniques, Google MediaPipe, TensorFlow Lite, ARKit 5, SceneKit, Reality Composer"
+  },
+  {
     role: "Android mobile application developer",
-    period: "September 2020 - ongoing",
+    period: "September 2020 - December 2021",
     client: "RCH",
     description: "Ad hoc customizations and various additions (e.g. SumUp terminals, MQTT protocol, NFC canteen badges and so on…)",
 experience: "Implementation of evolutionary changes for the introduction of new features",
@@ -615,23 +670,41 @@ Dati = {
   nazionalita: "Italiana",
   descrizioneProfilo: "Mobile developer su piattaforme Android e iOS",
   preambolo: "Mi sono laureato nel 2006 in Informatica, ordinamento quinquennale. Sin da allora lavoro come consulente per aziende private, fornendo sviluppo software in ambiti come finanza, telecomunicazioni, grande distribuzione organizzata e clinica medica.\n\n",
-  sommario: "Sviluppo applicazioni per smartphones da circa dieci anni. Lavoro in MOLO17 e ricopro attualmente il ruolo di sviluppatore su Android. Dispongo anche di una buona conoscenza della piattaforma iOS.\n\nNel corso della mia carriera, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware allo sviluppo back-end, talvolta con ruolo di Team Leader.\n\nOltre agli avanzamenti di vari linguaggi di programmazione (Kotlin/Swift/Haskell/Ruby), &mdash;ho iniziato a sperimentare Kotlin nel 2013 mentre con Swift sin dal suo primo rilascio, oggi seguo con molto interesse Kotlin/Native ed il suo uso in progetti Multiplatform con target Android ed iOS.\n\nRimango focalizzato sulle evoluzioni delle <em>best practices</em> in ambito di architettura software, per cui ho empiricamente maturato la convinzione che la <em>Clean Architecture</em> sia sempre auspicabile a livello applicativo.\n\nHo esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale/Logico) e mi interesso attivamente di automazione dei processi del ciclo di vita del software in fase di build che delivery (Bitrise/Fastlane).\n\nHo approfondito e mi interesso di <em>protocolli per pagamenti digitali</em>, oggi offerti tramite <em>Host-based Card Emulation</em> in tag di 4º tipo da Apple Pay e Google Pay.",
-  caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con strumenti appropriati, problem solver e membro proattivo nel team",
+  sommario: "Sviluppo applicazioni per smartphones ormai da più di dieci anni. Lavoro da remoto dal 2018, attualmente in Playtomic ricoprendo il ruolo di sviluppatore mobile nativo Android e iOS.\n\nNel corso della mia carriera, sono stato coinvolto in un largo spettro di progetti software che spaziano dallo sviluppo di firmware a quello back-end, talvolta come Team Leader.\n\nOltre agli avanzamenti dei linguaggi di programmazione, seguo con entusiasmo Kotlin/Native ed il suo uso in progetti Multiplatform.\n\nRimango interessato alle evoluzioni delle <em>best practices</em> in ambito di architettura software, per cui ho empiricamente maturato la convinzione che la <em>Clean Architecture</em> sia sempre auspicabile a livello applicativo.\n\nHo esperienza con diversi paradigmi di programmazione (Object Oriented/Funzionale/Logico) e mi sono specializzato nei <em>protocolli per pagamenti digitali</em>, oggi offerti tramite <em>Host-based Card Emulation</em> in tag di 4º tipo da Apple Pay e Google Pay. Curo inoltre con attenzione l\'automazione dei processi delle varie fasi del ciclo di vita del software.",
+  caratteristiche: "Autonomo e motivato ad imparare, entusiasta nell'affrontare problemi con gli strumenti appropriati, problem solver e membro proattivo nel team",
 }
 
 Competenze = [
   { titolo: 'Paradigmi di programmazione', nomi: 'Orientato agli oggetti, Funzionale, Logico' },
-  { titolo: 'Languaggi', nomi: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Javascript, Prolog' },
+  { titolo: 'Languaggi', nomi: 'Kotlin, Java, Swift, Objective-C, C, Ruby, Prolog' },
   { titolo: 'Piattaforme', nomi: 'Android, iOS, MacOS X, Linux, Windows'},
   { titolo: 'Paradigmi API', nomi: 'HTTP REST (JSON, XML), RPC (SOAP)'},
-  { titolo: 'Frameworks', nomi: 'JetPack Compose, SwiftUI, Coroutines, RxKotlin/RxJava, RxSwift/PromiseKit' },
+  { titolo: 'Frameworks', nomi: 'JetPack Compose, SwiftUI, Coroutines, RxKotlin, RxSwift' },
   { titolo: 'Specializzazioni', nomi: 'Digital Payments: ISO/IEC 14443, ISO/IEC 15693; Android NDK JNI C/C++, NFC (HCE, RW, P2P), Bluetooth LE'},
   { titolo: 'Sistemi di versionamento', nomi: 'Git (git-flow)' }
 ]
 
 Esperienze = [
   {
-    periodo: "Settembre 2020 - in corso",
+    periodo: "Aprile 2022 - in corso",
+    esperienza: "Sviluppo applicazione nativa iOS ed Android",
+    ruolo: "Android/Kotlin e iOS/Swift mobile developer nativo",
+    cliente: "Playtomic",
+    obiettivi: "Sviluppo di un'app consumer nativa Android e iOS finalizzata alla prenotazione di attività sportive e al social engagement con altri giocatori",
+    descrizione: "Implementazione di modifiche evolutive di un'applicazione mobile nativa esistente finalizzata a trovare e prenotare campi per giocare a Padel, Tennis e altri sport",
+    tecnologie: "Principi SOLID, criteri tratti dalla Clean Architecture; Android: Kotlin, Jetpack, Android Studio, Bitrise, Zeplin; iOS: Xcode, Swift, UIKit, SwiftUI, MVP, MVVM."
+  },
+    {
+    periodo: "Dicembre 2021 - Marzo 2022",
+    esperienza: "Sviluppo prototipo iOS in ambito corporate",
+    ruolo: "iOS mobile developer",
+    cliente: "DHI Global",
+    obiettivi: "Sviluppo app prototipole finalizzata al riconoscimento dei capelli umani e relativa ricostruzione 3D, modellazione e al rendering realistico dei capelli umani",
+    descrizione: "Segmentazione dei capelli umani e modellazione 3D mediante immagini 2D con tecniche generative, esplorazione dell'API LiDAR di iOS e altre tecniche di AR",
+    tecnologie: " iOS, Swift, Deep Learning techniques, Google MediaPipe, TensorFlow Lite, ARKit 5, SceneKit, Reality Composer"
+  },
+  {
+    periodo: "Settembre 2020 - Dicembre 2021",
     esperienza: "Sviluppo applicazione Android in ambito corporate",
     ruolo: "Android mobile developer",
     cliente: "RCH",
